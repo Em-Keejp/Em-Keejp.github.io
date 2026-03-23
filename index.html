@@ -41,34 +41,79 @@
 <br>
 
 
-  <h2>
-  <span style="background: linear-gradient(#dddddd 0%);">　歌詞集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-  </span>
-  </h2>
-  <p>ダウンロード機能の実験のためにこのセクションを作りました。多分需要はない。htmlってむずいなー笑</p>
-<h3>ボカロ系</h3>
-<table border="1">
-  <tr>
-    <td>[Sakuzyo] 怪獣になりたい feat. 初音ミク </td>
-    <td><a href="./lyrics/No1.txt"><button>見る</button></a></td>
-    <td><a href="./lyrics/No1.txt" download="怪獣になりたい 歌詞.txt"><button>歌詞をダウンロード(txt)</button></a></td>
-  </tr>
-  <tr>
-    <td>[サツキ] メズマライザー feat. 初音ミク・重音テトSV </td>
-    <td><a href="./lyrics/No2.txt"><button>見る</button></a></td>
-    <td><a href="./lyrics/No2.txt" download="メズマライザー 歌詞.txt"><button>歌詞をダウンロード(txt)</button></a></td>
-  </tr>
-</table>
-<h3>それ以外</h3>
-<table border="1">
-  <tr>
-    <td>[Masayoshi Minoshima] Bad Apple!! feat. nomico </td>
-    <td><a href="./lyrics/No3.txt"><button>見る</button></a></td>
-    <td><a href="./lyrics/No3.txt" download="Bad Apple!! 歌詞.txt"><button>歌詞をダウンロード(txt)</button></a></td>
-  </tr>
-</table>
+<h2>
+<span style="background: linear-gradient(#dddddd 0%);">　歌詞集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+</span>
+</h2>
+<p>ダウンロード機能の実験のためにこのセクションを作りました。多分需要はない。htmlってむずいなー笑<br>
+2026/03/24追記 : functionを学ぶためにこのエリアを拡充してみた。まあ大部分chatGPTに頼ったけど笑</p>
 
+<!--歌詞群表示部　2026/03/24　functionの練習も兼ねて...というかGPTの野郎が強すぎた笑-->
+<div id="lyrics"></div>
+<script>
+//表を自動で作る関数
+function createRows(composer,music,vocal,filenumber){
+  let musictitle;
+  if(vocal==""){
+    musictitle=`[${composer}] ${music}`;
+  }else{
+    musictitle=`[${composer}] ${music} feat. ${vocal}`;
+  }
 
+  return `<tr>
+          <td>${musictitle}</td>
+          <td><a href="./lyrics/${filenumber}.txt"><button>見る</button></td>
+          <td><a href="./lyrics/${filenumber}.txt" download="${music} 歌詞.txt"><button>歌詞をダウンロード(txt)</button></td>
+          </tr>`;
+}
+
+//表の題名と表データを入れる関数
+function Table(title,table){ 
+  return `<h3>${title}</h3>
+          <table border="1">
+          ${table.join("")}
+           </table>`;
+}
+
+//表データ(ボカロ系)
+const vocaloid=[ 
+  createRows( "Sakuzyo" , "怪獣になりたい" , "初音ミク" , "A1" ),
+  createRows( "サツキ" , "メズマライザー" , "初音ミク・重音テトSV" , "A2" ),
+  createRows( "椎名もた(ぽわぽわP)" , "少女A" , "鏡音リン" , "A3" ),
+  createRows( "吉田夜世" , "オーバーライド" , "重音テトSV" , "A4" ),
+  createRows( "柊マグネタイト" , "マーシャル・マキシマイザー" , "可不" , "A5" ),
+  createRows( "すりぃ" , "テレキャスタービーボーイ" , "鏡音レン" , "A6" ),
+  createRows( "いよわ" , "熱異常" , "足立レイ" , "A7" ),
+  createRows( "Atena" , "踊っチャイナ" , "初音ミク・重音テトSV" , "A8" ),
+  createRows( "Atena" , "クローンクローン" , "GUMI・鏡音リン" , "A9" ),
+  createRows( "原口沙輔" , "人マニア" , "重音テト" , "A10" ),
+  createRows( "原口沙輔" , "イガク" , "重音テト" , "A11" ),
+
+];
+
+//表データ(その他の音楽)
+const others=[ 
+  createRows( "Masayoshi Minoshima" , "Bad Apple!!" , "nomico" , "B1" ),
+  createRows( "back number" , "高嶺の花子さん" , "" , "B2" ),
+  createRows( "Mrs.GREEN APPLE" , "ダンスホール" , "" , "B3" ),
+  createRows( "Mrs.GREEN APPLE" , "ライラック" , "" , "B4" ),
+  createRows( "Mrs.GREEN APPLE" , "familie" , "" , "B5" ),
+  createRows( "Mrs.GREEN APPLE" , "クスシキ" , "" , "B6" ),
+  createRows( "Mrs.GREEN APPLE" , "lulu" , "" , "B7" ),
+  createRows( "Alexandros" , "閃光　(「閃光のハサウェイ」として流行った。)" , "" , "B8" ),
+  createRows( "M!LK" , "好きすぎて滅！" , "" , "B9" ),
+  createRows( "M!LK" , "イイじゃん" , "" , "B10" ),
+  createRows( "CANDY TUNE" , "倍倍FIGHT!" , "" , "B11"),
+  createRows( "RADWIMPS" , "正解" , "" , "B12"),
+  createRows( "LindaAI-CUE" , "さいたま2000" , "山田ふしぎ" , "B13"),
+
+];
+
+// 実行部
+document.getElementById("lyrics").innerHTML=
+      Table("(広義)ボカロ系",vocaloid)+
+      Table("それ以外",others);
+</script>
 
 
 
