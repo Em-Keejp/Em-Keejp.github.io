@@ -3,123 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>MKの保管庫</title>
+    <link rel="stylesheet" href="base.css">
 </head>
-<body>
+<body id="allArea" class="reloadWait">
 
-<h1>MKの保管庫</h1>
-<p>MKとは...Scratchアカウントの
-  <a href="https://scratch.mit.edu/users/mahirokkk/">
-  @mahirokkk
-  </a>
-  のことである。<br>
-  「えむけー」と呼んでくれると喜ぶようだ。<br>
-  なんなら、GitHubアカウントの
-  <a href="https://github.com/Em-Keejp">
-  @Em-Keejp
-  </a>
-  も「えむけー」と読めるようにしている。<br>
-  <small>(※プロセカの「鳳えむ」とは全く関係ないので注意すること。←何言ってんだこいつ。)</small><br>
-  </p>
-<br>
-<br>
-  <h2>
-  <span style="background: linear-gradient(#dddddd 0%);">　ツール系　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-  </span>
-  </h2>
-  <p>ScratchやTurboWarpで作った便利ツール系をここにまとめました。</p>
-<table border="1">
-  <tr>
-    <td>MKボールころころ　アクセス帳 </td>
-    <td><a href="./Acces Center/index.html"><button>詳細を見る</button></a></td>
-  </tr>
-  <tr>
-    <td>IMS便利ツール集 </td>
-    <td><a href="./IMS Tools/index.html"><button>詳細を見る</button></a></td>
-  </tr>
-</table>
-<br>
-<br>
-
-
-<h2>
-<span style="background: linear-gradient(#dddddd 0%);">　歌詞集　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-</span>
-</h2>
-<p>ダウンロード機能の実験のためにこのセクションを作りました。多分需要はない。htmlってむずいなー笑<br>
-2026/03/24追記 : functionを学ぶためにこのエリアを拡充してみた。まあ大部分chatGPTに頼ったけど笑</p>
-
-<!--歌詞群表示部　2026/03/24　functionの練習も兼ねて...というかGPTの野郎が強すぎた笑-->
-<div id="lyrics"></div>
-<script>
-//表を自動で作る関数
-function createRows(composer,music,vocal,filenumber){
-  let musictitle;
-  if(vocal==""){
-    musictitle=`[${composer}] ${music}`;
-  }else{
-    musictitle=`[${composer}] ${music} feat. ${vocal}`;
-  }
-
-  return `<tr>
-          <td>${musictitle}</td>
-          <td><a href="./lyrics/${filenumber}.txt"><button>見る</button></td>
-          <td><a href="./lyrics/${filenumber}.txt" download="${music} 歌詞.txt"><button>歌詞をダウンロード(txt)</button></td>
-          </tr>`;
-}
-
-//表の題名と表データを入れる関数
-function Table(title,table){ 
-  return `<h3>${title}</h3>
-          <table border="1">
-          ${table.join("")}
-           </table>`;
-}
-
-//表データ(ボカロ系)
-const vocaloid=[ 
-  createRows( "Sakuzyo" , "怪獣になりたい" , "初音ミク" , "A1" ),
-  createRows( "サツキ" , "メズマライザー" , "初音ミク・重音テトSV" , "A2" ),
-  createRows( "椎名もた(ぽわぽわP)" , "少女A" , "鏡音リン" , "A3" ),
-  createRows( "吉田夜世" , "オーバーライド" , "重音テトSV" , "A4" ),
-  createRows( "柊マグネタイト" , "マーシャル・マキシマイザー" , "可不" , "A5" ),
-  createRows( "すりぃ" , "テレキャスタービーボーイ" , "鏡音レン" , "A6" ),
-  createRows( "いよわ" , "熱異常" , "足立レイ" , "A7" ),
-  createRows( "Atena" , "踊っチャイナ" , "初音ミク・重音テトSV" , "A8" ),
-  createRows( "Atena" , "クローンクローン" , "GUMI・鏡音リン" , "A9" ),
-  createRows( "原口沙輔" , "人マニア" , "重音テト" , "A10" ),
-  createRows( "原口沙輔" , "イガク" , "重音テト" , "A11" ),
-
-];
-
-//表データ(その他の音楽)
-const others=[ 
-  createRows( "Masayoshi Minoshima" , "Bad Apple!!" , "nomico" , "B1" ),
-  createRows( "back number" , "高嶺の花子さん" , "" , "B2" ),
-  createRows( "Mrs.GREEN APPLE" , "ダンスホール" , "" , "B3" ),
-  createRows( "Mrs.GREEN APPLE" , "ライラック" , "" , "B4" ),
-  createRows( "Mrs.GREEN APPLE" , "familie" , "" , "B5" ),
-  createRows( "Mrs.GREEN APPLE" , "クスシキ" , "" , "B6" ),
-  createRows( "Mrs.GREEN APPLE" , "lulu" , "" , "B7" ),
-  createRows( "Alexandros" , "閃光　(「閃光のハサウェイ」として流行った。)" , "" , "B8" ),
-  createRows( "M!LK" , "好きすぎて滅！" , "" , "B9" ),
-  createRows( "M!LK" , "イイじゃん" , "" , "B10" ),
-  createRows( "CANDY TUNE" , "倍倍FIGHT!" , "" , "B11"),
-  createRows( "RADWIMPS" , "正解" , "" , "B12"),
-  createRows( "LindaAI-CUE" , "さいたま2000" , "山田ふしぎ" , "B13"),
-
-];
-
-// 実行部
-document.getElementById("lyrics").innerHTML=
-      Table("(広義)ボカロ系",vocaloid)+
-      Table("それ以外",others);
-</script>
+  <h1>　MKの保管庫</h1>
+  <p>MKとは...Scratchアカウントの
+    <a href="https://scratch.mit.edu/users/mahirokkk/">
+    @mahirokkk
+    </a>
+    を短縮した呼び方のことである。<br>
+    「えむけー」と呼んでくれると喜ぶようだ。<br>
+    なんなら、GitHubアカウントの
+    <a href="https://github.com/Em-Keejp">
+    @Em-Keejp
+    </a>
+    も「えむけー」と読めるようにしている。<br>
+    <small>(※プロセカの「<a href="https://dic.pixiv.net/a/%E9%B3%B3%E3%81%88%E3%82%80">鳳えむ</a>」とは全く関係ないので注意すること。←何言ってんだこいつ。)</small><br>
+    <br>
+    どうやらこの保管庫はMKがウェブサイトを独学で勉強しながら作りたいというだけの理由で作ったそうです。<br>
+    だからいろいろツッコミどころが多いかもしれないけど許してね!<br>
+    </p>
+  
+  <br>
+  <br>
+  
+  
+  <h2>ツール系</h2>
+  <div id="tool"></div>
+  <br>
+  <br>
+  
+  
+  <h2>ゲーム系</h2>
+  <div id="game"></div>
+  <br>
+  <br>
+  
+  
+  <h2>物語系</h2>
+  <div id="tale"></div>
+  <br>
+  <br>
+  
+  
+  <h2>記事系</h2>
+  <div id="article"></div>
+  <br>
+  <br>
+  
+  
+  <h2>歌詞集</h2>
+  <p>ダウンロード機能の実験のためにこのセクションを作りました。多分需要はない。htmlってむずいなー笑<br>
+  2026/03/24追記 : functionを学ぶためにこのエリアを拡充してみた。まあ大部分chatGPTに頼ったけど笑</p>
+  <div id="lyrics"></div>
+  <br>
+  <br>
+  
+  
+  <h2>その他、お知らせなど</h2>
+  <div id="notification"></div>
+  <br>
+  <br>
 
 
 
 
-
-
+<script src="index.js"></script>
 
 </body>
 </html>

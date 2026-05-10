@@ -1,0 +1,100 @@
+html{
+    font-size: 62.5%;
+}
+
+
+
+.reloadWait{
+    visibility: hidden;
+}
+
+
+
+body{
+    font-size: 1.6rem;
+}
+.b_tool{
+    background-color: #fafffa;
+}
+.b_game{
+    background-color: #fafaff;
+}
+.b_tale{
+    background-color: #fffafa;
+}
+.b_article{
+    background-color: #fffdfa;
+}
+
+
+
+h2::before{
+    content:"　";
+}
+h2{
+    background :linear-gradient(#dddddd 0%);
+}
+h2::after{
+    content:"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　";
+}
+
+
+
+a:hover{
+    color:#b292b2;
+}
+
+
+
+p .hi{
+    color:#cc0000;
+    font-weight:bold;
+    font-size:1.8rem;
+}
+
+
+
+h3 .hi{
+    color:#cc0000;
+    font-weight:bold;
+    font-size:2.2rem;
+}
+
+
+
+.game{
+    color:#2222dd;
+    font-weight:500;
+}
+
+
+
+.tool{
+    color:#22aa22;
+    font-weight:500;
+}
+
+
+
+.article{
+    color:#dd7722;
+    font-weight:500;
+}
+
+
+
+.tale{
+    color:#cc2222;
+    font-weight:500;
+}
+
+
+
+button.topic:disabled{
+    color:#000000;
+    border-radius: 0.25rem; /*ボタンの丸み*/
+    border-width: 0.125rem;
+    background-color:#888888;
+}
+
+/*これがCSSのコメントだ!!!!*/
