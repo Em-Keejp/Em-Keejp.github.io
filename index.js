@@ -89,9 +89,9 @@ const li_others=[
 
 //表データ(ツール)
 const li_tool=[
-    createTopics("tool","TurboWarpリンクコンバータ","./_Tool/TW Converter/index.html"),
-    createTopics("tool","MKボールころころ　アクセス帳","./_Tool/Acces Center/index.html"),
-    createTopics("tool","IMS便利ツール集","./_Tool/IMS Tools/index.html"),
+    createTopics("tool","TurboWarpリンクコンバータ","./_Tool/TW_Converter/index.html"),
+    createTopics("tool","MKボールころころ　アクセス帳","./_Tool/Acces_Center/index.html"),
+    createTopics("tool","IMS便利ツール集","./_Tool/IMS_Tools/index.html"),
     createTopics("tool","その他","")
 ];
 
@@ -125,12 +125,12 @@ const li_tale_public=[
 
 //表データ(物語_限定)
 const li_tale_private=[
-    createTopics("tale","[sub story] 東方共喰譚","./_Tale/[sub story] 東方共喰譚/index.html"),
+    createTopics("tale","[sub story] 東方共喰譚","./_Tale/[sub_story]touhoukyousyokutann/index.html"),
 ];
 
 //表データ(記事)
 const li_article=[
-    createTopics("article","自己紹介","./_Article/自己紹介/index.html"),
+    createTopics("article","自己紹介","./_Article/zikosyoukai/index.html"),
 ];
 
 //表データ(テンプレート)
@@ -143,12 +143,12 @@ const li_template=[
 
 //表データ(お知らせ)
 const li_notification=[
-    createTopics("article","自己紹介","./_Article/自己紹介/index.html"),
-    createTopics("article","このサイトを作るのに参考にしたもの","./_Article/参考/index.html"),
+    createTopics("article","自己紹介","./_Article/zikosyoukai/index.html"),
+    createTopics("article","このサイトを作るのに参考にしたもの","./_Article/sannkou/index.html"),
     createTopics("article","Scratchで仲がいい人たち",""),
     createTopics("article","よくMKに寄せられる質問",""),
-    createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","./_Article/しりとり情報/index.html"),
-    createTopics("article","関連リンク","./_Article/関連リンク/index.html")
+    createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","./_Article/siritorizyouhou/index.html"),
+    createTopics("article","関連リンク","./_Article/kannrennrinnku/index.html")
 ];
 
 
