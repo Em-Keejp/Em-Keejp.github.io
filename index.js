@@ -89,7 +89,7 @@ const li_others=[
 
 //表データ(ツール)
 const li_tool=[
-    createTopics("tool","TurboWarpリンクコンバータ","./f-Tool/TW_Converter/index.html"),
+    createTopics("tool","TurboWarpリンクコンバータ","./f-Tool/TW_converter/index.html"),
     createTopics("tool","MKボールころころ　アクセス帳","./f-Tool/Acces_Center/index.html"),
     createTopics("tool","IMS便利ツール集","./f-Tool/IMS_Tools/index.html"),
     createTopics("tool","その他","")
