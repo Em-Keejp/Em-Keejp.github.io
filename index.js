@@ -89,9 +89,9 @@ const li_others=[
 
 //表データ(ツール)
 const li_tool=[
-    createTopics("tool","TurboWarpリンクコンバータ","./_Tool/TW_Converter/index.html"),
-    createTopics("tool","MKボールころころ　アクセス帳","./_Tool/Acces_Center/index.html"),
-    createTopics("tool","IMS便利ツール集","./_Tool/IMS_Tools/index.html"),
+    createTopics("tool","TurboWarpリンクコンバータ","./f-Tool/TW_Converter/index.html"),
+    createTopics("tool","MKボールころころ　アクセス帳","./f-Tool/Acces_Center/index.html"),
+    createTopics("tool","IMS便利ツール集","./f-Tool/IMS_Tools/index.html"),
     createTopics("tool","その他","")
 ];
 
@@ -125,12 +125,12 @@ const li_tale_public=[
 
 //表データ(物語_限定)
 const li_tale_private=[
-    createTopics("tale","[sub story] 東方共喰譚","./_Tale/[sub_story]touhoukyousyokutann/index.html"),
+    createTopics("tale","[sub story] 東方共喰譚","./f-Tale/[sub story] 東方共喰譚/index.html"),
 ];
 
 //表データ(記事)
 const li_article=[
-    createTopics("article","自己紹介","./_Article/zikosyoukai/index.html"),
+    createTopics("article","自己紹介","./f-Article/自己紹介/index.html"),
 ];
 
 //表データ(テンプレート)
@@ -143,12 +143,12 @@ const li_template=[
 
 //表データ(お知らせ)
 const li_notification=[
-    createTopics("article","自己紹介","./_Article/zikosyoukai/index.html"),
-    createTopics("article","このサイトを作るのに参考にしたもの","./_Article/sannkou/index.html"),
+    createTopics("article","自己紹介","./f-Article/自己紹介/index.html"),
+    createTopics("article","このサイトを作るのに参考にしたもの","./f-Article/参考/index.html"),
     createTopics("article","Scratchで仲がいい人たち",""),
     createTopics("article","よくMKに寄せられる質問",""),
-    createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","./_Article/siritorizyouhou/index.html"),
-    createTopics("article","関連リンク","./_Article/kannrennrinnku/index.html")
+    createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","./f-Article/しりとり情報/index.html"),
+    createTopics("article","関連リンク","./f-Article/関連リンク/index.html")
 ];
 
 
@@ -253,19 +253,19 @@ const topicHeader = document.getElementById("topicHeader");
             backgroudClass:"",
             name:"",
         };
-        if(parent=="_Tool"){
+        if(parent=="f-Tool"){
             category.class = "tool";
             category.backgroudClass = "b_tool";
             category.name = "ツール";
-        }else if(parent=="_Game"){
+        }else if(parent=="f-Game"){
             category.class = "game";
             category.backgroudClass = "b_game";
             category.name = "ゲーム";
-        }else if(parent=="_Tale"){
+        }else if(parent=="f-Tale"){
             category.class = "tale";
             category.backgroudClass = "b_tale";
             category.name = "物語";
-        }else if(parent=="_Article"){
+        }else if(parent=="f-Article"){
             category.class = "article";
             category.backgroudClass = "b_article";
             category.name = "記事、お知らせ、その他";
