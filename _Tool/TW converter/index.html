@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>TurboWarpリンクコンバータ</title>
+   <link rel="stylesheet" href="/base.css">
+   <link rel="stylesheet" href="base.css">
+</head>
+<body id="allArea" class="reloadWait">
+
+
+  <div id="topicHeader"></div>
+
+  <h2>TurboWarpリンクコンバータ</h2>
+  <p>
+    Scratch作品のリンク<br>
+    <input type="text" class="input" id="input"><br>
+    <span class="convertHighlight">　↓TurboWarp Convert!</span><br>
+    <input type="text" class="output" id="output" readonly><br>
+  </p>
+
+  <p>
+    <br>
+    <h3>高度な設定</h3>
+    <p>
+    <a href="https://docs.turbowarp.org/" target="_blank" rel="noopener noreferrer">
+        高度な設定 について詳しく</a>
+    </p>
+    FPS <small>(Frames Per Second / 1秒間に何フレーム実行するか)</small><br>
+    <label><input type="radio" name="FPS" value="30">30</label>　
+    <label><input type="radio" name="FPS" value="60" checked>60</label>　
+    <label><input type="radio" name="FPS" value="90">90</label>　
+    <label><input type="radio" name="FPS" value="120">120</label>　
+    <label><input type="radio" name="FPS" value="150">150</label>　
+    <label><input type="radio" name="FPS" value="250">250</label><br>
+    <br>
+    <label>補完機能<input type="checkbox" id="hokan"></label><br>
+    <br>
+    <label>ペンを綺麗に描画する<input type="checkbox" id="pen" checked></label><br>
+    <br>
+    <label>Warpタイマー<input type="checkbox" id="warp"></label><br>
+    <br>
+    <label>クローン300個の制限を解除<input type="checkbox" id="clone" checked></label><br>
+    <br>
+    <label>動く範囲と大きさの制限を解除<input type="checkbox" id="range" checked></label><br>
+    <br>
+    <label>その他の制限を解除<input type="checkbox" id="other" checked></label><br>
+    <br>
+    <br>
+    <p>
+        [注意]<br>
+        「危険区域」に当たる設定はこのページでは変更できません。TurboWarpから直接行ってください。
+    </p>
+
+
+
+
+
+
+
+
+
+
+  </p>
+
+  <h2>これを作った理由</h2>
+  <p>
+    まず事前知識<br>
+    TurboWarpとは、
+    <a href="https://turbowarp.org/?offscreen&limitless&hqpen&fps=60&clones=Infinity" target="_blank" rel="noopener noreferrer">
+        このようなサイト</a>
+    のことである。<br>
+    Scratchの作品を高速に動かすことができ、しかも「高度な設定」によるオプション機能まで備えている。<br>
+    学タブとかだと規制されるという話をよく聞くため、万能という訳ではなさそうだが、開発においてコイツに助けられた<br>
+    という人はいるのではないだろうか。僕もそのうちの一人という訳だ。<br>
+    <br>
+    さてと...<br>
+    Scratchには、度々「TurboWarp推奨、あるいは専用の作品」というものが存在する。<br>
+    3Dゲーム、インフレを極めたスクアニ、そして我らがボールころころの作品に特に多い。<br>
+    これら自体は別にいいのだが、これらの作品を巡って時々とある問題が発生するのだ。<br>
+    そう...<br>
+    <br>
+    <span class="hi">\\\「TurboWarpのリンクを貼りやがらないやつがいる。」///</span><br>
+    <br>
+    特にシンプルリミックスを多く共有するクリエイターにありがちな傾向で、TurboWarpのリンクを説明に貼らない人が<br>
+    いるのだ。理由はおそらく「TurboWarpが使えないけどScratchで普通に動くから」や「アドオンがあるから」または「面倒くさい、やり方分からないから」<br>
+    とか、さしずめそんな感じはするが、アドオンも持ってない、Scratchだと動作が重いような人からすれば、遊びたい時には迷惑極まりない話である。<br>
+    というのも、TurboWarpリンクが説明に貼られてないと、その作品をTurboWarpで遊ぶにはそれなりに手間がかかる。<br>
+    わずか1分程度の手間だが、どうも煩わしく感じるのだ。<br>
+    <br>
+    ■補足<br>
+    ボールころころの場合、例えば<br>
+    <a href="https://scratch.mit.edu/projects/235811811" target="_blank" rel="noopener noreferrer">
+        https://scratch.mit.edu/projects/235811811</a><br>
+    のTurboWarpリンクは<br>
+    <a href="https://turbowarp.org/235811811?offscreen&limitless&hqpen&fps=60" target="_blank" rel="noopener noreferrer">
+        https://turbowarp.org/235811811?offscreen&limitless&hqpen&fps=60</a><br>
+    である。2つのリンクに共通して存在する「235811811」という数字は、<span class="hi">プロジェクトID(識別番号)</span>を指し、これが全く同じプロジェクトは存在しない。<br>
+    <br>
+    そして、TurboWarpリンクを作る方法は、<br>
+    <a href="https://turbowarp.org/227005798?offscreen&limitless&hqpen&fps=60" target="_blank" rel="noopener noreferrer">
+        https://turbowarp.org/227005798?offscreen&limitless&hqpen&fps=60</a><br>
+    のように、適当なTurboWarp作品のリンクを持ってきて、ここの番号部分(今回は227005798)を自身の作品のプロジェクトIDにするだけ!<br>
+    なお、プロジェクトIDは「メモとクレジット」欄の下にある「リンクをコピー」ボタンから簡単に確認できたりする。<br>
+    とっても簡単だから絶対やってね! (圧)<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    そういう、ムカつくという経緯で、実は
+    <a href="/_Tool/Acces%20Center/index.html">アクセス帳</a>
+    にも「リンクコンバータ」なるものが存在する。機能はこのページのリンクコンバータとほぼ同じだ。<br>
+    だがしかし、残念ながらこれには欠点がある。コンバータ自体はいいのだが、如何せん作品読み込みの時間が退屈!<br>
+    ...というなんともダサい欠陥である。<br>
+    そこで、これを解消すべくウェブページでリンクコンバータを作ってやろうということになったのだ。<br>
+    これをブックマークすれば面倒な手間もすこし解消されるは...ず...?<br>
+    <br>
+    え、?　こんなページ使わずとも従来の方法でアクセスしたほうが早いって?<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    MK「お前は今禁忌に触れた。消えてもらおうか。」<br>
+  </p>
+
+ 
+
+
+
+  
+
+
+
+
+
+
+<p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</p>
+  <script src="/index.js"></script>
+  <script src="index.js"></script>
+</body>
+<html>

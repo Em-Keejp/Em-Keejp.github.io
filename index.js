@@ -57,80 +57,98 @@ function topicTable(title,table,comment){
 //表データ部--------------------------------------------------------------------------------
 //表データ(ボカロ系)
 const li_vocaloid=[ 
-  createMusic( "Sakuzyo" , "怪獣になりたい" , "初音ミク" , "A1" ),
-  createMusic( "サツキ" , "メズマライザー" , "初音ミク・重音テトSV" , "A2" ),
-  createMusic( "椎名もた(ぽわぽわP)" , "少女A" , "鏡音リン" , "A3" ),
-  createMusic( "吉田夜世" , "オーバーライド" , "重音テトSV" , "A4" ),
-  createMusic( "柊マグネタイト" , "マーシャル・マキシマイザー" , "可不" , "A5" ),
-  createMusic( "すりぃ" , "テレキャスタービーボーイ" , "鏡音レン" , "A6" ),
-  createMusic( "いよわ" , "熱異常" , "足立レイ" , "A7" ),
-  createMusic( "Atena" , "踊っチャイナ" , "初音ミク・重音テトSV" , "A8" ),
-  createMusic( "Atena" , "クローンクローン" , "GUMI・鏡音リン" , "A9" ),
-  createMusic( "原口沙輔" , "人マニア" , "重音テト" , "A10" ),
-  createMusic( "原口沙輔" , "イガク" , "重音テト" , "A11" ),
-
+    createMusic( "Sakuzyo" , "怪獣になりたい" , "初音ミク" , "A1" ),
+    createMusic( "サツキ" , "メズマライザー" , "初音ミク・重音テトSV" , "A2" ),
+    createMusic( "椎名もた(ぽわぽわP)" , "少女A" , "鏡音リン" , "A3" ),
+    createMusic( "吉田夜世" , "オーバーライド" , "重音テトSV" , "A4" ),
+    createMusic( "柊マグネタイト" , "マーシャル・マキシマイザー" , "可不" , "A5" ),
+    createMusic( "すりぃ" , "テレキャスタービーボーイ" , "鏡音レン" , "A6" ),
+    createMusic( "いよわ" , "熱異常" , "足立レイ" , "A7" ),
+    createMusic( "Atena" , "踊っチャイナ" , "初音ミク・重音テトSV" , "A8" ),
+    createMusic( "Atena" , "クローンクローン" , "GUMI・鏡音リン" , "A9" ),
+    createMusic( "原口沙輔" , "人マニア" , "重音テト" , "A10" ),
+    createMusic( "原口沙輔" , "イガク" , "重音テト" , "A11" )
 ];
 
 //表データ(その他の音楽)
 const li_others=[ 
-  createMusic( "Masayoshi Minoshima" , "Bad Apple!!" , "nomico" , "B1" ),
-  createMusic( "back number" , "高嶺の花子さん" , "" , "B2" ),
-  createMusic( "Mrs.GREEN APPLE" , "ダンスホール" , "" , "B3" ),
-  createMusic( "Mrs.GREEN APPLE" , "ライラック" , "" , "B4" ),
-  createMusic( "Mrs.GREEN APPLE" , "familie" , "" , "B5" ),
-  createMusic( "Mrs.GREEN APPLE" , "クスシキ" , "" , "B6" ),
-  createMusic( "Mrs.GREEN APPLE" , "lulu" , "" , "B7" ),
-  createMusic( "Alexandros" , "閃光　(「閃光のハサウェイ」として流行った。)" , "" , "B8" ),
-  createMusic( "M!LK" , "好きすぎて滅！" , "" , "B9" ),
-  createMusic( "M!LK" , "イイじゃん" , "" , "B10" ),
-  createMusic( "CANDY TUNE" , "倍倍FIGHT!" , "" , "B11"),
-  createMusic( "RADWIMPS" , "正解" , "" , "B12"),
-  createMusic( "LindaAI-CUE" , "さいたま2000" , "山田ふしぎ" , "B13"),
-
+    createMusic( "Masayoshi Minoshima" , "Bad Apple!!" , "nomico" , "B1" ),
+    createMusic( "back number" , "高嶺の花子さん" , "" , "B2" ),
+    createMusic( "Mrs.GREEN APPLE" , "ダンスホール" , "" , "B3" ),
+    createMusic( "Mrs.GREEN APPLE" , "ライラック" , "" , "B4" ),
+    createMusic( "Mrs.GREEN APPLE" , "familie" , "" , "B5" ),
+    createMusic( "Mrs.GREEN APPLE" , "クスシキ" , "" , "B6" ),
+    createMusic( "Mrs.GREEN APPLE" , "lulu" , "" , "B7" ),
+    createMusic( "Alexandros" , "閃光　(「閃光のハサウェイ」として流行った。)" , "" , "B8" ),
+    createMusic( "M!LK" , "好きすぎて滅！" , "" , "B9" ),
+    createMusic( "M!LK" , "イイじゃん" , "" , "B10" ),
+    createMusic( "CANDY TUNE" , "倍倍FIGHT!" , "" , "B11"),
+    createMusic( "RADWIMPS" , "正解" , "" , "B12"),
+    createMusic( "LindaAI-CUE" , "さいたま2000" , "山田ふしぎ" , "B13")
 ];
 
 //表データ(ツール)
 const li_tool=[
-  createTopics("tool","MKボールころころ　アクセス帳","/_Tool/Acces Center/index.html"),
-  createTopics("tool","IMS便利ツール集","./_Tool/IMS Tools/index.html"),
-  createTopics("tool","その他","")
+    createTopics("tool","TurboWarpリンクコンバータ","/_Tool/TW Converter/index.html"),
+    createTopics("tool","MKボールころころ　アクセス帳","/_Tool/Acces Center/index.html"),
+    createTopics("tool","IMS便利ツール集","/_Tool/IMS Tools/index.html"),
+    createTopics("tool","その他","")
 ];
 
 //表データ(ゲーム)
 const li_game=[
-  createTopics("game","MKボールころころ一覧",""),
-  createTopics("game","MK?????ころころ一覧(保管庫限定)",""),
-  createTopics("game","合作ころころ一覧",""),
-  createTopics("game","クリッカーRPG",""),
-  createTopics("game","LINES CONNECTION一覧",""),
-  createTopics("game","その他","")
+    createTopics("game","MKボールころころ一覧",""),
+    createTopics("game","MK?????ころころ一覧(保管庫限定)",""),
+    createTopics("game","合作ころころ一覧",""),
+    createTopics("game","クリッカーRPG",""),
+    createTopics("game","LINES CONNECTION一覧",""),
+    createTopics("game","その他","")
+];
+
+//表データ(物語_登場人物)
+const tale_characters=[
+    createTopics("article","登場人物 - 主要キャラ",""),
+    createTopics("article","登場人物 - MKの秘密結社のメンバー",""),
+    createTopics("article","登場人物 - ショートムービーで初登場したキャラ",""),
+    createTopics("article","登場人物 - プロセカ / Vocaloidのキャラ",""),
+    createTopics("article","登場人物 - 広義ボーカロイドのキャラ",""),
+    createTopics("article","登場人物 - 東方Projectのキャラ",""),
+    createTopics("article","登場人物 - その他のキャラ",""),
 ];
 
 //表データ(物語_公開済み)
 const li_tale_public=[
-  createTopics("tale","BA5の隠し要素",""),
-  createTopics("tale","10周年企画第一弾の隠し要素",""),
-  createTopics("tale","10周年企画第二弾　質問コーナー","")
+    createTopics("tale","BA5の隠し要素",""),
+    createTopics("tale","10周年企画第一弾の隠し要素",""),
+    createTopics("tale","10周年企画第二弾　質問コーナー","")
 ];
 
 //表データ(物語_限定)
 const li_tale_private=[
-  createTopics("tale","[sub story] 東方共喰譚",""),
+    createTopics("tale","[sub story] 東方共喰譚","/_Tale/[sub story] 東方共喰譚/index.html"),
 ];
 
 //表データ(記事)
 const li_article=[
-  createTopics("article","自己紹介","/_Article/自己紹介/index.html"),
+    createTopics("article","自己紹介","/_Article/自己紹介/index.html"),
+];
+
+//表データ(テンプレート)
+const li_template=[
+    createTopics("tool","ツールのテンプレート","/テンプレート_ツールトピック/index.html"),
+    createTopics("game","ゲームのテンプレート",""),
+    createTopics("tale","物語のテンプレート","/テンプレート_物語トピック/index.html"),
+    createTopics("article","記事のテンプレート","/テンプレート_記事トピック/index.html")
 ];
 
 //表データ(お知らせ)
 const li_notification=[
-  createTopics("article","自己紹介","/_Article/自己紹介/index.html"),
-  createTopics("article","このサイトを作るのに参考にしたもの","/_Article/参考/index.html"),
-  createTopics("article","Scratchで仲がいい人たち",""),
-  createTopics("article","よくMKに寄せられる質問",""),
-  createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","/_Article/しりとり情報/index.html"),
-  createTopics("article","関連リンク","/_Article/関連リンク/index.html")
+    createTopics("article","自己紹介","/_Article/自己紹介/index.html"),
+    createTopics("article","このサイトを作るのに参考にしたもの","/_Article/参考/index.html"),
+    createTopics("article","Scratchで仲がいい人たち",""),
+    createTopics("article","よくMKに寄せられる質問",""),
+    createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","/_Article/しりとり情報/index.html"),
+    createTopics("article","関連リンク","/_Article/関連リンク/index.html")
 ];
 
 
@@ -173,13 +191,15 @@ const game = document.getElementById("game");
 const tale = document.getElementById("tale");
         if(tale){
             tale.innerHTML=
-            topicTable("Scratchで作品として公開済み",li_tale_public,` <p>
+            topicTable("登場人物集",tale_characters,` <p>
              自分が書いた物語をまとめてみました。基本は文章のみです。<br>
             ※一部ホラー注意<br>
             ※東方、
             <a href="https://pjsekai.sega.jp/" target="_blank" rel="noopener noreferrer">
             プロセカ</a>、広義ボーカロイドの二次創作要素が時々入ってきます。
              </p>` )+
+             topicTable("Scratchで作品として公開済み",li_tale_public,` <p>
+            </p>` )+
              topicTable("保管庫のみで公開",li_tale_private,` <p>
             </p>` );
         }
@@ -201,6 +221,18 @@ const article = document.getElementById("article");
 
 
 
+//テンプレート template
+const template = document.getElementById("template");
+        if(template){
+            template.innerHTML=
+            topicTable("テンプレート",li_template,` <p>
+            ツール、ゲーム、物語、記事の4種別のトピックのテンプレートです。<br>
+            ほぼ作者用。<br>
+            </p>` );
+        }
+
+
+
 //お知らせ notification
 const notification = document.getElementById("notification");
         if(notification){
@@ -209,8 +241,6 @@ const notification = document.getElementById("notification");
             お知らせとかはここにまとめてます。
             </p> ` );
         }
-
-
 
 //ヘッダー部-----------------------------------------------------------------------------
 const topicHeader = document.getElementById("topicHeader");
@@ -239,6 +269,10 @@ const topicHeader = document.getElementById("topicHeader");
             category.class = "article";
             category.backgroudClass = "b_article";
             category.name = "記事、お知らせ、その他";
+        }else{
+            category.class = "other";
+            category.backgroudClass = "b_other";
+            category.name = "特別なページ";
         }
 
         const head = document.getElementById("allArea");
@@ -263,12 +297,74 @@ const topicHeader = document.getElementById("topicHeader");
                 前のページへ
             </button>
         </a>
+
+        
+        <button style="position:relative; left:72px;" class="copyButton" id="linkCopy">
+            サイト内のhtmlで使えるリンクをコピー
+        </button>
         `;
     }
 
+    //リンクコピー linkCopy---------------------------------------------------------------------------
+    const linkCopy = document.getElementById("linkCopy");
+        if(linkCopy){
+            linkCopy.addEventListener("click",async() =>{
+                //console.log("リンクコピーボタンが押されました。");
+                try{
+                    await navigator.clipboard.writeText('<a href="'+window.location.pathname+'">■名前■</a>'); //現在のパスをコピー
+                }catch(err){
+                     alert('コピーに失敗しました: ' + err);
+                }
+            });
+        }
 
 
+    //トグル機構----------------------------------------------------------------------------------------
+    //chapterクラス
+    function setupToggle(chapter){
+    const toggle = chapter.querySelector(".toggle");
+    const main = chapter.querySelector(".main");
+    if(toggle.classList.contains("close")){ //closeというクラス名を含んでる?
+    main.classList.add("main_close"); //YES!!!! ならmainもそれに合わせよう。
+    }
 
+    toggle.addEventListener("click",()=>{
+            console.log("トグルが押された。");
+            main.classList.toggle("main_close");
+            toggle.classList.toggle("close");
+            toggle.classList.toggle("open");
+            console.log(main);
+            console.log(toggle);
+    });
+    }
+
+    const chapters = document.querySelectorAll(".chapter");
+    chapters.forEach(c => {setupToggle(c);});
+
+    //querySelectorおよびそれのAll版
+    //前者は一番最初に該当するものを選択、後者は全部引っ張り上げて配列化する。
+    //引数に「.」をつけるとhtmlのクラス、「#」をつけるとhtmlのidから探す。
+
+    //episodeクラス　関数は使い回し
+    const episodes = document.querySelectorAll(".episode");
+    episodes.forEach(e => {setupToggle(e);});
+
+    //キャラクター機構----------------------------------------------------------------------------------------
+    document.querySelectorAll(".teller").forEach(c=>{
+        const characterClass = [...c.classList].slice(1,2).join(""); //キャラクラス
+        const characterName = [...c.classList].slice(-1).join(""); //キャラ名(3個目のクラスを指定するとサブネーム指定となる。)
+        //.classListは厳密には配列ではないので、Array.from()や
+        // [...](スプレッド構文)で配列化してからsliceしないとエラーになる。
+        if(characterName=="n"){
+            c.insertAdjacentHTML("beforebegin" , `<br>`);
+            c.insertAdjacentHTML("afterend" , `<br>`);
+        }else if(characterName=="NEWS"){
+            c.insertAdjacentHTML("beforebegin" , `<div class="NEWS" teller" style="font-weight:600;"> NEWS : <br> </div>`);
+        }else{
+            c.insertAdjacentHTML("beforebegin" , `<div class="${characterClass} teller" style="font-weight:400;"> ${characterName} : <br> </div>`);
+        }
+        c.insertAdjacentHTML("afterend" , `<br>`);
+    });
 
 
 

@@ -8,6 +8,80 @@
 <body id="allArea" class="reloadWait">
 
   <h1>　MKの保管庫</h1>
+  
+
+  <div class="chapter">
+    <h2 class="toggle , close">ツール系</h2>
+    <div class="main">
+      <div id="tool"></div>
+      <br>
+      <br>
+    </div>
+  </div>
+
+  
+  <div class="chapter">
+    <h2 class="toggle , close">ゲーム系</h2>
+    <div class="main">
+      <div id="game"></div>
+      <br>
+      <br>
+    </div>
+  </div>
+  
+  
+  <div class="chapter">
+    <h2 class="toggle , close">物語系</h2>
+    <div class="main">
+      <div id="tale"></div>
+      <br>
+      <br>
+    </div>
+  </div>
+  
+
+  <div class="chapter">
+    <h2 class="toggle , close">記事系</h2>
+    <div class="main">
+      <div id="article"></div>
+      <br>
+      <br>
+    </div>
+  </div>
+  
+
+  <div class="chapter">
+    <h2 class="toggle , close">歌詞集</h2>
+    <div class="main">
+      <p>ダウンロード機能の実験のためにこのセクションを作りました。多分需要はない。htmlってむずいなー笑<br>
+      2026/03/24追記 : functionを学ぶためにこのエリアを拡充してみた。まあ大部分chatGPTに頼ったけど笑</p>
+      <div id="lyrics"></div>
+      <br>
+      <br>
+    </div>
+  </div>
+  
+
+  <div class="chapter">
+    <h2 class="toggle , close">テンプレート</h2>
+    <div class="main">
+      <div id="template"></div>
+      <br>
+      <br>
+    </div>
+  </div>
+
+
+  <div class="chapter">
+    <h2 class="toggle , close">その他、お知らせなど</h2>
+    <div class="main">
+      <div id="notification"></div>
+      <br>
+      <br>
+    </div>
+  </div>
+
+
   <p>MKとは...Scratchアカウントの
     <a href="https://scratch.mit.edu/users/mahirokkk/">
     @mahirokkk
@@ -23,48 +97,17 @@
     <br>
     どうやらこの保管庫はMKがウェブサイトを独学で勉強しながら作りたいというだけの理由で作ったそうです。<br>
     だからいろいろツッコミどころが多いかもしれないけど許してね!<br>
+    上にある赤い帯のやつはクリックすると展開できたり畳めたりする。カテゴリごとにいろんな情報書いといたよ!<br>
+    ちなみにWindows11で作ってるけどそれ以外のデバイスのこととかは全く考えてないです。多分スマホとかからだとレイアウトがぐちゃぐちゃになります。(未検証)<br>
+    <br>
+    今後も不定期で拡充予定! Scratchアカウントと一緒にこっちも見ていってね!<br>
+    そんなこんなで、ここでひとつ。<br>
+    <br>
+    「怪獣になりたーい♪　怪獣になりたーい♪　全て倒し―てー♪　全て壊すーの～♪♪♪♪♪♪♪♪」<br>
+    <br>
     </p>
   
-  <br>
-  <br>
   
-  
-  <h2>ツール系</h2>
-  <div id="tool"></div>
-  <br>
-  <br>
-  
-  
-  <h2>ゲーム系</h2>
-  <div id="game"></div>
-  <br>
-  <br>
-  
-  
-  <h2>物語系</h2>
-  <div id="tale"></div>
-  <br>
-  <br>
-  
-  
-  <h2>記事系</h2>
-  <div id="article"></div>
-  <br>
-  <br>
-  
-  
-  <h2>歌詞集</h2>
-  <p>ダウンロード機能の実験のためにこのセクションを作りました。多分需要はない。htmlってむずいなー笑<br>
-  2026/03/24追記 : functionを学ぶためにこのエリアを拡充してみた。まあ大部分chatGPTに頼ったけど笑</p>
-  <div id="lyrics"></div>
-  <br>
-  <br>
-  
-  
-  <h2>その他、お知らせなど</h2>
-  <div id="notification"></div>
-  <br>
-  <br>
 
 
 
@@ -73,3 +116,36 @@
 
 </body>
 </html>
+
+<!--
+!を押した後にTabキーを押すと開発環境の補完ができる。
+
+コマンド >Emmet:ラップ変換　を実行するとタグの補完ができる。便利。
+
+開発者ツール→コンソール　でdocumentと打つとそのページのhtmlが見れる。
+　　　さらに...ここで　document.getElementByID("id名")と打つと、そのidがかかっているタグの記述が見れる。
+　　　さらに...ここで　document.getElementByID("id名").valueと打つと、そのidがかかっている部分の現在の入力を見れる。
+
+console.log("")を使うことで""中の文字をコンソールに表示させることができる。デバグに便利
+
+ctrl+Fで検索バーが表示される。ここに入力すると文書内の指定ワードを検索出来て見通しが良くなる。
+
+ctrl+Hで置換ができる。関数名とかを一気に変えたい時に便利
+
+Live Serverをインストールすると、右下の「Go Live」を押すことで現在のウェブを表示できる。
+この状態だと「ホームに戻る」ボタンの絶対パス指定も使える。
+
+参考
+https://www.youtube.com/watch?v=E08jeQBa1D0
+
+トグルの書式
+<div class="chapter"> 
+    <h2 class="toggle , close">あらすじ</h2>
+     <div class="main">
+      <p>
+        ここにいろいろ書く。
+      </p>
+     </div>
+  </div>
+
+-->

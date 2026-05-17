@@ -1,0 +1,21 @@
+.input{
+    width:350px;
+    line-height:0rem;
+    height: 20px;
+}
+
+.output{
+    width:700px;
+    line-height:0rem;
+    border-radius: 0.25rem; /*ボタンの丸み*/
+    border-width: 0.125rem;
+    background-color:#ffeeee;
+    height: 20px;
+}
+
+.convertHighlight{
+    color:#6688dd;
+    font-size:2rem;
+    font-weight:bold;
+    line-height:200%;
+}
