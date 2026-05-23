@@ -19,15 +19,31 @@ function createMusic(composer,music,vocal,filenumber){
 function createTopics(topicType , topicName , fileName){
     return `<tr>
             <td><span class=${topicType}>${topicName}</span></td>
-            <td>`+topicButton(fileName)+`</td>
+            <td>`+topicButton(topicType , topicName , fileName)+`</td>
             </tr>`;
 }
 
-function topicButton(fileName){ //トピックボタンを作る関数
+function topicButton(topicType , topicName , fileName){ //トピックボタンを作る関数
     if(fileName){
-        return`
-        <a href="${fileName}"><button class="topic">詳細を見る</button></a>
-        `;
+        if(fileName=="auto"){
+            let refferFolderName="";
+            if(topicType=="tool"){
+                refferFolderName="-Tool";
+            }else if(topicType=="game"){
+                refferFolderName="-Game";
+            }else if(topicType=="tale"){
+                refferFolderName="-Tale";
+            }else if(topicType="article"){
+                refferFolderName="-Article";
+            }
+             return`
+            <a href="./${refferFolderName}/${topicName}/index.html"><button class="topic">詳細を見る</button></a>
+            `;
+        }else{
+            return`
+            <a href="${fileName}"><button class="topic">詳細を見る</button></a>
+            `;
+        }
     }else{
         return`
         <button disabled class="topic">[!]未実装</button>
@@ -67,7 +83,10 @@ const li_vocaloid=[
     createMusic( "Atena" , "踊っチャイナ" , "初音ミク・重音テトSV" , "A8" ),
     createMusic( "Atena" , "クローンクローン" , "GUMI・鏡音リン" , "A9" ),
     createMusic( "原口沙輔" , "人マニア" , "重音テト" , "A10" ),
-    createMusic( "原口沙輔" , "イガク" , "重音テト" , "A11" )
+    createMusic( "原口沙輔" , "イガク" , "重音テト" , "A11" ),
+    createMusic( "Shu" , "シルバーコレクター" , "巡音ルカ" , "A12" ),
+    createMusic( "かいりきベア" , "バグ" , "初音ミク" , "A13" ),
+    createMusic( "かいりきベア" , "ネクラチューンサーカス" , "初音ミク" , "A14" ),
 ];
 
 //表データ(その他の音楽)
@@ -84,15 +103,15 @@ const li_others=[
     createMusic( "M!LK" , "イイじゃん" , "" , "B10" ),
     createMusic( "CANDY TUNE" , "倍倍FIGHT!" , "" , "B11"),
     createMusic( "RADWIMPS" , "正解" , "" , "B12"),
-    createMusic( "LindaAI-CUE" , "さいたま2000" , "山田ふしぎ" , "B13")
+    createMusic( "LindaAI-CUE" , "さいたま2000" , "山田ふしぎ" , "B13"),
 ];
 
 //表データ(ツール)
 const li_tool=[
-    createTopics("tool","TurboWarpリンクコンバータ","./f-Tool/TW_converter/index.html"),
-    createTopics("tool","MKボールころころ　アクセス帳","./f-Tool/Acces_Center/index.html"),
-    createTopics("tool","IMS便利ツール集","./f-Tool/IMS_Tools/index.html"),
-    createTopics("tool","その他","")
+    createTopics("tool","TurboWarpリンクコンバータ","./-Tool/TW_Converter/index.html"),
+    createTopics("tool","MKボールころころ　アクセス帳","./-Tool/Acces_Center/index.html"),
+    createTopics("tool","IMS便利ツール集","./-Tool/IMS_Tools/index.html"),
+    createTopics("tool","その他",""),
 ];
 
 //表データ(ゲーム)
@@ -102,35 +121,34 @@ const li_game=[
     createTopics("game","合作ころころ一覧",""),
     createTopics("game","クリッカーRPG",""),
     createTopics("game","LINES CONNECTION一覧",""),
-    createTopics("game","その他","")
+    createTopics("game","その他",""),
 ];
 
-//表データ(物語_登場人物)
-const tale_characters=[
-    createTopics("article","登場人物 - 主要キャラ",""),
-    createTopics("article","登場人物 - MKの秘密結社のメンバー",""),
-    createTopics("article","登場人物 - ショートムービーで初登場したキャラ",""),
-    createTopics("article","登場人物 - プロセカ / Vocaloidのキャラ",""),
-    createTopics("article","登場人物 - 広義ボーカロイドのキャラ",""),
-    createTopics("article","登場人物 - 東方Projectのキャラ",""),
-    createTopics("article","登場人物 - その他のキャラ",""),
+//表データ(物語_情報)
+const tale_info=[
+    createTopics("article","登場人物","./-Article/Characters/index.html"),
+    createTopics("article","物語の時系列","./-Article/Timeline/index.html"),
+    createTopics("article","物語の実装順","./-Article/Implementation_Order/index.html"),
 ];
 
 //表データ(物語_公開済み)
 const li_tale_public=[
-    createTopics("tale","BA5の隠し要素",""),
+    createTopics("tale","BA5の隠し要素","auto"),
     createTopics("tale","10周年企画第一弾の隠し要素",""),
-    createTopics("tale","10周年企画第二弾　質問コーナー","")
+    createTopics("tale","10周年企画第二弾　質問コーナー",""),
 ];
 
 //表データ(物語_限定)
 const li_tale_private=[
-    createTopics("tale","[sub story] 東方共喰譚","./f-Tale/[sub story] 東方共喰譚/index.html"),
+    createTopics("tale","MKは2026年に初めてエイプリルフールを謳歌するようです。","auto"),
+    createTopics("tale","[sub story] 東方共喰譚","auto"),
 ];
 
 //表データ(記事)
 const li_article=[
-    createTopics("article","自己紹介","./f-Article/自己紹介/index.html"),
+    createTopics("article","自己紹介","./-Article/自己紹介/index.html"),
+    createTopics("article","プロフィールの独り言、ギャグ一覧","./-Article/profile/index.html"),
+    createTopics("article","MKボールころころコース作りマニュアル-IMS編","./-Article/IMS_Manual/index.html"),
 ];
 
 //表データ(テンプレート)
@@ -138,17 +156,17 @@ const li_template=[
     createTopics("tool","ツールのテンプレート","./テンプレート_ツールトピック/index.html"),
     createTopics("game","ゲームのテンプレート",""),
     createTopics("tale","物語のテンプレート","./テンプレート_物語トピック/index.html"),
-    createTopics("article","記事のテンプレート","./テンプレート_記事トピック/index.html")
+    createTopics("article","記事のテンプレート","./テンプレート_記事トピック/index.html"),
 ];
 
 //表データ(お知らせ)
 const li_notification=[
-    createTopics("article","自己紹介","./f-Article/自己紹介/index.html"),
-    createTopics("article","このサイトを作るのに参考にしたもの","./f-Article/参考/index.html"),
-    createTopics("article","Scratchで仲がいい人たち",""),
+    createTopics("article","自己紹介","./-Article/自己紹介/index.html"),
+    createTopics("article","このサイトを作るのに参考にしたもの","./-Article/参考/index.html"),
+    createTopics("article","Scratchで仲がいい人たち","./-Article/仲良し/index.html"),
     createTopics("article","よくMKに寄せられる質問",""),
-    createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","./f-Article/しりとり情報/index.html"),
-    createTopics("article","関連リンク","./f-Article/関連リンク/index.html")
+    createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","./-Article/しりとり情報/index.html"),
+    createTopics("article","関連リンク","./-Article/関連リンク/index.html"),
 ];
 
 
@@ -191,12 +209,14 @@ const game = document.getElementById("game");
 const tale = document.getElementById("tale");
         if(tale){
             tale.innerHTML=
-            topicTable("登場人物集",tale_characters,` <p>
+            topicTable("関連情報",tale_info,` <p>
              自分が書いた物語をまとめてみました。基本は文章のみです。<br>
             ※一部ホラー注意<br>
             ※東方、
             <a href="https://pjsekai.sega.jp/" target="_blank" rel="noopener noreferrer">
-            プロセカ</a>、広義ボーカロイドの二次創作要素が時々入ってきます。
+            プロセカ</a>、広義ボーカロイドの二次創作要素が時々入ってきます。<br>
+            時系列とかは一旦置いておいて、その場のノリとギャグを楽しむのが俺流の読み方かな。<br>
+            ここに書いてあるストーリーはそんな感じに頭空っぽにして読んだ方が楽しめます。<br>
              </p>` )+
              topicTable("Scratchで作品として公開済み",li_tale_public,` <p>
             </p>` )+
@@ -253,19 +273,19 @@ const topicHeader = document.getElementById("topicHeader");
             backgroudClass:"",
             name:"",
         };
-        if(parent=="f-Tool"){
+        if(parent=="-Tool"){
             category.class = "tool";
             category.backgroudClass = "b_tool";
             category.name = "ツール";
-        }else if(parent=="f-Game"){
+        }else if(parent=="-Game"){
             category.class = "game";
             category.backgroudClass = "b_game";
             category.name = "ゲーム";
-        }else if(parent=="f-Tale"){
+        }else if(parent=="-Tale"){
             category.class = "tale";
             category.backgroudClass = "b_tale";
             category.name = "物語";
-        }else if(parent=="f-Article"){
+        }else if(parent=="-Article"){
             category.class = "article";
             category.backgroudClass = "b_article";
             category.name = "記事、お知らせ、その他";
