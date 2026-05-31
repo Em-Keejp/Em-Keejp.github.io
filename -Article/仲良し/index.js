@@ -1,6 +1,6 @@
 function createNakayoshiList(name , memo){
     return `
-            <a href="https://scratch.mit.edu/users/${name}/">@${name}</a><br>
+            <a href="https://scratch.mit.edu/users/${name}/" target="_blank" rel="noopener noreferrer">@${name}</a><br>
             ${memo}<br>
             <br>
             <br>
@@ -10,7 +10,7 @@ function createNakayoshiList(name , memo){
 
 const nakayoshi=[
     createNakayoshiList("kirameku26","BA5でマシンガンのような勢いでコメントをぶつけてきて以降知り合った。なお最近はコメントで暴走することはほとんどなくなった。"),
-    createNakayoshiList("o_shusi","MKが初めて作ったスク友　アイコンがお寿司"),
+    createNakayoshiList("o_sushi","MKが初めて作ったスク友　アイコンがお寿司"),
     createNakayoshiList("hirokin2011","プレイスキル化け物　MKが挑んで全く歯が立たないようなレベルをクリアしたりしてる。"),
     createNakayoshiList("take_take_take","今後の進展が楽しみ。合作ころころ企画生みの親"),
     createNakayoshiList("take_sub","↑の人のサブ垢らしい。"),
@@ -30,7 +30,7 @@ const nakayoshi=[
     createNakayoshiList("Aruto719","唯一3Dくまころころを改造できる技量の持ち主"),
     createNakayoshiList("haru_1129","活休まじかー　ｳｿﾀﾞﾄﾞﾝﾄﾞｺﾄﾞｰﾝ!"),
     createNakayoshiList("BOYKOTAROU","BKRころころというシリーズを作っている。是非一度やってみて! (なお現在Scratchのバグによりプレイできない作品が存在する。)"),
-    createNakayoshiList("huz345","凄いポテンシャルを感じるクリエイター　いつの間にか音沙汰がなくなっていた。生きてるかな..."),
+    createNakayoshiList("huz345","凄いポテンシャルを感じるクリエイター　いつの間にか音沙汰がなくなっていた。生きてるかな...<br>前言撤回、ちゃんと生きてた。ひとまず安心。"),
     createNakayoshiList("taki567","複雑なIMSを使いこなすすげぇ奴"),
     createNakayoshiList("05hyuuu","「おまけころころ 鬼畜 remix」というシリーズ名かどうかも怪しいシリーズを作っていたが、すっかりシリーズ名として定着した、そんなシリーズを作ってる人"),
     createNakayoshiList("06jyuuu","この人の作品すごいから見て!　ちなみに↑の人のサブ垢だがほぼメイン垢になりつつある。"),

@@ -116,11 +116,14 @@ const li_tool=[
 
 //表データ(ゲーム)
 const li_game=[
-    createTopics("game","MKボールころころ一覧",""),
-    createTopics("game","MK?????ころころ一覧(保管庫限定)",""),
+    createTopics("game","MKボールころころ一覧","auto"),
+    createTopics("game","その他のMKのボールころころ一覧",""),
     createTopics("game","合作ころころ一覧",""),
     createTopics("game","クリッカーRPG",""),
     createTopics("game","LINES CONNECTION一覧",""),
+    createTopics("game","猫の帰宅物語一覧",""),
+    createTopics("game","猫退治ゲーム一覧",""),
+    createTopics("game","Scratchシューティング一覧",""),
     createTopics("game","その他",""),
 ];
 
@@ -154,7 +157,7 @@ const li_article=[
 //表データ(テンプレート)
 const li_template=[
     createTopics("tool","ツールのテンプレート","./テンプレート_ツールトピック/index.html"),
-    createTopics("game","ゲームのテンプレート",""),
+    createTopics("game","ゲームのテンプレート","./テンプレート_ゲームトピック/index.html"),
     createTopics("tale","物語のテンプレート","./テンプレート_物語トピック/index.html"),
     createTopics("article","記事のテンプレート","./テンプレート_記事トピック/index.html"),
 ];
@@ -300,28 +303,23 @@ const topicHeader = document.getElementById("topicHeader");
             head.classList.add(category.backgroudClass);
         }
 
-        topicHeader.innerHTML=
-        `
-        <h1>　${document.title}</h1>
+            topicHeader.innerHTML=
+            `
+            <h1>　${document.title}</h1>
 
-        <p>　　分類 : <span class=${category.class}>${category.name}</span></p>
-
-        <a href="/index.html">
-            <button style="position:relative; left:24px;">
+            <p>　　分類 : <span class=${category.class}>${category.name}</span></p>
+            
+            <a href="/index.html" style="position:relative; left:24px;"><button>
                 ホームへ戻る
-            </button>
-        </a>
+            </button></a>
 
-        <a href="javascript:history.back();">
-            <button style="position:relative; left:36px;">
-                前のページへ
-            </button>
-        </a>
-
+            <a href="javascript:history.back();" style="position:relative; left:36px;"><button>
+                    前のページへ
+            </button></a>
         
-        <button style="position:relative; left:72px;" class="copyButton" id="linkCopy">
-            サイト内のhtmlで使えるリンクをコピー
-        </button>
+            <button style="position:relative; left:72px;" class="copyButton" id="linkCopy">
+                サイト内のhtmlで使えるリンクをコピー
+            </button>
         `;
     }
 
