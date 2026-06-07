@@ -176,6 +176,14 @@ button:disabled{
 }
 
 
+
+table {
+    border-collapse: separate;
+    border-color:#444444;
+}
+
+
+
 /*トグル機構用 mainが閉まってるとき*/
 .main_close{
     display:none;
