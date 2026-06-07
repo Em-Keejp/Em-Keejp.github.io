@@ -57,13 +57,13 @@ h3::before{
     content:"■";
 }
 
-.hi{
+.hi{ /*強調(本文)*/
     color:#bb0000;
     font-weight:bold;
     font-size:1.8rem;
 }
 
-h3 .hi{
+h3 .hi{ /*強調(見出し)*/
     color:#cc0000;
     font-weight:bold;
     font-size:2.2rem;
@@ -71,9 +71,28 @@ h3 .hi{
 
 
 
-.lo{
+.lo{ /*弱調*/
     color:#999999;
     font-size:1.2rem;
+}
+
+
+
+.right{ /*右揃え*/
+    text-align: right;
+}
+
+.up{ /*右揃え*/
+    vertical-align: top;
+}
+
+.bold{  /*太文字*/
+    font-weight : bold;
+}
+
+.index{  /*項目*/
+    font-weight : bold;
+    color :#447755;
 }
 
 
@@ -106,12 +125,30 @@ h3 .hi{
 
 
 
-button.topic:disabled{
-    color:#000000;
+button.playable{
+    color : #000000;
+    border-radius: 0.25rem; /*ボタンの丸み*/
+    border-width: 0.125rem;
+    background-color:#ffddbb;
+}
+button.playable:hover{
+    background-color:#ffeedd;
+}
+
+button.deprecated{
+    color : #000000;
+    border-radius: 0.25rem; /*ボタンの丸み*/
+    border-width: 0.125rem;
+    background-color:#ffbbbb;
+}
+
+button:disabled{
+    color : #000000;
     border-radius: 0.25rem; /*ボタンの丸み*/
     border-width: 0.125rem;
     background-color:#888888;
 }
+
 
 
 
@@ -123,8 +160,6 @@ button.topic:disabled{
 }
 :hover.copyButton{
     color:#444488;
-    border-radius: 0.25rem; /*ボタンの丸み*/
-    border-width: 0.125rem;
     background-color:#f0f8ff;
 }
 :active.copyButton{
@@ -135,10 +170,38 @@ button.topic:disabled{
 }
 
 
+
+.yohaku{
+    padding: 16px;
+}
+
+
 /*トグル機構用 mainが閉まってるとき*/
 .main_close{
     display:none;
 }
+
+
+
+
+/*ゲームトグル機構用 gtoggle*/
+.gtoggle{
+    color:#0000ff;
+}
+.gtoggle:hover{
+    color:#aa77cc;
+}
+.gclose::before{
+    content:"■ ";
+    color:#000066;
+}
+.gopen::before{
+    content:"▼ ";
+    color:#88bbdd;
+}
+
+
+
 
 
 

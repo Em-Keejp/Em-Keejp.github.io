@@ -117,9 +117,9 @@ const li_tool=[
 //表データ(ゲーム)
 const li_game=[
     createTopics("game","MKボールころころ一覧","auto"),
-    createTopics("game","その他のMKのボールころころ一覧",""),
+    createTopics("game","その他のMKのボールころころ一覧","auto"),
     createTopics("game","合作ころころ一覧",""),
-    createTopics("game","クリッカーRPG",""),
+    createTopics("game","クリッカーRPG","auto"),
     createTopics("game","LINES CONNECTION一覧",""),
     createTopics("game","猫の帰宅物語一覧",""),
     createTopics("game","猫退治ゲーム一覧",""),
@@ -342,8 +342,11 @@ const topicHeader = document.getElementById("topicHeader");
     function setupToggle(chapter){
     const toggle = chapter.querySelector(".toggle");
     const main = chapter.querySelector(".main");
+        //console.log(chapter.innerHTML);
+        //console.log(toggle);
+        //console.log(main);
     if(toggle.classList.contains("close")){ //closeというクラス名を含んでる?
-    main.classList.add("main_close"); //YES!!!! ならmainもそれに合わせよう。
+        main.classList.add("main_close"); //YES!!!! ならmainもそれに合わせよう。
     }
 
     toggle.addEventListener("click",()=>{
@@ -366,6 +369,31 @@ const topicHeader = document.getElementById("topicHeader");
     //episodeクラス　関数は使い回し
     const episodes = document.querySelectorAll(".episode");
     episodes.forEach(e => {setupToggle(e);});
+
+
+
+
+    //ゲームトグル機構---------------------------------------------------------------------------------------- 
+    function setupGameToggle(gameChapter){
+        const gtoggle = gameChapter.querySelector(".gtoggle");
+        const main = gameChapter.querySelector(".main");
+            console.log(gameChapter.innerHTML);
+            console.log(gtoggle);
+            console.log(main);
+        if(gtoggle.classList.contains("gclose")){ //closeというクラス名を含んでる?
+            main.classList.add("main_close"); //YES!!!! ならmainもそれに合わせよう。
+        }
+
+        gtoggle.addEventListener("click",()=>{
+            main.classList.toggle("main_close");
+            gtoggle.classList.toggle("gclose");
+            gtoggle.classList.toggle("gopen");
+        });
+    }
+
+    const gameToggeles = document.querySelectorAll(".gameChapter");
+    gameToggeles.forEach(g => {setupGameToggle(g);});
+
 
     //キャラクター機構----------------------------------------------------------------------------------------
     document.querySelectorAll(".teller").forEach(c=>{
