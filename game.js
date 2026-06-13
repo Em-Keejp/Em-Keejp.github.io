@@ -76,6 +76,12 @@ function difficulty(type , index , num){
 function gameDesMKRS(length , addition , difficulty , summary , image , BGM){
     return`
         <table>
+
+            <colgroup>
+                <col>
+                <col style="width: 1024px;">
+            </colgroup>
+
             <tr>
                 <td span class="index right up">長さ :</td>
                 <td>${length}</td>

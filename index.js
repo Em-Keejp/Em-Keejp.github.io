@@ -87,6 +87,10 @@ const li_vocaloid=[
     createMusic( "Shu" , "シルバーコレクター" , "巡音ルカ" , "A12" ),
     createMusic( "かいりきベア" , "バグ" , "初音ミク" , "A13" ),
     createMusic( "かいりきベア" , "ネクラチューンサーカス" , "初音ミク" , "A14" ),
+    createMusic( "40mP" , "ドリーマーズビート" , "初音ミク" , "A15" ),
+    createMusic( "よみぃ" , "初音狂奏曲第01番「彗惺」" , "初音ミク" , "A16" ),
+    createMusic( "Capchii" , "What's up? Pop!" , "初音ミク" , "A17" ),
+    createMusic( "ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ" , `<br>`+"モ ミ ア ゲ ヲ シ ャ カ ア ゲ ヲ"+`<br>` , "ずんだもん・東北きりたん・初音ミク・歌愛ユキ・栗田まろん・可不・WhiteCUL・松嘩りすく" , "A18" ),
 ];
 
 //表データ(その他の音楽)
@@ -104,6 +108,8 @@ const li_others=[
     createMusic( "CANDY TUNE" , "倍倍FIGHT!" , "" , "B11"),
     createMusic( "RADWIMPS" , "正解" , "" , "B12"),
     createMusic( "LindaAI-CUE" , "さいたま2000" , "山田ふしぎ" , "B13"),
+    createMusic( "YOASOBI" , "夜に駆ける" , "" , "B14"),
+
 ];
 
 //表データ(ツール)
@@ -276,6 +282,7 @@ const topicHeader = document.getElementById("topicHeader");
             backgroudClass:"",
             name:"",
         };
+        let other=``;
         if(parent=="-Tool"){
             category.class = "tool";
             category.backgroudClass = "b_tool";
@@ -288,6 +295,11 @@ const topicHeader = document.getElementById("topicHeader");
             category.class = "tale";
             category.backgroudClass = "b_tale";
             category.name = "物語";
+            other=`
+                ■<a href="/-Article/Characters/index.html">登場人物</a>　　
+                ■<a href="/-Article/Timeline/index.html">物語の時系列</a>　　
+                ■<a href="/-Article/Implementation_Order/index.html">物語の実装順</a>
+            `;
         }else if(parent=="-Article"){
             category.class = "article";
             category.backgroudClass = "b_article";
@@ -303,8 +315,7 @@ const topicHeader = document.getElementById("topicHeader");
             head.classList.add(category.backgroudClass);
         }
 
-            topicHeader.innerHTML=
-            `
+            topicHeader.innerHTML=`
             <h1>　${document.title}</h1>
 
             <p>　　分類 : <span class=${category.class}>${category.name}</span></p>
@@ -320,7 +331,9 @@ const topicHeader = document.getElementById("topicHeader");
             <button style="position:relative; left:72px;" class="copyButton" id="linkCopy">
                 サイト内のhtmlで使えるリンクをコピー
             </button>
-        `;
+            
+            <p>　　${other}</p>
+            `;
     }
 
     //リンクコピー linkCopy---------------------------------------------------------------------------
@@ -407,13 +420,10 @@ const topicHeader = document.getElementById("topicHeader");
         }else if(characterName=="NEWS"){
             c.insertAdjacentHTML("beforebegin" , `<div class="NEWS" teller" style="font-weight:600;"> NEWS : <br> </div>`);
         }else{
-            c.insertAdjacentHTML("beforebegin" , `<div class="${characterClass} teller" style="font-weight:400;"> ${characterName} : <br> </div>`);
+            c.insertAdjacentHTML("beforebegin" , `<div class="teller ${characterClass}"><a href="/-Article/Characters/index.html" style="text-decoration:none; font-weight:400; color:inherit;"> ${characterName} </a>: <br></div>`);                
         }
         c.insertAdjacentHTML("afterend" , `<br>`);
     });
-
-
-
 
 
 
