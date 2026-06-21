@@ -78,6 +78,7 @@ const li_vocaloid=[
     createMusic( "椎名もた(ぽわぽわP)" , "少女A" , "鏡音リン" , "A3" ),
     createMusic( "吉田夜世" , "オーバーライド" , "重音テトSV" , "A4" ),
     createMusic( "柊マグネタイト" , "マーシャル・マキシマイザー" , "可不" , "A5" ),
+    createMusic( "柊マグネタイト" , "テトリス" , "重音テト" , "A21" ),
     createMusic( "すりぃ" , "テレキャスタービーボーイ" , "鏡音レン" , "A6" ),
     createMusic( "いよわ" , "熱異常" , "足立レイ" , "A7" ),
     createMusic( "Atena" , "踊っチャイナ" , "初音ミク・重音テトSV" , "A8" ),
@@ -91,6 +92,11 @@ const li_vocaloid=[
     createMusic( "よみぃ" , "初音狂奏曲第01番「彗惺」" , "初音ミク" , "A16" ),
     createMusic( "Capchii" , "What's up? Pop!" , "初音ミク" , "A17" ),
     createMusic( "ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ" , `<br>`+"モ ミ ア ゲ ヲ シ ャ カ ア ゲ ヲ"+`<br>` , "ずんだもん・東北きりたん・初音ミク・歌愛ユキ・栗田まろん・可不・WhiteCUL・松嘩りすく" , "A18" ),
+    createMusic( "せきこみごはん" , "征け" , "鏡音リン・鏡音レン" , "A19" ),
+    createMusic( "TAK" , "PPPP" , "初音ミク・重音テト" , "A20" ),
+    createMusic( "TAK" , "LEMON MELON COOKIE" , "初音ミク" , "A23" ),
+    createMusic( "はろける" , "キャンディークッキーチョコレート" , "初音ミク・重音テト" , "A22" ),
+
 ];
 
 //表データ(その他の音楽)
