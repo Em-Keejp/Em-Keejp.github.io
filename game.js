@@ -9,10 +9,11 @@ function gameURL(url , tw , dl , other){
         linkTw : `href = "https://turbowarp.org/${url}${tw}" target="_blank" rel="noopener noreferrer"`,
         textTw : `TurboWarpでプレイ`,
         classTw: `class="playable"`,
-        linkDl : `href = "../../code/${dl}"`,
+        linkDl : `href = "../../code/${dl}" download="${dl}"`,
         textDl : `ダウンロード`,
         classDl: `class="playable"`
     };
+
     if(url==""){//url番号未記入なら、ScratchとTurboWarpは両方無効
         button.linkSc = ``;
         button.linkTw = ``;
@@ -59,6 +60,12 @@ function difficulty(type , index , num){
     if(index=="MKRSstar"){ //MKボールころころの★形式だったら
         difficulty=`★${num}`;
     }
+    if(index=="BKRDifLv1"){
+        difficulty=`Lv1　${num}`;
+    };
+    if(index=="BKRDifLv1+"){
+        difficulty=`Lv1+　${num}`;
+    };
     if(index=="none"||num=="none"||index=="--"||num=="--"||index==undefined||num==undefined){ //指標または定数が指定されてなかったら
         difficulty=`--`; 
     }

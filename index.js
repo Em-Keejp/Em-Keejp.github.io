@@ -124,9 +124,9 @@ const li_tool=[
 const li_game=[
     createTopics("game","MKボールころころ一覧","auto"),
     createTopics("game","その他のMKのボールころころ一覧","auto"),
-    createTopics("game","合作ころころ一覧",""),
+    createTopics("game","合作ころころ一覧","auto"),
     createTopics("game","クリッカーRPG","auto"),
-    createTopics("game","LINES CONNECTION一覧",""),
+    createTopics("game","LINES CONNECTION一覧","auto"),
     createTopics("game","猫の帰宅物語一覧",""),
     createTopics("game","猫退治ゲーム一覧",""),
     createTopics("game","Scratchシューティング一覧",""),
@@ -145,12 +145,22 @@ const li_tale_public=[
     createTopics("tale","BA5の隠し要素","auto"),
     createTopics("tale","10周年企画第一弾の隠し要素",""),
     createTopics("tale","10周年企画第二弾　質問コーナー",""),
+    createTopics("tale","[ShortMovie] カンニング猫を成敗",""),
+    createTopics("tale","[ShortMovie] 猫田の日常",""),
+    createTopics("tale","[ShortMovie] マラソン大会",""),
+    createTopics("tale","[ShortMovie] 町探検",""),
+    createTopics("tale","[ShortMovie] もしドラえもんがいれば",""),
+    createTopics("tale","[ShortMovie] 洞窟探検",""),
+    createTopics("tale","[ShortMovie] 偽物は誰だ!",""),
+    createTopics("tale","[ShortMovie] 猫田の旅行",""),
+    createTopics("tale","[ShortMovie] 猫山の辛い思い出",""),
 ];
 
 //表データ(物語_限定)
 const li_tale_private=[
     createTopics("tale","MKは2026年に初めてエイプリルフールを謳歌するようです。","auto"),
     createTopics("tale","[sub story] 東方共喰譚","auto"),
+    createTopics("tale","MKボールころころ一斉消失事件、そしてIMSの誕生まで",""),
 ];
 
 //表データ(記事)
