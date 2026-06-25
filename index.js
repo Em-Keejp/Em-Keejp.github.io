@@ -182,6 +182,7 @@ const li_template=[
     createTopics("game","ゲームのテンプレート","./テンプレート_ゲームトピック/index.html"),
     createTopics("tale","物語のテンプレート","./テンプレート_物語トピック/index.html"),
     createTopics("article","記事のテンプレート","./テンプレート_記事トピック/index.html"),
+    createTopics("links","リンク集のテンプレート","./テンプレート_リンク集トピック/index.html"),
 ];
 
 //表データ(お知らせ)
@@ -320,6 +321,10 @@ const topicHeader = document.getElementById("topicHeader");
             category.class = "article";
             category.backgroudClass = "b_article";
             category.name = "記事、お知らせ、その他";
+        }else if(parent=="-Links"){
+            category.class = "links";
+            category.backgroudClass = "b_links";
+            category.name = "リンク集";
         }else{
             category.class = "other";
             category.backgroudClass = "b_other";
@@ -441,6 +446,25 @@ const topicHeader = document.getElementById("topicHeader");
         c.insertAdjacentHTML("afterend" , `<br>`);
     });
 
+    //userタグ自動変換機構
+    document.querySelectorAll("user").forEach(user=>{
+        const userName = user.textContent;
+        let preName = `@`+userName;
+        if(user.getAttribute("name")){
+            preName = user.getAttribute("name");
+        }
+        user.innerHTML=`<a href="https://scratch.mit.edu/users/${userName}/" target="_blank" rel="noopener noreferrer">${preName}</a>`
+    });
+
+    //リンク自動生成機構
+    document.querySelectorAll("url").forEach(url=>{
+        let preName = url.textContent;
+        if(url.getAttribute("name")){
+            preName = url.getAttribute("name");
+        }
+        url.innerHTML=`<a href="${url.textContent}" target="_blank" rel="noopener noreferrer">${preName}</a>`
+    });
+
 
 
 
@@ -488,4 +512,9 @@ const allArea = document.getElementById("allArea");
     }
 
     /*
+    MEMO リンクの書式
+
+        <a href="" target="_blank" rel="noopener noreferrer">
+      リンク</a>
+
     */

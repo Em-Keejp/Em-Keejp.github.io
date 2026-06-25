@@ -7,6 +7,7 @@ const clone  = document.getElementById("clone");
 const range  = document.getElementById("range");
 const other  = document.getElementById("other");
 const FPS   = document.querySelectorAll('input[name="FPS"]');
+const URL   = document.getElementById("TurboWarpURL");
  let status=["fps=60","hqpen","clones=Infinity","offscreen","limitless"];
 
  FPS.forEach(FPS=>{
@@ -59,11 +60,22 @@ function statusCahnge(idName , element){
 
 function urlReload(){ //URL更新を司る関数
     const urlNumber=input.value.match(/\d+/g);//URL番号を抽出
+    URL.className="convertLowlight"; //CONVERTボタンを暗転
+    URL.disabled=true; //disabledのような中身を持たない属性は真偽値で制御
     if(urlNumber){
         output.value="https://turbowarp.org/"+urlNumber[0]+"?"+status.join("&");
+        URL.className="convertHighlight";//CONVERTボタンを明転
+        URL.disabled=false;
     }else if(input.value){
         output.value="[エラー] プロジェクトIDを読み取れません。";
     }else{
         output.value="白いテキストボックスにScratch作品のURLを入力してください。";
     }
+     URL.href=`${output.value}`;
 }
+
+//URL.setAttribute("class", "convertLowlight");みたいな記法でもclassは操れる。
+
+document.getElementById("TurboWarp_Convert").innerHTML=`
+    <a href="${output.value}">　<span class="convertHighlight">↓TurboWarp Convert!</span></a>
+`

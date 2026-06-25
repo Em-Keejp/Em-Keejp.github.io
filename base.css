@@ -25,6 +25,9 @@ body{
 .b_article{
     background-color: #fffdfa;
 }
+.b_links{
+    background-color: #fdfaff;
+}
 .b_other{
     background-color: #ffffff;
 }
@@ -63,6 +66,12 @@ h3::before{
     font-size:1.8rem;
 }
 
+hi{ /*強調(タグ)*/
+    color:#bb0000;
+    font-weight:bold;
+    font-size:1.8rem;
+}
+
 h3 .hi{ /*強調(見出し)*/
     color:#cc0000;
     font-weight:bold;
@@ -72,6 +81,11 @@ h3 .hi{ /*強調(見出し)*/
 
 
 .lo{ /*弱調*/
+    color:#999999;
+    font-size:1.2rem;
+}
+
+lo{ /*弱調(タグ)*/
     color:#999999;
     font-size:1.2rem;
 }
@@ -120,6 +134,12 @@ h3 .hi{ /*強調(見出し)*/
 
 .tale{
     color:#cc2222;
+    font-weight:500;
+}
+
+
+.links{
+    color:#7722cc;
     font-weight:500;
 }
 

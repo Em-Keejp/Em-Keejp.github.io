@@ -13,9 +13,19 @@
     height: 20px;
 }
 
+.convertLowlight{
+    pointer-events: none;
+    color:#223366;
+    font-size:2rem;
+    font-weight:bold;
+    line-height:200%;
+    text-decoration: none;
+}
+
 .convertHighlight{
     color:#6688dd;
     font-size:2rem;
     font-weight:bold;
     line-height:200%;
+    text-decoration: none;
 }
