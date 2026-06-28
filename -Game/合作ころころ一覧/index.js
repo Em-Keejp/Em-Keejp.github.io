@@ -1,127 +1,142 @@
-const li_OtherMKBC=[
-    createGames("Remix S9-4ボールころころ10　Hardmode2　★10" , gameURL("235785271","","")+gameDesMKRS(`2400 (400×6)`,`なし (S9-4/10比較)`,
-            difficulty("　通常","MKRSstar","∞")+
-            difficulty("全回収","none",0)
+const li_CCI=[
+    createGames("CCI1　合作ころころI - 区間1" , gameURL("1190895845","","","ScDeprecated")+gameDesCCRS(`<user>take_take_take</user>`,`583`,`583`,`縦レーザー(語彙力)、下が通行可能・不可ボール(語彙力)、ライブレーザー (親作品不明)`,
+            difficulty("　通常","MKRSstar",8)+
+            difficulty("全回収","MKRSstar",8)
         ,`
-            非常にN35と関りが深いステージ。というのも、N35の900%のうち0~600%はこの譜面の断続的なアレンジが続くのだ。<br>
-            なんか巷では某コースメーカーのおかげでN35のテーマを使ったシンプルリミックスが増えているようだが、厳密に言うとオリジナルはコイツ。ほとんどの人はそんなことすら知らずのうのうとリミックスするんだろうなぁ...(それでいいんだけども!)<br>
-            中間ポイントあり　全体的に足場が良くなり、難所が減りましたが、初見殺し要素が多くなりました。また、中間ポイントは1つ減り、コースの全体の長さは2倍になりました。
-            全体の長さ　12000 (S9-4 20　は13100で少し届かない)　難易度(作者の推定)<br>
-            <br>
-            100% ...　★x5　　400%(Cなし) ...　★x11<br>
-            200% ...　★x7　　500%(Cなし) ...　★x14<br>
-            300% ...　★x9　　600%(Cなし) ...　★x18<br>
-            400%(Cあり) ...　★x6<br>
-            500%(Cあり) ...　★x8<br>
-            600%(Cあり) ...　★x10<br>
-            <br>
-            多分S9-4ボールころころ10よりも難しいと思うよ。作者はなんとかクリア
+            合作ころころIの記念すべき1区間目。速いうえに狭い場所や認識難があったりで結構侮れない。<br>
+            サイバー風のテーマを基調としており本家LIMBOにあったような特殊演出も入る。カッコよさは合作Iの中では随一。<br>
+            全回収難易度が示されているが、区間1~4には<user name="後のクリエイター">karikarium</user>によって星が置かれている。元々はなかった。
         `,``
-        ,`[東方] 神々が恋した幻想郷`)
+        ,`[NightHawk22] Isolation`)
     ),
-
-    createGames("ボールコロコロになぜ猫!?　★9" , gameURL("314460208","","")+gameDesMKRS(`1001 (500×2)`,`上下バー、長めレーザー、横移動猫、上下猫、???猫、ウェーブ床 (新4比較)`,
-            difficulty("　通常","MKRSstar","9")+
-            difficulty("全回収","none",0)
+    createGames("CCI2　合作ころころI - 区間2" , gameURL("1191440671","","","ScDeprecated")+gameDesCCRS(`<user>seisakusha-3978</user>`,`583`,`1166`,`なし (CCI1比較)`,
+            difficulty("　通常","free","多分IMS基準で★10以上は余裕である。")+
+            difficulty("全回収","free","通常ルートとほぼ同じ。まあその通常ルートがゲキムズなんだけどな!")
         ,`
-            上下バー、長めレーザー、横移動猫、上下猫、???猫、ウェーブ床追加<br>
-            その後横に動かしてひたすら落ちたり、ハンマー、レーザービーム、猫などに当たらないようにして前に進む<br>
-            黄色でジャンプだよ　一応作者(mahirokkk)はクリアしたよ。3回ほどで<br>
-            重かったらPCを再起動するといいよ。<br>
-            <br>
-            何が猫になったか わかるかな...
-            数カ所原作を真似たところがあります。
-            ちなみに結構ムズイステージ。★9とあるが最近のMKは全然クリアできてない。
+            合作ころころIの2区間目。他の区間とは全回収を込みにしても比べ物にならないほどの難易度を誇る。
+            足場は基本的に1マス幅であり、しかもウェーブしていることも多い。おまけにそんな譜面を高速でやらせるうえに1-3、1-4配置も平気で出してくるまさしく鬼畜の所業。<br>
+            他の区間を突破したことのある僕でもこの区間だけは歯が立たなかった。区間の最後の方はその分動かさなくてもいい虚無時間になっており、合作ころころIに参加する全クリエイターの名前が表示される。<br>
+            次に来たるは...<user name="俺">mahirokkk</user>のターンだ!!!! <lo>(活動停止と重なって大遅刻したけどね...)</lo>
         `,``
-        ,`[東方] 月まで届け、不死の煙`)
+        ,`[NightHawk22] Isolation`)
     ),
-
-    createGames("新S9-4ボールころころ15 remix　難易度緩和バージョン　★10" , gameURL("555877288","","")+gameDesMKRS(`920`,`バリア復活ポイント (S9-4N/15比較)`,
-            difficulty("　通常","MKRSstar","10")+
-            difficulty("全回収","none",0)
+    createGames("CCI3　合作ころころI - 区間3" , gameURL("1239443452","","","ScDeprecated")+gameDesCCRS(`<user>mahirokkk</user>`,`591`,`1757`,`正方回転模様、菱形出現模様、高い菱形出現模様、ボール状態変化・透明 (CCI4比較)`,
+            difficulty("　通常","MKRSstar",6)+
+            difficulty("全回収","MKRSstar",9)
         ,`
-            ほぼ全てが難所でおそらく過去最高難易度です。当たり判定が緩くなった分、TAS乗り(？)や1マス飛びなどが出現しました。特に90%以降は壊滅的に難しい。こんなの誰がクリアできる！？<br>
-            <br>
-            <br>
-            <br>
-            <br>
-            という説明文が<a href="https://scratch.mit.edu/projects/550132989" target="_blank" rel="noopener noreferrer">リミックス元</a>
-            にありましたね。このリミックスはこの鬼畜ステージの難易度を下げたものです。それでも難しい。<br>
-            作者はクリアした。難易度は★x10くらいかな...　余裕がある人は最初においてある反転を受けて挑戦してみよう<span class="lo">(作者はこのモードで41%)</span>
+            合作ころころIの3区間目。なお、この直前まで僕は4ヵ月くらいの活動休止をしていたので、先に他の人が区間を完成させようということで、共有時系列的には先に<user>taru-ru</user>さんの区間4ができて、これを親作品にして区間3を共有した形となる。
+            本家ローリングスカイのテーマで構成されており、前半は洞窟、後半は曙のテーマが採用される。また新ギミックは全部後半で登場する。<br>
+            なおこの区間には1つ本家曙の配置を強化したような王冠が登場する。配置を作ったのは僕だが王冠の実装はめんどくさかったため<user name="後のクリエイター">karikarium</user>が置いた。
         `,``
-        ,`[DOVA-SYNDROME] Blue Garnet`)
+        ,`[NightHawk22] Isolation`)
     ),
-
-    createGames("2Dボールアクション1　「クラシック」　★2" , gameURL("329747655","","")+gameDesMKRS(`253`,`床、ジャンプ床、赤床、ウェーブ床`,
-            difficulty("　通常","MKRSstar","2")+
-            difficulty("全回収","none",0)
+    createGames("CCI4　合作ころころI - 区間4" , gameURL("1195123653","","","ScDeprecated")+gameDesCCRS(`<user>taru-ru</user>`,`561`,`2318`,`降りてくる床、昇っていく床、上記と落ちる床、上がる床、矢印床のジャンプver、飛行アイテム、障害物ブレイカー、ガラス床、多分かっこいいオブジェクト(3*8種)、特殊ウェーブ、レレレウェーブ、床と立体の独立、チェックポイント、状態編集、床の連結、緩い判定(床のみ) (CCI2比較)`,
+            difficulty("　通常","MKRSstar",3)+
+            difficulty("全回収","MKRSstar",5)
         ,`
-            床、ジャンプ床、赤い床、ウェーブ床追加<br>
-            2∂...おっとっと　2Dボールアクション初の作品です。<br>
-            ボールころころを参考に作りました。プログラムは全て自作です。<br>
-            当たり判定、ウェーブずれ、演出手抜き、文字なしとまだまだクソゲーですがこれからがんばっていきます。<br>
-            クリックでスタート　ゴールまで落ちたり壊したりせずに行けるかな?<br>
-            <br>
-            2026/06/20追記　結局このシリーズお蔵入りになったな...　まあ
-            <a href="https://scratch.mit.edu/users/tyottogan/" target="_blank" rel="noopener noreferrer">
-            意志を継いでくれた人</a>
-            がいたのは嬉しい!
+            合作ころころIの4区間目。難易度は合作ころころIの中ではトップクラスに簡単でひたすらにギミックと高速が爽快なものになっている。やや初見殺しはあるけど。<br>
+            どこぞの<user name="制作者">seisakusha-3978</user>とは雲泥の差である。
         `,``
-        ,`なし`)
+        ,`[NightHawk22] Isolation`)
     ),
-
-    createGames("2Dボールアクション2　「ファーストブレイク」　★3" , gameURL("555676847","","")+gameDesMKRS(`250`,`回転バー (2Dボールアクション1比較)`,
-            difficulty("　通常","MKRSstar","3")+
-            difficulty("全回収","none",0)
+    createGames("CCI5　合作ころころI - 区間5" , gameURL("1297757138","","","ScDeprecated")+gameDesCCRS(`<user>karikarium</user>`,`594`,`2912`,`ぴっかりボール、ウェーブボールっぽい障害物、星、王冠、T字の障害物 (CCI3比較)`,
+            difficulty("　通常","MKRSstar",7)+
+            difficulty("全回収","MKRSstar",10)
         ,`
-            回転バー追加　一気に難易度を上げました<br>
-            かわりにボールのスピードを下げました
+            合作ころころIファイナルの5区間目。なかなかに独特な、宇宙を感じさせるようなテーマが特徴の区間。認識の難しさは合作I全区間の中でトップクラスであり、<br>
+            この作品から追加された星と王冠もこの区間に結構あるのだが、元の技術難も相まって取るのはかなり難しい。
         `,``
-        ,`[東方] 平安のエイリアン`)
+        ,`[NightHawk22] Isolation`)
     ),
-
-    createGames("ボールころころ endless remix　★∞" , gameURL("273729141","","")+gameDesMKRS(`∞(Scratchの仕様上40000)`,`なし (新5比較)`,
-            difficulty("　通常","MKRSstar","∞")+
-            difficulty("全回収","none",0)
+    
+    createGames("CCI　合作ころころI - 総合" , gameURL("1297757138","","","ScDeprecated")+gameDesCCRSOverAll(`<user>take_take_take</user>`,`
+        区間1 <user>take_take_take</user><br>
+        区間2 <user>seisakusha-3978</user><br>
+        区間3 <user>mahirokkk</user><br>
+        区間4 <user>taru-ru</user><br>
+        区間5 <user>karikarium</user><br>
+        `,
+        `旧TK RS ENGINE`,`2912`,
+            difficulty("　通常","MKRSstar",12)+
+            difficulty("全回収","MKRSstar",16)
         ,`
-            一度はやってみたかった、エンドレスに続くボールころころ。とにかく精神をすり減らされます。(嘘)<br>
-            ウェーブリストは何もいじってないせいで、本家の長さである1000を超えるとタイルがずっと右から左にウェーブするという地獄絵図が流れてきます。<br>
-            しかもBaclRoomsのように同じようなパターンの譜面しか流れてこないので結構退屈...笑　僕が今エンドレスころころ作れば少しはバリエーション増やせそう。
+            実は結構z長が長かった合作ころころI　区画ごとに独自のテーマがあり、難易度の傾向も変わってくる。全体的に高速であり難しい場所が多い。<br>
+            正直これをクリアできる人はやばいと思う。CPは一応あるけどそれを込みにしてもね。だって明らかに難しすぎる区間が1つあるんだもん。<br>
+            BGMは、Geometry Dashの超激ムズステージ"LIMBO"に使われてる曲「[NightHawk22] Isolation」のリミックスです。初めて聴いたときは元ネタが全く分からなかったが...　
+            その後、LIMBOの攻略動画を見てみたら絶句した。なんだこれヤバすぎだろ...<br>
+            というわけで、流石に本家LIMBOと比較されたらこれは大分ぬるいと思う。それでもムズイことに変わりはない。　<lo>(なお、MKはGeometry Dashをやったことがありません。)</lo>
         `,``
-        ,`[東方] 月まで届け、不死の煙`)
-    ),
-
-    createGames("MK　ビートころころ12 通常ルートver　★9" , gameURL("1154907526","IMS","","ScDeprecated")+gameDesMKRS(`1863`,`なし (BE12比較)`,
-            difficulty("　通常","MKRSstar","9")+
-            difficulty("全回収","MKRSstar",12)
-        ,`
-            MKビートころころ12の模範解答リプレイを、星を重視しない通常ルートに変えたものです。まずはクリアを目指したい、という方はぜひご覧ください。<br>
-            譜面や演出の方は当たり前ですが原作と全く同じです。安心して遊べます。
-            原作はこちら。→<a href="https://turbowarp.org/356241311?offscreen&limitless&hqpen&fps=60" target="_blank" rel="noopener noreferrer">MK　ビートころころ12</a>
-        `,``
-        ,`<a href="https://www.youtube.com/watch?v=LLjfal8jCYI" target="_blank" rel="noopener noreferrer">
-        [吉田夜世] オーバーライド - 重音テトSV</a>`)
-    ),
-
-     createGames("BKRボールころころ 058...?　Lv1　10" , gameURL("1255465728","IMS","","ScDeprecated")+gameDesMKRS(`990`,`なし (BKR58比較)`,
-            difficulty("　   　　CLEAR","BKRDifLv1",3)+
-            difficulty("　 FULL COMBO","BKRDifLv1",5)+
-            difficulty("　ALL PERFECT","BKRDifLv1",10)
-        ,`
-            というわけで、横幅5マスを横幅9マスにアップグレードしてみました。<br>
-            ...重すぎん?<br>
-            <br>
-            譜面は変えてあります。多分原作よりは簡単。あとﾌﾟﾛｾｶにありそうなスコアバーも追加したよ。ノリでやっただけだけど。作者はランクSはとった。<br>
-            絶対ターボワープでやった方がいい。パフォーマンス面で軽量化できる人、マジで尊敬します...<br>
-            <br>
-            <a href="https://scratch.mit.edu/projects/897503168/" target="_blank" rel="noopener noreferrer">
-            BKR61</a>よりこのシステムの運用開始!　しかも初っ端から高難度譜面で!
-        `,``
-        ,`<a href="https://www.youtube.com/watch?v=8s1VNX7xmRI" target="_blank" rel="noopener noreferrer">
-        [Kai] マジカホリック / 初音ミク</a>`)
+        ,`[NightHawk22] Isolation`)
     ),
 
 ]
 
-document.getElementById("OtherMKBC").innerHTML=
-    gameTable("MKのその他のボールころころ一覧",li_OtherMKBC,`` );
+const li_CCII=[
+    createGames("CCII1　合作ころころII - 区間1" , gameURL("1309036613","IMS","","ScDeprecated")+gameDesCCRS(`<user>mahirokkk</user>`,`270`,`270`,`消える床、現れる床 (BΕ15比較)`,
+            difficulty("　通常","MKRSstar",3)+
+            difficulty("全回収","MKRSstar",5)
+        ,`
+            合作ころころIIの1区間目。難易度の割には障害物がごっちゃしていて難しいかも。<br>
+            ただし遅いためゲキムズではない。なお、タイトルロゴ表示中は中央に居ればやられることはないのでご安心を。<br>
+            ちなみに全回収に関してはもう初見殺しと謎解きの塊である。逆に一度分かってしまえば途端にイージーゲームになる。<br>
+            この区間にはクソ頑張って作った背景と最初の一瞬だけ特殊演出とどこかで見たことのある最初の配置があったりなかったり...
+        `,``
+        ,`<url name="[cosMo@暴走P] 初音ミクの激唱 / feat.初音ミク">https://www.youtube.com/watch?v=MFEaIgMkR_0</url>`)
+    ),
+    createGames("CCII2　合作ころころII - 区間2" , gameURL("1309407771","IMS","","ScDeprecated")+gameDesCCRS(`<user>o_sushi</user>`,`260`,`530`,`なし (CCII1比較)`,
+            difficulty("　通常","MKRSstar",2)+
+            difficulty("全回収","MKRSstar",7)
+        ,`
+            時間長ではここが一番長い区間でありながら、かなり簡単な区間でもある。手加減素晴らしい。<br>
+            ただし回収物はダークネスなしのネオンフロアを見極めて見つけないといけないのでかなり難易度が高い。一方技術難はほぼないので区間1同様分かってしまえば途端にイージーゲームになる。
+        `,``
+        ,`<url name="[cosMo@暴走P] 初音ミクの激唱 / feat.初音ミク">https://www.youtube.com/watch?v=MFEaIgMkR_0</url>`)
+    ),
+    createGames("CCII3　合作ころころII - 区間3" , gameURL("1314594273","IMS","","ScDeprecated")+gameDesCCRS(`<user>karikarium</user>`,`256`,`786`,`なし (CCII2比較)`,
+            difficulty("　通常","MKRSstar",3)+
+            difficulty("全回収","MKRSstar",6)
+        ,`
+            区間2と比べると障害物が増えたり変なウェーブが増えたりして認識が難しくなったが、代わりに理不尽な回収物は減った。<br>
+            認識難は強くなったが直感で進めるルートとなっており初見突破も比較的現実的な範囲である。一方で、これより後の区間は難関配置がずっと続く魔境となっている。<br>
+            覚悟の準備をしておいてください。
+        `,``
+        ,`<url name="[cosMo@暴走P] 初音ミクの激唱 / feat.初音ミク">https://www.youtube.com/watch?v=MFEaIgMkR_0</url>`)
+    ),
+    createGames("CCII4　合作ころころII - 区間4" , gameURL("1314594332","IMS","","ScDeprecated")+gameDesCCRS(`<user>06jyuuu</user>`,`384`,`1170`,`なし (CCII3比較)`,
+            difficulty("　通常","MKRSstar",9)+
+            difficulty("全回収","MKRSstar",10)
+        ,`
+            これまでの区間とは打って変わって、ボールの速度が2倍になる。そのうえムーバーや脆い床を難解な配置で置いてくるので極めて難易度が高い。他のギミックも凶悪な配置をしており視認性も最悪である。
+            ここをノーダメージで突破出来たらいよいよ上手い人を名乗れると思う。MKにはこの区間は難しすぎた。今までの区間はノーダメ余裕だったのにここは9バリアでも突破できないんですが...
+        `,``
+        ,`<url name="[cosMo@暴走P] 初音ミクの激唱 / feat.初音ミク">https://www.youtube.com/watch?v=MFEaIgMkR_0</url>`)
+    ),
+    createGames("CCII5　合作ころころII - 区間5" , gameURL("1314827800","IMS","","ScDeprecated")+gameDesCCRS(`<user>rollinghuman</user>`,`168`,`1338`,`なし (CCII4比較)`,
+            difficulty("　通常","MKRSstar",3)+
+            difficulty("全回収","MKRSstar",6)
+        ,`
+            ギミックの配置は前の区間同様複雑で、斜め配置もちょっと混じっているが、速度は再び区間1~3の時同様の低速に落ち着く。<br>
+            この区間はただ通過する分にはそこまで難しくはないが、唯一置いてある金星のルートはやや複雑で、譜面研究をしないととれないような配置になっている。<br>
+            <lo>なお、この作品の段階ではその金星のルートに誤りがあり、獲得不可になっていた模様。次の区間の作品でこの部分は修正されている。一応非正規ルートではあるが横TASやタブレットワープで取れる。</lo>
+        `,``
+        ,`<url name="[cosMo@暴走P] 初音ミクの激唱 / feat.初音ミク">https://www.youtube.com/watch?v=MFEaIgMkR_0</url>`)
+    ),
+    createGames("CCII6　合作ころころII - 区間6" , gameURL("1329310495","IMS","","ScDeprecated")+gameDesCCRS(`<user>wakannai123</user>`,`235`,`1573`,`なし (CCII5比較)`,
+            difficulty("　通常","MKRSstar",9)+
+            difficulty("全回収","MKRSstar",11)
+        ,`
+            今まで低速の区間は全て簡単だと思っていたが、どうやらそんな考えは浅はかだったようだ。...遅いくせにとんでもなくムズイんだが!?<br>
+            ここでは、区間1以降では初となるテーマ変更が入る。しかもよりによってクリッカーRPGのテーマであり結構エモい...のだが、背景が明るかったりタイルが同化していたり、そもそもの配置がゲキムズだったりで認識難は結構ヤバい。<br>
+            ちなみに要求技術も結構高い。後半に置いてある星とか取らせる気ないだろマジで。さらに驚いたのがこれを模範リプレイがノーダメ全回収できてしまうということ...　ということは人間にもこれは可能な譜面ってことか...<br>
+            いや、模範リプレイは実質TASだからそれと同じにするのはどうなんだ!?
+        `,``
+        ,`<url name="[cosMo@暴走P] 初音ミクの激唱 / feat.初音ミク">https://www.youtube.com/watch?v=MFEaIgMkR_0</url>`)
+    ),
+    
+]
+
+document.getElementById("CCI").innerHTML=
+    gameTable("合作ころころI　区間別",li_CCI,`` );
+
+document.getElementById("CCII").innerHTML=
+    gameTable("合作ころころII　区間別",li_CCII,`` )+`<p>coming soon...</p>`;

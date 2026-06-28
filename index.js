@@ -10,7 +10,7 @@ function createMusic(composer,music,vocal,filenumber){
 
   return `<tr>
           <td>${musictitle}</td>
-          <td><a href="./lyrics/${filenumber}.txt"><button>見る</button></td>
+          <td><a href="./lyrics/${filenumber}.txt" target="_blank" rel="noopener noreferrer"><button>見る</button></td>
           <td><a href="./lyrics/${filenumber}.txt" download="${music} 歌詞.txt"><button>歌詞をダウンロード(txt)</button></td>
           </tr>`;
 }
@@ -27,14 +27,16 @@ function topicButton(topicType , topicName , fileName){ //トピックボタン�
     if(fileName){
         if(fileName=="auto"){
             let refferFolderName="";
-            if(topicType=="tool"){
+                  if(topicType=="tool"){
                 refferFolderName="-Tool";
             }else if(topicType=="game"){
                 refferFolderName="-Game";
             }else if(topicType=="tale"){
                 refferFolderName="-Tale";
-            }else if(topicType="article"){
+            }else if(topicType=="article"){
                 refferFolderName="-Article";
+            }else if(topicType=="links"){
+                refferFolderName="-Links";
             }
              return`
             <a href="./${refferFolderName}/${topicName}/index.html"><button class="topic">詳細を見る</button></a>
@@ -78,11 +80,13 @@ const li_vocaloid=[
     createMusic( "椎名もた(ぽわぽわP)" , "少女A" , "鏡音リン" , "A3" ),
     createMusic( "吉田夜世" , "オーバーライド" , "重音テトSV" , "A4" ),
     createMusic( "柊マグネタイト" , "マーシャル・マキシマイザー" , "可不" , "A5" ),
-    createMusic( "柊マグネタイト" , "テトリス" , "重音テト" , "A21" ),
+    createMusic( "柊マグネタイト" , "テトリス" , "重音テトSV" , "A21" ),
     createMusic( "すりぃ" , "テレキャスタービーボーイ" , "鏡音レン" , "A6" ),
     createMusic( "いよわ" , "熱異常" , "足立レイ" , "A7" ),
     createMusic( "Atena" , "踊っチャイナ" , "初音ミク・重音テトSV" , "A8" ),
     createMusic( "Atena" , "クローンクローン" , "GUMI・鏡音リン" , "A9" ),
+    createMusic( "Atena" , "どりーむもーど" , "音街ウナ・歌愛ユキ" , "A26" ),
+    createMusic( "Atena" , "キャラクターT" , "重音テトUTAU・重音テトSV" , "A27" ),
     createMusic( "原口沙輔" , "人マニア" , "重音テト" , "A10" ),
     createMusic( "原口沙輔" , "イガク" , "重音テト" , "A11" ),
     createMusic( "Shu" , "シルバーコレクター" , "巡音ルカ" , "A12" ),
@@ -93,9 +97,23 @@ const li_vocaloid=[
     createMusic( "Capchii" , "What's up? Pop!" , "初音ミク" , "A17" ),
     createMusic( "ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ" , `<br>`+"モ ミ ア ゲ ヲ シ ャ カ ア ゲ ヲ"+`<br>` , "ずんだもん・東北きりたん・初音ミク・歌愛ユキ・栗田まろん・可不・WhiteCUL・松嘩りすく" , "A18" ),
     createMusic( "せきこみごはん" , "征け" , "鏡音リン・鏡音レン" , "A19" ),
-    createMusic( "TAK" , "PPPP" , "初音ミク・重音テト" , "A20" ),
+    createMusic( "TAK" , "PPPP" , "初音ミク・重音テトSV" , "A20" ),
     createMusic( "TAK" , "LEMON MELON COOKIE" , "初音ミク" , "A23" ),
-    createMusic( "はろける" , "キャンディークッキーチョコレート" , "初音ミク・重音テト" , "A22" ),
+    createMusic( "はろける" , "キャンディークッキーチョコレート" , "初音ミク・重音テトSV" , "A22" ),
+    createMusic( "むさぬりゆ","0.0000034","初音ミク","A24"),
+    createMusic( "sasakure.UK","トンデモワンダーズ","初音ミク・KAITO","A25"),
+    createMusic( "佐藤ちなみに" , "最しゅう演目" , "初音ミク・可不" , "A28" ),
+    createMusic( "佐藤ちなみに" , "血泥のダンスホール" , "初音ミク" , "A29" ),
+    createMusic( "佐藤ちなみに" , "惨たらしいアソビ" , "初音ミク" , "A30" ),
+    createMusic( "佐藤ちなみに" , "骸の園" , "初音ミク" , "A31" ),
+    createMusic( "佐藤ちなみに" , "博士" , "重音テトSV" , "A32" ),
+    createMusic( "佐藤ちなみに" , "リベル" , "初音ミク・重音テトSV" , "A33" ),
+    createMusic( "佐藤ちなみに" , "押ス" , "重音テトSV" , "A34" ),
+    createMusic( "佐藤ちなみに" , "マリ" , "初音ミク・重音テトSV" , "A35" ),
+    createMusic( "佐藤ちなみに" , "キマツテスト" , "重音テトSV" , "A36" ),
+    createMusic( "佐藤ちなみに" , "はやくにげなきゃ" , "初音ミク・雨衣" , "A37" ),
+    createMusic( "佐藤ちなみに" , "アダチ・レイ" , "足立レイ・重音テト" , "A38" ),
+    createMusic( "ピノキオピー" , "ノンブレス・オブリージュ" , "初音ミク" , "A39" ),
 
 ];
 
@@ -115,7 +133,8 @@ const li_others=[
     createMusic( "RADWIMPS" , "正解" , "" , "B12"),
     createMusic( "LindaAI-CUE" , "さいたま2000" , "山田ふしぎ" , "B13"),
     createMusic( "YOASOBI" , "夜に駆ける" , "" , "B14"),
-
+    createMusic( "米津玄師" , "Lemon" , "" , "B15"),
+    createMusic( "sasakure.UK" , "The EmpError" , "" , "B16"),
 ];
 
 //表データ(ツール)
@@ -151,15 +170,7 @@ const li_tale_public=[
     createTopics("tale","BA5の隠し要素","auto"),
     createTopics("tale","10周年企画第一弾の隠し要素",""),
     createTopics("tale","10周年企画第二弾　質問コーナー",""),
-    createTopics("tale","[ShortMovie] カンニング猫を成敗",""),
-    createTopics("tale","[ShortMovie] 猫田の日常",""),
-    createTopics("tale","[ShortMovie] マラソン大会",""),
-    createTopics("tale","[ShortMovie] 町探検",""),
-    createTopics("tale","[ShortMovie] もしドラえもんがいれば",""),
-    createTopics("tale","[ShortMovie] 洞窟探検",""),
-    createTopics("tale","[ShortMovie] 偽物は誰だ!",""),
-    createTopics("tale","[ShortMovie] 猫田の旅行",""),
-    createTopics("tale","[ShortMovie] 猫山の辛い思い出",""),
+    createTopics("links","ショートムービー","auto"),
 ];
 
 //表データ(物語_限定)

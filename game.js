@@ -68,7 +68,11 @@ function difficulty(type , index , num){
     };
     if(index=="none"||num=="none"||index=="--"||num=="--"||index==undefined||num==undefined){ //指標または定数が指定されてなかったら
         difficulty=`--`; 
-    }
+    };
+    if(index=="free"){
+        difficulty=`${num}`;
+    };
+
 
     return`
         <tr>
@@ -96,6 +100,94 @@ function gameDesMKRS(length , addition , difficulty , summary , image , BGM){
             <tr>
                 <td span class="index right up">追加物 :</td>
                 <td>${addition}</td>
+            </tr>
+            <tr>
+                <td span class="index right up">難易度 :</td>
+                <td><table>${difficulty}</table></td>
+            </tr>
+        </table>
+        <br>
+        ${summary}<br>
+        <br>
+        <table>
+            <tr>
+                <td span class="index right up">BGM :</td><td>${BGM}</td>
+            </tr>
+        </table>
+    `;
+}
+
+
+
+//内容説明関数(合作ころころフォーマット)
+function gameDesCCRS(creator , length , totallength , addition , difficulty , summary , image , BGM){
+    return`
+        <table>
+
+            <colgroup>
+                <col>
+                <col style="width: 1024px;">
+            </colgroup>
+
+            <tr>
+                <td span class="index right up">区間担当 :</td>
+                <td>${creator}</td>
+            </tr>
+            <tr>
+                <td span class="index right up">区間長さ :</td>
+                <td>${length}</td>
+            </tr>
+            <tr>
+                <td span class="index right up">累計長さ :</td>
+                <td>${totallength}</td>
+            </tr>
+            <tr>
+                <td span class="index right up">追加物 :</td>
+                <td>${addition}</td>
+            </tr>
+            <tr>
+                <td span class="index right up">区間難易度 :</td>
+                <td><table>${difficulty}</table></td>
+            </tr>
+        </table>
+        <br>
+        ${summary}<br>
+        <br>
+        <table>
+            <tr>
+                <td span class="index right up">BGM :</td><td>${BGM}</td>
+            </tr>
+        </table>
+    `;
+}
+
+
+
+//内容説明関数(合作ころころ総合フォーマット)
+function gameDesCCRSOverAll(proposer , creator , engine , length , difficulty , summary , image , BGM){
+    return`
+        <table>
+
+            <colgroup>
+                <col>
+                <col style="width: 1024px;">
+            </colgroup>
+
+            <tr height="80">
+                <td span class="index right">提案者 :</td>
+                <td>${proposer}</td>
+            </tr>
+            <tr>
+                <td span class="index right up">合作担当者 :</td>
+                <td>${creator}</td>
+            </tr>
+            <tr>
+                <td span class="index right up">使用エンジン :</td>
+                <td>${engine}</td>
+            </tr>
+            <tr>
+                <td span class="index right up">長さ :</td>
+                <td>${length}</td>
             </tr>
             <tr>
                 <td span class="index right up">難易度 :</td>

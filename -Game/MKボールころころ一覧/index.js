@@ -404,22 +404,28 @@ const li_MKBC_B=[
         ,`[東方] 平安のエイリアン`)
     ),
 
-    createGames("B3　★6" , gameURL("","","")+gameDesMKRS(`--`,`--`,
-            difficulty("通常","MKRSstar",)+
-            difficulty("全回収","none",)
+    createGames("B3　★6" , gameURL("535527130","","")+gameDesMKRS(`500`,`上がるジャンプ床、下がるジャンプ床、降ってく棒、大ジャンプ床、小ジャンプ床、スライドジャンプ床、金の星 (B2比較)`,
+            difficulty("通常","MKRSstar",6)+
+            difficulty("全回収","MKRSstar",9)
         ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+            上がるジャンプ床、下がるジャンプ床、降ってく棒、大ジャンプ床、小ジャンプ床、スライドジャンプ床、金の星追加<br>
+            ボーナスころころの3作目です。　星は全部で11個　全部取ってのクリアは鬼畜です。<br>
+            初見殺しが厳しいです。　難易度は緩和はしましたがそれでもむずいです　。ほとんどの星がテクニックが必要なところにあります。<br>
+            作者はソロで3回くらいでクリアしたよ。　10回くらいで作者は星を全部取れました。
         `,``
-        ,`--`)
+        ,`[東方] 無何有の郷`)
     ),
 
-    createGames("B4　★7" , gameURL("","","")+gameDesMKRS(`--`,`--`,
-            difficulty("通常","MKRSstar",)+
-            difficulty("全回収","none",)
+    createGames("B4　★7" , gameURL("535975953","","")+gameDesMKRS(`500`,`スピード変更床、特殊ウェーブ、ジャンプ色の出っ張り、ジャンプ色の高い出っ張り、高い横移動四角 (B3比較)`,
+            difficulty("通常","MKRSstar",7)+
+            difficulty("全回収","MKRSstar",10)
         ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+            スピード変更床、特殊ウェーブ、ジャンプ色の出っ張り、ジャンプ色の高い出っ張り、高い横移動四角追加<br>
+            あ、いつの間にかスピード変更床が独自の色を持つようになりました。<lo>(速くするのは青、遅くするのは赤、普通にするのは灰色)</lo><br>
+            星は全部で11個　全部取ってのクリアは鬼畜です。　本編作品よりタイル管理が下手になりました。<br>
+            作者はソロで3回くらいでクリアしたよ。(星は10個)
         `,``
-        ,`--`)
+        ,`[東方] フラワリングナイト`)
     ),
 
     createGames("B5　★9　longstage8" , gameURL("","","")+gameDesMKRS(`--`,`--`,
@@ -1053,7 +1059,7 @@ const li_MKBC_BE=[
     `,``,`<a href="https://www.youtube.com/watch?v=bmbAm-fKnbQ" target="_blank" rel="noopener noreferrer">
             [Atena] クローンクローン / GUMI, 鏡音リン</a>`)),
 
-    createGames("BE10　★10 + 3" , gameURL("228396018","IMS","","ScDeprecated")+gameDesMKRS(`2679`,`電極、電極スイッチ、振り子(8種類)、状態編集`, difficulty("通常","MKRSstar",13)+ difficulty("全回収","none",) ,`
+    createGames("BE10　★10 + 3" , gameURL("228396018","IMS","","ScDeprecated")+gameDesMKRS(`2679`,`電極、電極スイッチ、振り子(8種類)、状態編集 (BE9比較)`, difficulty("通常","MKRSstar",13)+ difficulty("全回収","none",) ,`
             電極、電極スイッチ、振り子(8種類)、状態編集　追加<br>
             <br>
             今回、ついに難易度が限界突破しました...難所だらけの鬼畜ステージ　さらにBGMはフルバージョンで5分超え!　もちろんチェックポイントなし!　こんなの誰がクリアできる!?<br>

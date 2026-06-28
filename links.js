@@ -1,7 +1,11 @@
 //表を自動で作る関数(通常版)
 function createLinks(topicType , topicName , fileName){
+    let url=`<a href="../../${fileName}">${topicName}</a>`;
+    if(fileName==""){
+        url=`<span style="color:#888888";>${topicName}</span>`;
+    }
     return `
-            <p style="font-size:2rem";><span class="b_${topicType}"><span class="${topicType}">● </span><a href="../../${fileName}">${topicName}</a></span></p>
+            <p style="font-size:2rem";><span class="b_${topicType}"><span class="${topicType}">● </span>${url}</span></p>
             `;
 }
 
