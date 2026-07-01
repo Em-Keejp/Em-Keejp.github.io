@@ -185,6 +185,8 @@ const li_article=[
     createTopics("article","自己紹介","./-Article/自己紹介/index.html"),
     createTopics("article","プロフィールの独り言、ギャグ一覧","./-Article/profile/index.html"),
     createTopics("article","MKボールころころコース作りマニュアル-IMS編","./-Article/IMS_Manual/index.html"),
+    createTopics("article","合作er達の最高傑作のボールころころ",""),
+    createTopics("article","クリア困難なボールころころ",""),
 ];
 
 //表データ(テンプレート)
