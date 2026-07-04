@@ -34,8 +34,8 @@ const li_CCI=[
             difficulty("　通常","MKRSstar",3)+
             difficulty("全回収","MKRSstar",5)
         ,`
-            合作ころころIの4区間目。難易度は合作ころころIの中ではトップクラスに簡単でひたすらにギミックと高速が爽快なものになっている。(頑張ったんだよ〜by<user name="taru-ru">taru-ru</user>)やや初見殺しはあるけど。<br>
-            どこぞの<user name="制作者">seisakusha-3978</user>とは雲泥の差である。
+            合作ころころIの4区間目。難易度は合作ころころIの中ではトップクラスに簡単でひたすらにギミックと高速が爽快なものになっている。(頑張ったんだよ〜by<user name="taru-ru">taru-ru</user>)<br>
+            やや初見殺しはあるけど。どこぞの<user name="制作者">seisakusha-3978</user>とは雲泥の差である。
         `,``
         ,`[NightHawk22] Isolation`)
     ),
