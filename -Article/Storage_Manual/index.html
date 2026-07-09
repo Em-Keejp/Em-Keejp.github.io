@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>この保管庫を編集したい方向けマニュアル</title>
+  <link rel="stylesheet" href="../../base.css">
+  <link rel="stylesheet" href="./base.css">
+</head>
+<body id="allArea" class="reloadWait">
+
+
+  <div id="topicHeader"></div>
+
+  <h2>はじめに</h2>
+  <p>
+    このページでは、MKの保管庫<lo>(このウェブサイト)</lo>を執筆する方を対象に、以下の内容を取り扱います。<br>
+    <br>
+    ・Discordサーバーについて<br>
+    ・保管庫編集に必要なツール<br>
+    ・保管庫編集の方法<br>
+    ・HTML , CSS , JavaScriptの基礎文法<br>
+    ・GitHubを使う際のルール<br>
+    <br>
+    やってみたい!　って方は一度読んでください!<br>
+    ちなみにここで言うんだけど、この規模のウェブサイト開発であれば普通にChatGPT等の生成AIは強力なツールになる。<br>
+    壁にぶち当たったらこいつらに頼るのも有力な手段だ。<br>
+    ちなみにこのマニュアル自体はかなりテキトーです。意外とネットで調べたら出てくる知識だけでイケるので...<br>
+    <br>
+
+      
+      <div class="chapter">
+        <h2 class="toggle close">A. Discordサーバーについて</h2>
+        <div class="main">
+          今までMKの保管庫をほぼワンオペで拡張してきたのですが、一人の力には限界があります。そこで、複数人による開発をしようと考えました。<br>
+          しかし、Scratchのサーバーだとこれらについて話し合う場所としては不便だと考えており、そういう理由で以下のDiscordサーバーを立ち上げました。<br>
+          <br>
+          <url name="Discordサーバー - 保管庫拡張保守委員会">https://discord.com/channels/1523312184770429040/1523325704106676225</url><br>
+          <lo>(多分招待されてない人は入れない...はず。)</lo><br>
+          <br>
+          今後MKの保管庫で執筆を担当する方は、できるなら会話の円滑化のためにもこのサーバーに入ってくれると嬉しいです。<br>
+          このサーバーでは保管庫についての質問だったり、書き方のコツなどの共有、そのほか執筆場所の担当割り振りを行おうと思います。<br>
+          このDiscordサーバーに入りたい場合は<url name="MKのプロフィールのコメント欄">https://scratch.mit.edu/users/mahirokkk/</url>とかに参加したい旨を書いてください。<br>
+          Discordのユーザー名と一緒に書いてくれると助かります。<lo>(持ってない人はまずアカウントを作りましょう。)</lo><br>
+          <br>
+          あと注意点 : ScratchにDiscordという言葉をコメントすると多分ですが悪い言葉検知器が反応してコメントブロックされます。<br>
+          　　　　　　だから「保管庫執筆やってみたいです　アカウントはXXXXXXです」みたいにアカウントだけ書くことを強く推奨します。
+
+        
+
+
+        </div>
+      </div>
+
+
+
+      <div class="chapter">
+        <h2 class="toggle close">B. 環境設定</h2>
+        <div class="main">
+
+          <a href="/-Article/%E5%8F%82%E8%80%83/index.html">このサイトを作るのに参考にしたもの</a>
+          という記事でもちょっとだけ書いたけど、MKは主にこんなものを使って保管庫拡充してる。<br>
+          <br>
+          ・Visual Studio Code (VScode)<br>
+          ・GitHub<br>
+          <br>
+          それぞれ詳しく以下のタブで解説する。<br>
+
+          <div class="episode"><h3 class="toggle close">Visual Studio Code (VS code)</h2><div class="main">
+            まずVS codeこと、Visual Studio Codeをインストールしよう。<br>
+            ちなみにインストールが不要なWeb版もあるけど、MKはデスクトップ版を使っていて、できることもこっちの版の方が柔軟だから、よほどのことがない限りデスクトップ版をインストールすることを推奨する。
+            なお、IPadとかのタブレットを使ってる人はVS codeをインストールできないので、Web版のVS codeを使おう。一応Web版でも共同開発に必要な最低限の機能は備わってるので無理ではないはず。<br>
+            <br>
+            <h3>1.インストール手順</h3>
+            まず<url name="公式ダウンロードページ">https://code.visualstudio.com/download?_exp_download=fb315fc982</url>
+            に飛んで、VS codeをインストールしよう。<br>
+            <br>
+            ...あとは解説が面倒くさいので、以下のリンクの記事を読んだり、自分で「VScode　インストール」と検索してみたりしてください。<br>
+            インストールすると初期言語は英語になっているので、これを日本語にできたら一旦一区切りです。
+
+            <h3>参考にできる記事</h3>
+            ・<url name="【VSCode】Windowsへのインストール手順を画像付きで解説！">https://it-life.net/programming/vscode-windows-install/</url><br>
+            ・<url name="【VSCode】日本語化のやり方(Japanese Language Pack)">https://it-life.net/programming/vscode-japanese-language-pack/</url><br>
+            ・<url name="【初心者向け】VSCodeのインストールと日本語化手順まとめ">https://qiita.com/yuri_777/items/b2d0472ba68ebe431859</url><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>2.Web開発環境を整える</h3>
+            VScodeは、デフォルトの状態でもWeb開発ができないわけではないが、拡張機能を使うことによって少しWeb開発を便利にすることができる。<br>
+            その一つに「Live Server」なるものがある。この拡張機能、中で何が起こってるのかは参考記事を見てもらうとして、以下のメリットがある。<br>
+            <br>
+            ・ファイルの保存を検知して勝手にリロードしてくれる。<br>
+            ・ダウンロードの挙動をローカル環境で確かめられる。<br>
+            <br>
+            まあ、これがあるとWeb開発がスムーズになる。実際に手元にHTMLファイルが無いと効果が分からないのだが...今はとりあえずダウンロードしよう<br>
+            VS codeをインストールして日本語化までしている前提で話を進める。以下はLive Server導入の手順である。<br>
+            <br>
+            1.まず、左タブの「拡張機能」と書いてあるところをクリック<br>
+            2.検索ボックスに「Live Server」と入力<br>
+            3.一番上に出てきたやつを押す<br>
+            4.開発者が「Ritwick Dey」であることを確認したら、インストールする<br>
+            <br>
+            ファイルエディタに戻ってみよう。そしたら、右下に Go Liveボタンがいつの間にかあるはずだ。<br>
+            これを押すとブラウザが立ち上がり、自分が今作ってるウェブサイトが表示される。さらに、そのページはファイルが保存されるとそれを検知して自動でリロードしてくれるのだ!　
+            これで<br>
+            <hi>「VScodeでコードを修正してCtrl+Sで保存」→「ブラウザですぐ変更を確かめる」</hi><br>
+            という流れが可能になり作業が効率化される。OFFにしたい場合は、先ほどのGo LiveボタンがPort:5500ボタンになってるので、これを押すと自動同期を止められる。<br>
+            <lo>(補足 : 「Port:5500」の代わりに、「Stop Live Server」や「Disconnect from Live Server」等の表示が出る場合もある。)</lo>
+            <br>
+            <h3>参考にできる記事</h3>
+            ・<url name="【VSCode】Live Serverの「使い方」や「設定」などわかりやすく解説！">https://it-infomation.com/visual-studio-code-live-server/</url><br>
+            ・<url name="VSCodeのLive Serverとは？ローカル環境でのウェブサイトプレビューを簡単に(Live Previewも)">https://qiita.com/kimascript/items/6176896ee2f34da7f496</url><br>
+            
+
+
+          </div></div>
+          <div class="episode"><h3 class="toggle close">GitHub</h2><div class="main">
+            GitHubはWeb上の開発環境だ。この保管庫のみならず、多くの開発物がこのGitHubには入っている。便利だからだ。でもMKには難しすぎる。英語だし...<br>
+            GitHubには「リモートリポジトリ」というものがあり、個人PCには「ローカルリポジトリ」がある。<br>
+            ローカルリポジトリの内容をリモートリポジトリに移す、またはその逆といった行動の繰り返しによって開発物を発展させていくイメージだ。<br>
+            ちなみにMKの保管庫は「Em-Keejp.github.io」というリモートリポジトリが元になって動いている。<br>
+            GitHubはターミナルでコマンド打って操作するパターンもあるが、今回それは一切やらない。なぜなら全部VScodeで代用できるから。<br>
+            とりま...<hi>まずアカウントを作らないと始まらない。</hi>自分で調べてアカウントを作ろう。<br>
+            <br>
+            そしたら、リモートリポジトリをクローンして自身のPCに保存しよう。そうすると<hi>ローカルリポジトリとして自身のPCにMKの保管庫が保存され、編集できる</hi>ようになるよ。
+            ここでの変更はローカルリポジトリ内に留まるものであって、すぐにGitHubに反映されるものではないから、「無意識に荒らしちゃうかも...」という心配は無用だよ。<br>
+            じゃあ、クローンしてみよう。<br>
+            <br>
+            1.VScodeを開いて、左タブの「ソース管理」をクリック<br>
+            2.「変更」タブの右にある3点リーダーをクリック<br>
+            3.「クローン」をクリック<br>
+            4.テキストボックスに、m-Keejp.github.ioリポジトリのURL <hi>https://github.com/Em-Keejp/Em-Keejp.github.io</hi> を入れる<br>
+            5.複製先のフォルダを選択(事前に空のフォルダを作るといいかも)<br>
+            <br>
+            リポジトリをクローンできたら、またも<url name="MKのプロフィールのコメント欄">https://scratch.mit.edu/users/mahirokkk/</url>に行ってもらって、今度はGitHubのアカウントを伝えよう。<br>
+            MKが確認したら、Em-Keejp.github.ioリポジトリのコラボレーターに招待するから承認してね。<br>
+            晴れてコラボレーター登録すると、Em-Keejp.github.ioリポジトリにブランチを切ったり、プルリクエストをする権利が与えられるよ。<br>
+            なんか難しそうな機能名が出てきたけど、これらについてはまた「C. 保管庫拡充、編集の方法」にて解説するね。<br>
+            ざっくり言うとクローンしたローカルリポジトリをGitHub上のリモートリポジトリに反映させる機能だよ。
+          </div></div>
+
+        </div>
+      </div>
+
+
+
+      <div class="chapter">
+        <h2 class="toggle close">C. 保管庫拡充、編集の方法</h2>
+        <div class="main">
+            リモートリポジトリをクローンして、自分のPCに保存できたはず。そしたら、これを編集することで保管庫ことウェブサイトを編集できる。<br>
+            基本的に編集内容はGitHubには反映されないから、好き勝手実験するといい。GitHubに編集を反映する方法は別で解説する。<br>
+            ちなみにMKはWebサイトの書き方を基礎となる部分はYouTube動画で、後はChatGPTに聞きまくって覚えた。
+            <div class="episode"><h3 class="toggle close">HTMLの基礎文法</h2><div class="main">
+              ※未完成
+            </div></div>
+            <div class="episode"><h3 class="toggle close">保管庫特有のショートカットHTMLタグ</h2><div class="main">
+              以下に紹介するのは、MKの保管庫のみで通用する特殊なHTMLタグだ。本来のHTMLにはこのタグを設定しても何も起きないが、MKが無理やりJavaScriptの力で使えるように改造した。
+              ちなみにできることはいずれも特殊なことではなく、タイトル通り書く量を少なくするためのショートカットとして導入されている。<br>
+              <br>
+
+              <h3>&lt;user&gt;タグ</h3>
+              &lt;user&gt;mahirokkk&lt;/user&gt;<br>
+              <user>mahirokkk</user><br>
+              <br>
+              Scratchの対象のユーザーへのリンクを作る。<br>
+              <br>
+              <br>
+
+              <h3>&lt;url&gt;タグ</h3>
+              &lt;url name="MK　ビートころころ9"&gt;https://turbowarp.org/235811811?hqpen&offscreen&lt;/url&gt;<br>
+              <url name="MK　ビートころころ9">https://turbowarp.org/235811811?hqpen&offscreen</url><br>
+              <br>
+              対象のサイトへのリンクを作る。<br>
+              <br>
+              <br>
+
+              <h3>&lt;hi&gt;タグ</h3>
+              &lt;hi&gt;強調文字&lt;/hi&gt;<br>
+              <hi>強調文字</hi><br>
+              <br>
+              強調文字を作る。class指定でhiを入れても同じことができる。なお、タグの方のhiは本文の強調以外は想定していない。<br>
+              タイトルとかを強調するときはclass指定でhiを使おう。<br>
+              <br>
+              <br>
+
+              <h3>&lt;lo&gt;タグ</h3>
+              &lt;lo&gt;(弱調文字)ですぅ...&lt;/lo&gt;<br>
+              <lo>(弱調文字)ですぅ...</lo><br>
+              <br>
+              弱調文字を作る。class指定でloを入れても同じことができる。なお、タグ、class指定双方で本文以外での使用は想定していない。<br>
+              かっこ書きで注釈を入れたい時とかに使おう。<br>
+              <br>
+              <br>
+
+            </div></div>
+            <div class="episode"><h3 class="toggle close">CSSの基礎文法</h2><div class="main">
+              ※未完成
+            </div></div>
+            <div class="episode"><h3 class="toggle close">JavaScriptの基礎文法</h2><div class="main">
+              ※未完成
+            </div></div>
+            <div class="episode"><h3 class="toggle close">VScodeの便利コマンド</h2><div class="main">
+              VScodeに限らず覚えておいた方が良いコマンドも含む。<br>
+              <h3>VScode外にも通用する、習得必須コマンド</h3>
+              1. Ctrl + A ...全選択<br>
+              2. Ctrl + F ...検索<br>
+              3. Ctrl + S ...セーブ<br>
+              4. Ctrl + C ...コピー<br>
+              5. Ctrl + V ...ペースト <lo>(テンプレートのフォルダごとコピーして編集したりもできる。)</lo><br>
+              <h3>覚えてると便利</h3>
+              1. VS codeでCtrl + B ...プライマリ サイドバーの表示非表示<br>
+              2. ブラウザでF12...デバッガを開く<br>
+            </div></div>
+            <div class="episode"><h3 class="toggle close">自分の変更をGitHubに反映する方法</h2><div class="main">
+              ※未完成
+            </div></div>
+        </div>
+      </div>
+
+
+
+      
+
+
+        </div>
+      </div>
+      <br>
+      <lo>文体が場所によってまるでボールころころのようにコロコロ変わるじゃん...　どうしてこうなった。</lo>
+
+  </p>
+
+
+ 
+
+
+
+  
+
+
+
+
+  
+
+<p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</p>
+  <script src="./index.js"></script>
+  <script src="../../index.js"></script>
+</body>
+<html>
+
+<!--
+MEMO リンクの書式
+
+<a href="■名前■" target="_blank" rel="noopener noreferrer">
+      リンク</a>
+
+なお現在は独自タグ<url></url>のおかげでもっと簡単に書ける。
+<url name="■名前■">リンク</url>
+
+
+
+タブの書式
+
+大タブ
+<div class="chapter"><h3 class="toggle close">■大タブ名■</h2><div class="main">
+      いえーい
+</div></div>
+
+小タブ
+<div class="episode"><h3 class="toggle close">■小タブ名■</h2><div class="main">
+      いえーい
+</div></div>
+
+-->
+

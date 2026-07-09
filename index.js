@@ -9,16 +9,19 @@ function createMusic(composer,music,vocal,filenumber){
   }
 
   return `<tr>
-          <td>${musictitle}</td>
-          <td><a href="./lyrics/${filenumber}.txt" target="_blank" rel="noopener noreferrer"><button>見る</button></td>
           <td><a href="./lyrics/${filenumber}.txt" download="${music} 歌詞.txt"><button>歌詞をダウンロード(txt)</button></td>
+          <td><a href="./lyrics/${filenumber}.txt" target="_blank" rel="noopener noreferrer"><button>見る</button></td>
+          <td>${musictitle}</td>
           </tr>`;
 }
 
 //表を自動で作る関数(通常版)
 function createTopics(topicType , topicName , fileName){
-    return `<tr>
-            <td><span class=${topicType}>${topicName}</span></td>
+    let label=`<td><span class="${topicType}">${topicName}</span></td>`;
+    if(fileName){
+        label=`<td><span class="${topicType}"><a href="${fileName}" style="text-decoration:none; color:inherit;">${topicName}</a></span></td>`;
+    }
+    return `<tr>`+`${label}`+`
             <td>`+topicButton(topicType , topicName , fileName)+`</td>
             </tr>`;
 }
@@ -183,7 +186,11 @@ const li_tale_private=[
 //表データ(記事)
 const li_article=[
     createTopics("article","自己紹介","./-Article/自己紹介/index.html"),
+    createTopics("article","Scratchで仲がいい人たち","./-Article/仲良し/index.html"),
+    createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","./-Article/しりとり情報/index.html"),
+    //以上、お知らせの方でも同じ内容を掲載
     createTopics("article","プロフィールの独り言、ギャグ一覧","./-Article/profile/index.html"),
+    createTopics("article","この保管庫を編集したい方向けマニュアル","./-Article/Storage_Manual/index.html"),
     createTopics("article","MKボールころころコース作りマニュアル-IMS編","./-Article/IMS_Manual/index.html"),
     createTopics("article","合作er達の最高傑作のボールころころ",""),
     createTopics("article","クリア困難なボールころころ",""),
@@ -200,11 +207,11 @@ const li_template=[
 
 //表データ(お知らせ)
 const li_notification=[
-    createTopics("article","自己紹介","./-Article/自己紹介/index.html"),
+    li_article[0],
     createTopics("article","このサイトを作るのに参考にしたもの","./-Article/参考/index.html"),
-    createTopics("article","Scratchで仲がいい人たち","./-Article/仲良し/index.html"),
-    createTopics("article","よくMKに寄せられる質問",""),
-    createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","./-Article/しりとり情報/index.html"),
+    li_article[1],
+    createTopics("article","よくMKに寄せられる質問","./-Article/よくある質問/index.html"),
+    li_article[2],
     createTopics("article","関連リンク","./-Article/関連リンク/index.html"),
 ];
 
