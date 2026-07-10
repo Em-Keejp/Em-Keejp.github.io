@@ -17,38 +17,40 @@ function createMusic(composer,music,vocal,filenumber){
 
 //表を自動で作る関数(通常版)
 function createTopics(topicType , topicName , fileName){
+
+    let refferFolderName="";
+    let refferFilePath="";
+    if(fileName=="auto"){
+            if(topicType=="tool"){
+            refferFolderName="-Tool";
+        }else if(topicType=="game"){
+            refferFolderName="-Game";
+        }else if(topicType=="tale"){
+            refferFolderName="-Tale";
+        }else if(topicType=="article"){
+            refferFolderName="-Article";
+        }else if(topicType=="links"){
+            refferFolderName="-Links";
+        }
+        refferFilePath=`./${refferFolderName}/${topicName}/index.html`;
+    }else{
+        refferFilePath=fileName;
+    }
+
     let label=`<td><span class="${topicType}">${topicName}</span></td>`;
-    if(fileName){
-        label=`<td><span class="${topicType}"><a href="${fileName}" style="text-decoration:none; color:inherit;">${topicName}</a></span></td>`;
+    if(refferFilePath){
+        label=`<td><span class="${topicType}"><a href="${refferFilePath}" style="text-decoration:none; color:inherit;">${topicName}</a></span></td>`;
     }
     return `<tr>`+`${label}`+`
-            <td>`+topicButton(topicType , topicName , fileName)+`</td>
+            <td>`+topicButton(topicType , topicName , refferFilePath)+`</td>
             </tr>`;
 }
 
 function topicButton(topicType , topicName , fileName){ //トピックボタンを作る関数
-    if(fileName){
-        if(fileName=="auto"){
-            let refferFolderName="";
-                  if(topicType=="tool"){
-                refferFolderName="-Tool";
-            }else if(topicType=="game"){
-                refferFolderName="-Game";
-            }else if(topicType=="tale"){
-                refferFolderName="-Tale";
-            }else if(topicType=="article"){
-                refferFolderName="-Article";
-            }else if(topicType=="links"){
-                refferFolderName="-Links";
-            }
-             return`
-            <a href="./${refferFolderName}/${topicName}/index.html"><button class="topic">詳細を見る</button></a>
-            `;
-        }else{
-            return`
-            <a href="${fileName}"><button class="topic">詳細を見る</button></a>
-            `;
-        }
+    if(fileName){ 
+        return`
+        <a href="${fileName}"><button class="topic">詳細を見る</button></a>
+        `;
     }else{
         return`
         <button disabled class="topic">[!]未実装</button>
