@@ -537,4 +537,6 @@ const allArea = document.getElementById("allArea");
         <a href="" target="_blank" rel="noopener noreferrer">
       リンク</a>
 
+    一応<url>タグでも代用可能
+
     */
