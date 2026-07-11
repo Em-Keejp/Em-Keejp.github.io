@@ -195,7 +195,7 @@ const li_article=[
     createTopics("article","この保管庫を編集したい方向けマニュアル","./-Article/Storage_Manual/index.html"),
     createTopics("article","MKボールころころコース作りマニュアル-IMS編","./-Article/IMS_Manual/index.html"),
     createTopics("article","合作er達の最高傑作のボールころころ",""),
-    createTopics("article","クリア困難なボールころころ",""),
+    createTopics("article","クリア困難なボールころころ","auto"),
 ];
 
 //表データ(テンプレート)

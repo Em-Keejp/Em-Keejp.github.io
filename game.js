@@ -94,15 +94,15 @@ function gameDesMKRS(length , addition , difficulty , summary , image , BGM){
             </colgroup>
 
             <tr>
-                <td span class="index right up">長さ :</td>
+                <td class="index right up">長さ :</td>
                 <td>${length}</td>
             </tr>
             <tr>
-                <td span class="index right up">追加物 :</td>
+                <td class="index right up">追加物 :</td>
                 <td>${addition}</td>
             </tr>
             <tr>
-                <td span class="index right up">難易度 :</td>
+                <td class="index right up">難易度 :</td>
                 <td><table>${difficulty}</table></td>
             </tr>
         </table>
