@@ -211,6 +211,7 @@ const li_template=[
 const li_notification=[
     li_article[0],
     createTopics("article","このサイトを作るのに参考にしたもの","./-Article/参考/index.html"),
+    createTopics("article","このサイトの執筆協力者","./-Article/staff_members/index.html"),
     li_article[1],
     createTopics("article","よくMKに寄せられる質問","./-Article/よくある質問/index.html"),
     li_article[2],
