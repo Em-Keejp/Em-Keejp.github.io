@@ -392,6 +392,7 @@ const topicHeader = document.getElementById("topicHeader");
     }
 
     //フッター部-----------------------------------------------------------------------------
+    //開発の関係でフッターが存在しないページもある。ここには他にも情報を追加していく予定
     const topicFooter = document.getElementById("topicFooter");
     if(topicFooter){
         let writers=``;
