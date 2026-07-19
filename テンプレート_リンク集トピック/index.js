@@ -1,3 +1,23 @@
+function createWriterList(name , memo){
+    return `
+            ・<a href="https://scratch.mit.edu/users/${name}/" target="_blank" rel="noopener noreferrer">@${name}</a><br>
+            　${memo}<br><br>
+            `;
+}
+
+
+const li_WrittenBy=[]; //このページには書いた人を表示しない。
+
+
+
+
+
+
+
+
+
+
+
 const li_links_template=[
     createLinks("tool","ツールのテンプレート","テンプレート_ツールトピック/index.html"),
     createLinks("game","ゲームのテンプレート","テンプレート_ゲームトピック/index.html"),
