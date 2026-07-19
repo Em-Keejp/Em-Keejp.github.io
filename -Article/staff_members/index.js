@@ -11,6 +11,8 @@ function createNakayoshiList(name , memo){
 const staff=[
     createNakayoshiList("mahirokkk","MKの保管庫を作った人"),
     createNakayoshiList("taru-ru","時々執筆に協力してくれている。まだ明確な役割という役割は決まっていない。"),
+    createNakayoshiList("rollinghuman",""),
+    createNakayoshiList("taki567",""),
 ];
 
 document.getElementById("staff").innerHTML=`
