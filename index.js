@@ -218,10 +218,11 @@ const li_notification=[
     createTopics("article","関連リンク","./-Article/関連リンク/index.html"),
 ];
 
-
-
-
-
+//表データ(保管庫Games)
+const li_storagegames=[
+    createTopics("storagegame","保管庫MiniGames","-Storage Games/MiniGames/index.html"),
+    createTopics("storagegame","保管庫BigGames","-Storage Games/BigGames/index.html"),
+];
 
         
 // 実行部------------------------------------------------------------------------------------
@@ -297,6 +298,16 @@ const template = document.getElementById("template");
             topicTable("テンプレート",li_template,` <p>
             ツール、ゲーム、物語、記事の4種別のトピックのテンプレートです。<br>
             ほぼ作者用。<br>
+            </p>` );
+        }
+
+//保管庫Games
+const storagegames = document.getElementById("storagegames");
+        if(storagegames){
+            storagegames.innerHTML=
+            topicTable("保管庫Games",li_storagegames,` <p>
+            保管庫Gamesは、保管庫の愉快な(?)仲間たちがhtmlで作ったゲームをまとめたページです。(今はtaki567だけだけど...)<br>
+            ぜひ遊んでください。<br>
             </p>` );
         }
 
