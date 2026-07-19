@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Jump Game</title>
+    <style>
+        body { text-align: center; background: #f0f0f0; font-family: sans-serif; }
+        canvas { background: #fff; border: 2px solid #333; margin-top: 20px; }
+        .info { margin-top: 10px; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>ジャンプゲーム</h1>
+    <canvas id="gameCanvas" width="600" height="200"></canvas>
+    <div class="info">スペースキーかクリックでジャンプ！</div>
+    <script>
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // ゲームの設定
+        let score = 0;
+        let isGameOver = false;
+        let gamestarted = false;
+
+        // プレイヤー(自機)
+        const player = {
+            x: 50, y: 150,
+            width: 30, height:30,
+            color: "#0095DD",
+            dy: 0,
+            jumpPower: -10,
+            gravity: 0.6,
+            grounded: true  // 地面に着いているか
+        };
+
+        // 障害物
+        const obstacle = {
+            x: 600, y: 150,
+            width: 20, height: 40,
+            color: "#FF4B4B",
+            speed: 5,
+            step: 0
+        };
+
+        function draw() {
+            if (isGameOver) {
+                ctx.fillStyle = "black";
+                ctx.font = "30px Arial";
+                ctx.fillText("GAME OVER", 220, 100);
+                ctx.font = "20px Arial";
+                ctx.fillText("Click to Restart", 240, 130);
+                return;
+            }
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // --- プレイヤーの物理計算 ---
+            player.dy += player.gravity;
+            player.y += player.dy;
+
+            // 地面との接触判定
+            if (player.y > 150) {
+                player.y = 150;
+                player.dy = 0;
+                player.grounded = true;
+            }
+
+            // --- 障害物の移動 ---
+            if (!gamestarted) {
+                obstacle.x = 600; // ゲーム開始前は障害物をリセット
+                ctx.fillText(`スペースキーかクリックで開始`, 160, 100);
+            }
+            obstacle.x -= obstacle.speed;
+            if (obstacle.x < -obstacle.width) {
+                obstacle.x = 600;
+                score++;
+                obstacle.step += 1;
+                if (obstacle.step % 4 == 0){
+                    obstacle.speed += 1; // 徐々に速くする
+                }
+                obstacle.y = 100+(Math.floor(Math.random()*2)*50);
+            }
+
+            // --- 当たり判定 ---
+            if (player.x < obstacle.x + obstacle.width &&
+                player.x + player.width > obstacle.x &&
+                player.y < obstacle.y + obstacle.height &&
+                player.y + player.height > obstacle.y) {
+                isGameOver = true;
+            }
+
+            // --- 描画 ---
+            // プレイヤー
+            ctx.fillStyle = player.color;
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+
+            // 障害物
+            ctx.fillStyle = obstacle.color;
+            ctx.fillRect(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
+
+            // スコア表示
+            ctx.fillStyle = "#333";
+            ctx.font = "20px Arial";
+            ctx.fillText(`Score: ${score}`, 20, 30);
+
+            requestAnimationFrame(draw);
+        }
+
+        // ジャンプ操作
+        function jump() {
+            if (isGameOver) {
+                // リスタート処理
+                location.reload();
+            } else if (player.grounded) {
+                player.dy = player.jumpPower;
+                player.grounded = false;
+                gamestarted = true;
+            }
+        }
+
+        window.addEventListener("keydown", (e) => { if ( e.code === "Space") jump();});
+        canvas.addEventListener("mousedown", jump);
+
+        draw();
+    </script>
+</body>
+</html>
