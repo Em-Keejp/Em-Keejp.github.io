@@ -1,3 +1,16 @@
+function createWriterList(name , memo){
+    return `
+            ・<a href="https://scratch.mit.edu/users/${name}/" target="_blank" rel="noopener noreferrer">@${name}</a><br>
+            　${memo}<br>
+            `;
+}
+
+
+const li_WrittenBy=[createWriterList("mahirokkk",`新作の情報追加担当<br>`),
+                    createWriterList("rollinghuman",`既存作品の情報埋め担当`),];
+
+
+
 const li_MKBC_H=[
     createGames("H1　★1" , gameURL("317860246","","")+gameDesMKRS(`250`,`床、ジャンプ床`,
             difficulty("　通常","MKRSstar",1)+
