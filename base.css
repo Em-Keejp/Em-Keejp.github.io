@@ -28,6 +28,9 @@ body{
 .b_links{
     background-color: #fdfaff;
 }
+.b_storagegame{
+    background-color: #faffff;
+}
 .b_other{
     background-color: #ffffff;
 }
@@ -140,6 +143,12 @@ lo{ /*弱調(タグ)*/
 
 .links{
     color:#7722cc;
+    font-weight:500;
+}
+
+
+.storagegame{
+    color:#22ccdd;
     font-weight:500;
 }
 

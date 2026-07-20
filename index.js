@@ -31,6 +31,8 @@ function createTopics(topicType , topicName , fileName){
             refferFolderName="-Article";
         }else if(topicType=="links"){
             refferFolderName="-Links";
+        }else if(topicType=="storagegame"){
+            refferFolderName="-Storage Games";
         }
         refferFilePath=`./${refferFolderName}/${topicName}/index.html`;
     }else{
@@ -359,6 +361,10 @@ const topicHeader = document.getElementById("topicHeader");
             category.class = "links";
             category.backgroudClass = "b_links";
             category.name = "リンク集";
+        }else if(parent=="-Storage%20Games"){
+            category.class = "storagegame";
+            category.backgroudClass = "b_storagegame";
+            category.name = "保管庫ゲームス";
         }else{
             category.class = "other";
             category.backgroudClass = "b_other";
