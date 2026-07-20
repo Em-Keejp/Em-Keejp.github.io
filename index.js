@@ -31,6 +31,8 @@ function createTopics(topicType , topicName , fileName){
             refferFolderName="-Article";
         }else if(topicType=="links"){
             refferFolderName="-Links";
+        }else if(topicType=="storagegame"){
+            refferFolderName="-Storage Games";
         }
         refferFilePath=`./${refferFolderName}/${topicName}/index.html`;
     }else{
@@ -359,6 +361,10 @@ const topicHeader = document.getElementById("topicHeader");
             category.class = "links";
             category.backgroudClass = "b_links";
             category.name = "リンク集";
+        }else if(parent=="-Storage%20Games"){
+            category.class = "storagegame";
+            category.backgroudClass = "b_storagegame";
+            category.name = "保管庫ゲームス";
         }else{
             category.class = "other";
             category.backgroudClass = "b_other";
@@ -395,20 +401,24 @@ const topicHeader = document.getElementById("topicHeader");
     //開発の関係でフッターが存在しないページもある。ここには他にも情報を追加していく予定
     const topicFooter = document.getElementById("topicFooter");
     if(topicFooter){
+
         let writers=``;
-        if(li_WrittenBy.length>0){ //執筆協力者が一人でも記されていたら、「この記事を書いた人」表示する。
+
+        if (typeof li_WrittenBy != "undefined"){//対象の配列が存在する?
+            if(li_WrittenBy.length>0){//執筆協力者が一人でも記されていたら、「この記事を書いた人」表示する。
             writers=`
             <h3>この記事を書いた人 (<span class="hi">${li_WrittenBy.length}</span>人)</h3>
             <table border="1">
                 ${li_WrittenBy.join("")}
             </table>`
+            }
         }
+
         topicFooter.innerHTML=`
             <br><br><br><br><br>${writers}
-            `
-            ;
-    }
+        `;
 
+    }
     
 
     //リンクコピー linkCopy---------------------------------------------------------------------------
