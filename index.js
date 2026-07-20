@@ -391,6 +391,26 @@ const topicHeader = document.getElementById("topicHeader");
             `;
     }
 
+    //フッター部-----------------------------------------------------------------------------
+    //開発の関係でフッターが存在しないページもある。ここには他にも情報を追加していく予定
+    const topicFooter = document.getElementById("topicFooter");
+    if(topicFooter){
+        let writers=``;
+        if(li_WrittenBy.length>0){ //執筆協力者が一人でも記されていたら、「この記事を書いた人」表示する。
+            writers=`
+            <h3>この記事を書いた人 (<span class="hi">${li_WrittenBy.length}</span>人)</h3>
+            <table border="1">
+                ${li_WrittenBy.join("")}
+            </table>`
+        }
+        topicFooter.innerHTML=`
+            <br><br><br><br><br>${writers}
+            `
+            ;
+    }
+
+    
+
     //リンクコピー linkCopy---------------------------------------------------------------------------
     const linkCopy = document.getElementById("linkCopy");
         if(linkCopy){

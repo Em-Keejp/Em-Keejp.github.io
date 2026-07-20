@@ -6,5 +6,10 @@ function createWriterList(name , memo){
 }
 
 
-const li_WrittenBy=[createWriterList("mahirokkk","備考"),
+const li_WrittenBy=[createWriterList("mahirokkk",""),
                     ];
+
+
+
+
+
