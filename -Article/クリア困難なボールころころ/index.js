@@ -22,7 +22,7 @@ const li_hardRollingSky=[
     createHardRollingSkyTopics("物量認識難、おまけに高等テクニックの詰め合わせ「MK　番外編ころころ6」",
         "MK　番外編ころころ6","mahirokkk","https://turbowarp.org/1203213654?offscreen&limitless&hqpen&fps=60",
         `
-            ここに説明を書く。
+            むずいよ。
         `
     ),
 
