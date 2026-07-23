@@ -407,15 +407,14 @@ const topicHeader = document.getElementById("topicHeader");
         if (typeof li_WrittenBy != "undefined"){//対象の配列が存在する?
             if(li_WrittenBy.length>0){//執筆協力者が一人でも記されていたら、「この記事を書いた人」表示する。
             writers=`
-            <h3>この記事を書いた人 (<span class="hi">${li_WrittenBy.length}</span>人)</h3>
-            <table border="1">
+            <div class="episode"><h3 class="toggle close">この記事を書いた人 (<span class="hi">${li_WrittenBy.length}</span>人)</h3><div class="main">
                 ${li_WrittenBy.join("")}
-            </table>`
+            </div></div>`
             }
         }
 
         topicFooter.innerHTML=`
-            <br><br><br><br><br>${writers}
+            <br><br><br><br><br>${writers}<br><br><br><br><br>
         `;
 
     }

@@ -1,3 +1,16 @@
+function createWriterList(name , memo){
+    return `
+            ・<a href="https://scratch.mit.edu/users/${name}/" target="_blank" rel="noopener noreferrer">@${name}</a><br>
+            　${memo}<br>
+            `;
+}
+
+
+const li_WrittenBy=[createWriterList("taru-ru",``),
+                    ];
+
+
+
 function createHardRollingSkyTopics(title , name , creator , url , description){
     return `
         <div class="episode"><h3 class="toggle close">${title}</h2><div class="main"  style="padding-left: 20px;">
