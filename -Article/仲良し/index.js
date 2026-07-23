@@ -1,3 +1,18 @@
+function createWriterList(name , memo){
+    return `
+            ・<a href="https://scratch.mit.edu/users/${name}/" target="_blank" rel="noopener noreferrer">@${name}</a><br>
+            　${memo}<br>
+            `;
+}
+
+
+const li_WrittenBy=[createWriterList("mahirokkk",``),
+                    ];
+
+
+
+
+
 function createNakayoshiList(name , memo){
     return `
             <a href="https://scratch.mit.edu/users/${name}/" target="_blank" rel="noopener noreferrer">@${name}</a><br>
@@ -41,6 +56,10 @@ const nakayoshi=[
     createNakayoshiList("wanpakubouzu","もうちょっとは謙虚さというものを身に着けてほしい...!!!"),
     createNakayoshiList("5-4-ON","ついに芯だけになったトイレットペーパー...のようだ。"),
     createNakayoshiList("tyottogan","BΕ15を1バリア全回収、BE12をノーダメ全回収するなど実力はかなり高い。ボールころころシリーズも作っている。"),
+    createNakayoshiList("SANti-36","同じプロセカ好きということで、波長が合いそう。名前の元ネタはAPPEND36のSAN値直葬って曲から。"),
+
+    
+
 
 
 

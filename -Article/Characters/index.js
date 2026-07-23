@@ -1,3 +1,15 @@
+function createWriterList(name , memo){
+    return `
+            ・<a href="https://scratch.mit.edu/users/${name}/" target="_blank" rel="noopener noreferrer">@${name}</a><br>
+            　${memo}<br>
+            `;
+}
+
+
+const li_WrittenBy=[createWriterList("mahirokkk",``),
+                    ];
+
+
 function characterIntroduce(name,a,b,c,d,e,f,g,h,i,j,k,l){
     let profile="[!]未実装";
     if(c!=``){
