@@ -187,6 +187,12 @@ const li_tale_private=[
     createTopics("tale","MKボールころころ一斉消失事件、そしてIMSの誕生まで",""),
 ];
 
+//表データ(マニュアル)
+const li_manual=[
+    createTopics("article","この保管庫を編集したい方向けマニュアル","./-Article/Storage_Manual/index.html"),
+    createTopics("article","MKボールころころコース作りマニュアル-IMS編","./-Article/IMS_Manual/index.html"),
+];
+
 //表データ(記事)
 const li_article=[
     createTopics("article","自己紹介","./-Article/自己紹介/index.html"),
@@ -194,8 +200,6 @@ const li_article=[
     createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","./-Article/しりとり情報/index.html"),
     //以上、お知らせの方でも同じ内容を掲載
     createTopics("article","プロフィールの独り言、ギャグ一覧","./-Article/profile/index.html"),
-    createTopics("article","この保管庫を編集したい方向けマニュアル","./-Article/Storage_Manual/index.html"),
-    createTopics("article","MKボールころころコース作りマニュアル-IMS編","./-Article/IMS_Manual/index.html"),
     createTopics("article","合作er達の最高傑作のボールころころ",""),
     createTopics("article","クリア困難なボールころころ","auto"),
 ];
@@ -282,14 +286,17 @@ const tale = document.getElementById("tale");
 const article = document.getElementById("article");
         if(article){
             article.innerHTML=
-            topicTable("記事",li_article,` <p>
-            気ままに更新します。主に自分の体験談とか好きなこととか
+            topicTable("マニュアル",li_manual,` <p>
+            マニュアルの方は保管庫の拡充のしかたIMSの使い方とかをまとめた記事が今あります。ただしまだろくな内容になってないので執筆協力者募集中です。<br>
+            記事の方は気ままに更新します。主に自分の体験談とか好きなこととか
             <a href="https://www.youtube.com/watch?v=OnCFEo_pXaY" target="_blank" rel="noopener noreferrer">
             好きな総菜発表ドラゴン</a>とか((殴<br>
-            あとScratchで頻繁に更新されてるほぼギャグな「私について」とか。<br>
-            まあ結論、有用な情報はほぼ皆無に等しいのでよろしくお願いします。
-            </p>` );
+            あとScratchで頻繁に更新されてるほぼギャグな「私について」とか。まあ結論、<hi>有用な情報はほぼ皆無</hi>に等しいのでよろしくお願いします。<br>
+            </p>` )
+            +
+            topicTable("記事",li_article,``);
         }
+        
 
 
 
