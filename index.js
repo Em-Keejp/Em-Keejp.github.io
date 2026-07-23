@@ -515,6 +515,12 @@ const topicHeader = document.getElementById("topicHeader");
         }
         c.insertAdjacentHTML("afterend" , `<br>`);
     });
+    
+    //markdownタグ自動変換機構
+    document.querySelectorAll("markdown").forEach(markdown=>{
+        markdown.innerHTML = marked.parse(markdown.textContent);
+                              console.log(markdown.textContent);
+    });
 
     //userタグ自動変換機構
     document.querySelectorAll("user").forEach(user=>{
