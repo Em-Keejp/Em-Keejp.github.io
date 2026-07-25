@@ -191,6 +191,7 @@ const li_tale_private=[
 const li_manual=[
     createTopics("article","この保管庫を編集したい方向けマニュアル","./-Article/Storage_Manual/index.html"),
     createTopics("article","MKボールころころコース作りマニュアル-IMS編","./-Article/IMS_Manual/index.html"),
+    createTopics("article","マークダウン記法のマニュアル","./-Article/Markdown_Manual/index.html"),
 ];
 
 //表データ(記事)
@@ -516,10 +517,31 @@ const topicHeader = document.getElementById("topicHeader");
         c.insertAdjacentHTML("afterend" , `<br>`);
     });
     
-    //markdownタグ自動変換機構
-    document.querySelectorAll("markdown").forEach(markdown=>{
-        markdown.innerHTML = marked.parse(markdown.textContent);
-                              console.log(markdown.textContent);
+    //markdownクラス自動変換機構
+    document.querySelectorAll(".markdown").forEach(markdown=>{
+        const div = document.createElement("div");
+        div.innerHTML = marked.parse( //&lt;と&gt;は自動変換する。
+            markdown.textContent.replaceAll("&lt;","<").replaceAll("&gt;",">")
+        );
+        markdown.replaceWith(div);
+    });
+
+    //markdownのコード自動変換機構
+    document.querySelectorAll("code").forEach(block => {
+        hljs.highlightElement(block);
+        block.style=`
+            background :linear-gradient(rgba(127, 127, 127, 0.15));
+            padding: 3px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-family: Consolas, monospace;
+            max-width: 80%;
+        `
+    });
+
+    //markdownのstrongタグ自動変換機構
+    document.querySelectorAll("strong").forEach(strong => {
+        strong.innerHTML=`<hi>${strong.textContent}</hi>`;
     });
 
     //userタグ自動変換機構
