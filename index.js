@@ -201,7 +201,7 @@ const li_article=[
     createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","./-Article/しりとり情報/index.html"),
     //以上、お知らせの方でも同じ内容を掲載
     createTopics("article","プロフィールの独り言、ギャグ一覧","./-Article/profile/index.html"),
-    createTopics("article","合作er達の最高傑作のボールころころ",""),
+    createTopics("article","合作er達の最高傑作のボールころころ","auto"),
     createTopics("article","クリア困難なボールころころ","auto"),
 ];
 
