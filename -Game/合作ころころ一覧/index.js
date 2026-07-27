@@ -1,3 +1,17 @@
+function createWriterList(name , memo){
+    return `
+            ・<a href="https://scratch.mit.edu/users/${name}/" target="_blank" rel="noopener noreferrer">@${name}</a><br>
+            　${memo}<br>
+            `;
+}
+
+
+const li_WrittenBy=[createWriterList("mahirokkk",``),
+                    ];
+
+
+
+
 const li_CCI=[
     createGames("CCI1　合作ころころI - 区間1" , gameURL("1190895845","","","ScDeprecated")+gameDesCCRS(`<user>take_take_take</user>`,`583`,`583`,`縦レーザー(語彙力)、下が通行可能・不可ボール(語彙力)、ライブレーザー (親作品不明)`,
             difficulty("　通常","MKRSstar",8)+
