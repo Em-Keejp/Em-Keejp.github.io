@@ -780,22 +780,31 @@ const li_MKBC_O=[
         ,`[東方]針小棒大の天守閣`)
     ),
 
-    createGames("O16　★10" , gameURL("","","")+gameDesMKRS(`--`,`--`,
-            difficulty("通常","MKRSstar",)+
+    createGames("O16　★10" , gameURL("549994443","","")+gameDesMKRS(`660`,`なし(O15比較)`,
+            difficulty("通常","MKRSstar",10)+
             difficulty("全回収","none",)
         ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+            最初のウェーブゾーンが難所ですが、そのほかにもたくさんあります。つまりガチ難易度。前作のロングステージより難しい気がする<br>
+            <br>
+            作者は一重バリアで40回ぐらいでクリア<lo>(超鬼畜だった。33%地点が異常に難しい)</lo><br>
+            <br>
+            9重バリアでなら2回でクリア
         `,``
-        ,`--`)
+        ,`rollingsky-曙`)
     ),
 
-    createGames("O17　★6" , gameURL("","","")+gameDesMKRS(`--`,`--`,
-            difficulty("通常","MKRSstar",)+
+    createGames("O17　★6" , gameURL("550324932","","")+gameDesMKRS(`567`,`分裂するジャンプ床、合体するジャンプ床(O16比較)`,
+            difficulty("通常","MKRSstar",6)+
             difficulty("全回収","none",)
         ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+            難易度が前作よりかなり緩和されました、ただ初見殺しは健在です。<br>
+            <br>
+            後、今作から前回の自分のプレーをRキーを押して見れるようになりました!　ぜひ使って見て!<br>
+            <br>
+            作者は一重バリアで一発クリアだよ<lo>(おまけの一発クリアは珍しい)</lo><br>
+            <lo>コースの長さが超ビミョー…</lo>
         `,``
-        ,`--`)
+        ,`[東方]月まで届け、不死の煙`)
     ),
 
     createGames("O18　★9" , gameURL("550489719","","")+gameDesMKRS(`700`,`視覚状態変化 (O17比較)`,
@@ -809,58 +818,103 @@ const li_MKBC_O=[
         ,`[ローリングスカイ] 遺跡`)
     ),
 
-    createGames("O19　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`,
-            difficulty("通常","MKRSstar",)+
+    createGames("O19　★9" , gameURL("550593970","","")+gameDesMKRS(`650`,`視覚状態変化、「ウェーブ」(O18比較)`,
+            difficulty("通常","MKRSstar",9)+
             difficulty("全回収","none",)
         ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+            視覚状態変化、「ウェーブ」追加　赤い菱形で、画面がぐわングワンします。これは酔い注意!!<br>
+            <br>
+            前作よりは短いです<br>
+            今回は、最後にぐわんぐわん+ステップダウンの難関が待ち受けています。<br>
+            <br>
+            作者は10回くらいでクリア
         `,``
-        ,`--`)
+        ,`東方原曲　恋色マスタースパーク`)
     ),
 
-    createGames("O20　★10　longstage13" , gameURL("","","")+gameDesMKRS(`--`,`--`,
-            difficulty("通常","MKRSstar",)+
+    createGames("O20　★10　longstage13" , gameURL("551780295","","")+gameDesMKRS(`600×4`,`なし(O19比較)`,
+            difficulty("通常","MKRSstar",10)+
             difficulty("全回収","none",)
         ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+            とにかく初見殺しむずいです。100%当たりはおまけロングステージ過去作で一番短く、チェックポイントまでの間隔は短いですが、そこまで本当にバリアを温存するのが難しいコースになっております。長さもMKの中では歴代2位です。<br>
+            1st...本編35　3500 (700x5)<br>
+            2nd...おまけ20　2400 (600x4)<br>
+            3rd...おまけ15　2100 (700x3)<br>
+            4th...本編20　2000 (500x4)<br>
+            4th...おまけ8　2000<br>
+            5th...おまけ10、ボーナス10　1800 (900x2)<br>
+            5th...本編25、本編30　1800 (600x3)<br>
+            <br>
+            作者は5回ぐらいでクリア
         `,``
-        ,`--`)
+        ,`[東方]厄神様の通り道<br>
+        [東方]幻想浄瑠璃`)
     ),
 
-    createGames("O21　★10" , gameURL("","","")+gameDesMKRS(`--`,`--`,
-            difficulty("通常","MKRSstar",)+
+    createGames("O21　★10" , gameURL("552818265","","")+gameDesMKRS(`300`,`なし(O20比較)`,
+            difficulty("通常","MKRSstar",10)+
             difficulty("全回収","none",)
         ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+            短めのステージですが、複雑で高難易度に設計されています。クリアは困難でしょう。<br>
+            <br>
+            作者は9重バリアで2回くらいでクリア<br>
+            <br>
+            一重バリアでなら15回くらいでクリア
         `,``
-        ,`--`)
+        ,`[東方] 夜が降りてくる ～ Evening Star(後半)`)
     ),
 
-    createGames("O22　★4" , gameURL("","","")+gameDesMKRS(`--`,`--`,
-            difficulty("通常","MKRSstar",)+
+    createGames("O22　★4" , gameURL("552835399","","")+gameDesMKRS(`400`,`風車、市松模様床(O21比較)`,
+            difficulty("通常","MKRSstar",4)+
             difficulty("全回収","none",)
         ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+            風車、市松模様床追加<br>
+            障害物の密度が多いので、かなり難しく感じるかもしれませんが...テクニックだけで見ればすごい簡単です。<br>
+            <br>
+            作者は一発クリア<br>
+            <br>
+            カナアミ<br>
+            ^________________________________________________<br>
+               ああ、なんか俺たちの出番少なくなってない...?　　　|<br>
+               まあ言われてみれば本編28で登場したやつだからな... |<br>
+              今の流行にはもう一生乗れないんだろうな...(´・ω・)　|<br>
+            ---------------------------------------------------------------
         `,``
-        ,`--`)
+        ,`[東方]幻視の夜`)
     ),
 
-    createGames("O23　★10" , gameURL("","","")+gameDesMKRS(`--`,`--`,
-            difficulty("通常","MKRSstar",)+
+    createGames("O23　★10" , gameURL("554046501","","")+gameDesMKRS(`1200`,`カッコ良さそうなオブジェクト(O22比較)`,
+            difficulty("通常","MKRSstar",10)+
             difficulty("全回収","none",)
         ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+            カッコ良さそうなオブジェクト追加<br>
+            今回はかなり長いです。初見殺しもやや多め<br>
+            <br>
+            中盤の文字ゾーンが難所。特に0~9の数字とそれをジャンパー力で越えるのが難しい<br>
+            <br>
+            新タイルが追加される一方、マニアックなタイルは出番をなくしていくのだった...<br>
+            例えば視覚状態変化、ジャンパー力、勝手に3回ジャンプ床、ガードレール(高いバージョン含む)、スピード変更床などなど<br>
+            <br>
+            作者はなんとかクリアした<br>
+            <br>
+            サムネイルが展望台みたいで好き。<br>
+            しっかりとガードレールの活躍が見て取れる。
         `,``
-        ,`--`)
+        ,`ローリングスカイ 7(科学技術) の音楽`)
     ),
 
-    createGames("O24　★6" , gameURL("","","")+gameDesMKRS(`--`,`--`,
-            difficulty("通常","MKRSstar",)+
+    createGames("O24　★6" , gameURL("554563948","","")+gameDesMKRS(`500`,`障害物ブレイカー(O23比較)`,
+            difficulty("通常","MKRSstar",6)+
             difficulty("全回収","none",)
         ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+            障害物ブレイカー追加<br>
+            破壊を楽しもうぜ!!<br>
+            <br>
+            作者は2回でクリア<br>
+            <br>
+            縺翫∪縺代す繝ｪ繝ｼ繧ｺ縺ｮ譛?邨ょ屓縺ｨ縺ｪ繧区ｬ｡蝗樔ｽ
         `,``
-        ,`--`)
+        ,`ローリングスカイ　16の音楽`)
     ),
 
     createGames("O25　???????????　longstage14" , gameURL("555520773","","")+gameDesMKRS(`3000 (1000×3)`,`なし`,
@@ -903,58 +957,87 @@ const li_MKBC_N=[
         作者は一発クリア
     `,``,`[東方] 靈異伝　魔界16～19面テーマ`)),
 
-    createGames("N4　★5" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N4　★5" , gameURL("561114715","","")+gameDesMKRS(`500`,`即席ゲート、スティックハンマー、降ってくる棒、降ってくる短い棒、大ジャンプ、小ジャンプ床`, difficulty("通常","MKRSstar",5)+ difficulty("全回収","none",) ,`
+        即席ゲート、スティックハンマー、降ってくる棒、降ってくる短い棒、大ジャンプ、小ジャンプ床追加<br>
+        初見殺し、テクニック難易度が厳しくなってきました<br>
+        作者は一発クリア<br>
+        あ、今回は脆い床の出番はありません。(背景の都合上)
+    `,``,`[東方]黒い海に紅く`)),
+
+    createGames("N5　★8　longstage15" , gameURL("561211444","","")+gameDesMKRS(`800`,`横移動四角系統の床全種、カナアミ、落ちるカナアミ、上がるカナアミ、スライドジャンプ床、特殊ウェーブ`, difficulty("通常","MKRSstar",8)+ difficulty("全回収","none",) ,`
+            横移動四角系統の床全種、カナアミ、落ちるカナアミ、上がるカナアミ、スライドジャンプ床、特殊ウェーブ追加<br>
+            難所をいくつか設けています。<br>
+            これでも新作最初のロングステージなので手加減はした。次作からリミッター外すので覚悟してください<lo>(一般的なおまけシリーズのステージ並みの難易度になる)</lo><br>
+            作者は一発クリア
+    `,``,`[東方]東方原曲　靈異伝　10面テーマ　天使伝説`)),
+
+
+    createGames("N6　★8" , gameURL("561416544","","")+gameDesMKRS(`600`,`ジャンプ色の出っ張り、ジャンプ色の高い出っ張り、出っ張りゲート、レーザービームキューブ`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+            ジャンプ色の出っ張り、ジャンプ色の高い出っ張り、出っ張りゲート、レーザービームキューブ追加<br>
+            少なくとも前作よりは難しいです。<br>
+            作者は5回でクリア<br>
+            カナアミの描画バグが直りました<br>
+            人人人人人人<br>
+            怒涛の軽量化<br>
+            YYYYYYYYYY
+    `,``,`[東方]ネイティブフェイス`)),
+
+    createGames("N7　★10" , gameURL("313099786","","")+gameDesMKRS(`500`,`ナゾネジ、ウェーブタワー、揺れる棒`, difficulty("通常","MKRSstar",10)+ difficulty("全回収","none",) ,`
+            ナゾネジ、ウェーブタワー、揺れる棒追加<br>
+            作者は本気を出したようです<br>
+            作者100%　ついに「勝った」ぞー!　(PC勢)<br>
+            ただし、これをやった後でもしっかりN8は苦戦するのであった。(なんとしばらくの間クリアできてない。)
+    `,``,`[東方] 有頂天変`)),
+
+    createGames("N8　★9" , gameURL("561707689","","")+gameDesMKRS(`650`,`視覚状態変化全種、分裂する床、ジャンプ床、合体する床、ジャンプ床`, difficulty("通常","MKRSstar",9)+ difficulty("全回収","none",) ,`
+            視覚状態変化全種、分裂する床、ジャンプ床、合体する床、ジャンプ床追加<br>
+            初見殺しがきつい<br>
+            これ絶対難度10はあるような...気のせいか。<br>
+            特に61%とかその他とか...絶対やってるってこれ<br>
+            作者は10回くらいでクリア<br>
+            <br>
+            グラフィックを少しだけ改良しました<br>
+            ・視覚状態変化で視野が変わった時にタイルの縁線も連動して太さが変わるように。<br>
+            ・大ジャンプ床、小ジャンプ床の矢印は透明になったりする<br>
+    `,``,`TheFatRat - Jackpot`)),
+
+    createGames("N9　★10" , gameURL("561767950","","")+gameDesMKRS(`700`,`勝手に3回ジャンプ床、ジャンパー力、風車、障害物ブレイカー`, difficulty("通常","MKRSstar",10)+ difficulty("全回収","none",) ,`
+            勝手に3回ジャンプ床、ジャンパー力、風車、障害物ブレイカー追加<br>
+            中盤は爽快さを意識して作りました!<br>
+            終盤のウェーブジャンプと縦レーザーのゾーンが難しい<br>
+            作者は10回くらいでクリア
+    `,``,`[東方]ネクロファンタジア`)),
+
+    createGames("N10　★10　longstage16" , gameURL("562079862","","")+gameDesMKRS(`500×3`,`ガードレール、高いガードレール、特殊ウェーブ(横一マス移動)　スピード変更床`, difficulty("通常","MKRSstar",10)+ difficulty("全回収","none",) ,`
+            ガードレール、高いガードレール、特殊ウェーブ(横一マス移動)　スピード変更床追加<br>
+            すごく難しいです　手加減?　慈悲?<br>
+            そんなものはありません。<br>
+            作者は40回くらいでクリア
+    `,``,`[東方]ハルトマンの妖怪少女`)),
+
+
+    createGames("N11　★6" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",6)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N5　★8　longstage15" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N12　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",9)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-
-    createGames("N6　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N14　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",9)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N7　★10" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-    createGames("N8　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-    createGames("N9　★10" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-    createGames("N10　★10　longstage16" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-
-    createGames("N11　★6" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-    createGames("N12　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-    createGames("N14　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-    createGames("N15　★10　longstage17" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N15　★10　longstage17" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",10)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
     
-    createGames("N16　★10" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N16　★10" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",10)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N17　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N17　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",8)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
@@ -965,95 +1048,95 @@ const li_MKBC_N=[
             作者は15回くらいでクリア
     `,``,`[東方] 妖魔夜行`)),
 
-    createGames("N19　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N19　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",9)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N20　★6　longstage18" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-
-    createGames("N21　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-    createGames("N22　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-    createGames("N23　★7" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-    createGames("N24　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
-            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
-    `,``,`--`)),
-
-    createGames("N25　★10　longstage19" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N20　★6　longstage18" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",6)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
 
-    createGames("N26　★2" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N21　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",8)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N27　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N22　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",8)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N28　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N23　★7" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",7)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N29　★5" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N24　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",8)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N30　★10　longstage20" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N25　★10　longstage19" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",10)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
 
-    createGames("N31　★5" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N26　★2" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",2)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N32　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N27　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",9)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N33　★10" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N28　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",9)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N34　★10" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N29　★5" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",5)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N35　★10　longstage21" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N30　★10　longstage20" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",10)+ difficulty("全回収","none",) ,`
+            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+    `,``,`--`)),
+
+
+    createGames("N31　★5" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",5)+ difficulty("全回収","none",) ,`
+            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+    `,``,`--`)),
+
+    createGames("N32　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",8)+ difficulty("全回収","none",) ,`
+            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+    `,``,`--`)),
+
+    createGames("N33　★10" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",10)+ difficulty("全回収","none",) ,`
+            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+    `,``,`--`)),
+
+    createGames("N34　★10" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",10)+ difficulty("全回収","none",) ,`
+            ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
+    `,``,`--`)),
+
+    createGames("N35　★10　longstage21" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",10)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
     
-    createGames("N36　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N36　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",9)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N37　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N37　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",9)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N38　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N38　★8" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",8)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N39　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N39　★9" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",9)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 
-    createGames("N40　★7" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",)+ difficulty("全回収","none",) ,`
+    createGames("N40　★7" , gameURL("","","")+gameDesMKRS(`--`,`--`, difficulty("通常","MKRSstar",7)+ difficulty("全回収","none",) ,`
             ※このリンク先はMKが更新するのを面倒くさがったため使えません。次回更新をお待ちください。
     `,``,`--`)),
 ];
