@@ -5,6 +5,9 @@
     <title>よくMKに寄せられる質問</title>
   <link rel="stylesheet" href="../../base.css">
   <link rel="stylesheet" href="./base.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
 </head>
 <body id="allArea" class="reloadWait">
 
@@ -19,11 +22,21 @@
       <div class="main">
 
 
-        <div class="episode"><h3 class="toggle , close">好きな曲は?</h2><div class="main">
+        <div class="episode"><h3 class="toggle , close">好きな曲は?</h3><div class="main">
             まあ... Sakuzyoさんの <url name="怪獣になりたい">https://www.youtube.com/watch?v=TbakFPc4ZTw</url> ですかね。<br>
             初見で聴いたとくのインパクトが忘れられませんしなによりフレーズが単純で歌いやすいです。<br>
             是非皆さんも、この曲で<hi>「怪獣になりたーい！」</hi>と叫びましょう。
         </div></div>
+
+        <div class="episode"><h3 class="toggle , close">ずっと気になってたけどmahirokkkさんってキメラなのかな？</h3><div class="main">
+            全く持って違うと断言します。
+        </div></div>
+
+        <div class="episode"><h3 class="toggle , close">保管庫のurl貼っていいかな</h3><div class="main">
+            いいですよ!　特にTurboWarpコンバータとか便利だと思うので。
+            コメント欄やプロジェクトの説明欄に貼り付けて拡散しよう! <lo>(何を四天王?)</lo>
+        </div></div>
+
 
 
 
@@ -32,10 +45,43 @@
     </div>
 
 
+
+    <div class="chapter">
+      <h2 class="toggle , close">保管庫拡充についての質問</h2>
+      <div class="main">
+
+      </div>
+    </div>
+
+
+
     <div class="chapter"> <!--トグル(クリックで開いたり畳んだりできる。)-->
       <h2 class="toggle , close">ボールころころに関する質問</h2>
       <div class="main">
-        ここにいろいろ書く。
+        
+        <div class="episode"><h3 class="toggle , close">IMSのエディターについて、電極の高さ4のところってどうやって編集できるの?</h3><div class="main">
+            電極編集モードでiキーを押す。(fキーは高さ1、gで2、hで3、そしてiで4)<br>
+            数字キーとかと同時押しすることで高さ1~3同様スイッチ式にできたり消灯、点灯式にできたりする。
+        </div></div>
+
+        <div class="episode"><h3 class="toggle , close">IMSのエディターについて、電極の電流が切り替わるタイミングの編集方法は?</h3><div class="main">
+          f,g,h,iキーのどれか+cキーで質問されるので、ここに数字を入れることで高さ別に切り替わりのタイミングを早めたり遅らせたりできる。<br>
+          ちなみにこれによって判定が変わることはなく、例えば点灯式の電極を大幅に遅らせれば...<br>
+          電流は見えないのにダメージだけ喰らうという悪魔みたいなシステムができます。
+        </div></div>
+
+        <div class="episode"><h3 class="toggle , close">IMSのエディターについて、レーザーをいろいろといじる方法について教えてください。</h3><div class="main">
+          edit6ページでenter+aキーを押すと好きなIDのタイルを設置できる。レーザーは11.0000みたいな書式になっているはずだが、...<br>
+          確か<url name="BE13">https://scratch.mit.edu/projects/224433012</url>以降の背景のコメントにレーザーの書式のヒントがあったかな?　それを見ながらいろいろなIDのレーザーを置いて試してみるといいかも。<br>
+          あと、<user>wanda8gd</user>さんがBE13以降のIMSを用いた難化ころころに変種レーザーを使いまくってるから、それらのIDを見ていくのもありかも。
+        </div></div>
+
+        <div class="episode"><h3 class="toggle , close">IMSで視点が止まる演出ってどうやって追加・Sakuzyoするんですか？</h3><div class="main">
+          ※回答募集中...
+        </div></div>
+
+        
+
       </div>
     </div>
 
@@ -46,6 +92,24 @@
       <h2 class="toggle , close">クリッカーRPGに関する質問</h2>
       <div class="main">
         ここにいろいろ書く。
+      </div>
+    </div>
+
+
+
+    <div class="chapter"> <!--トグル(クリックで開いたり畳んだりできる。)-->
+      <h2 class="toggle , close">MKの物語に関する質問</h2>
+      <div class="main">
+        ここにいろいろ書く。
+      </div>
+    </div>
+
+
+
+    <div class="chapter">
+      <h2 class="toggle , close">その他</h2>
+      <div class="main">
+
       </div>
     </div>
 
@@ -71,12 +135,7 @@
   <br>
   <br>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <div id="topicFooter"></div>
 </p>
   <script src="./index.js"></script>
   <script src="../../index.js"></script>

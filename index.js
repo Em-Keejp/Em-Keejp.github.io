@@ -187,6 +187,13 @@ const li_tale_private=[
     createTopics("tale","MKボールころころ一斉消失事件、そしてIMSの誕生まで",""),
 ];
 
+//表データ(マニュアル)
+const li_manual=[
+    createTopics("article","この保管庫を編集したい方向けマニュアル","./-Article/Storage_Manual/index.html"),
+    createTopics("article","MKボールころころコース作りマニュアル-IMS編","./-Article/IMS_Manual/index.html"),
+    createTopics("article","マークダウン記法のマニュアル","./-Article/Markdown_Manual/index.html"),
+];
+
 //表データ(記事)
 const li_article=[
     createTopics("article","自己紹介","./-Article/自己紹介/index.html"),
@@ -194,9 +201,7 @@ const li_article=[
     createTopics("article","プロフィールコメント欄で行われているしりとりに関する情報","./-Article/しりとり情報/index.html"),
     //以上、お知らせの方でも同じ内容を掲載
     createTopics("article","プロフィールの独り言、ギャグ一覧","./-Article/profile/index.html"),
-    createTopics("article","この保管庫を編集したい方向けマニュアル","./-Article/Storage_Manual/index.html"),
-    createTopics("article","MKボールころころコース作りマニュアル-IMS編","./-Article/IMS_Manual/index.html"),
-    createTopics("article","合作er達の最高傑作のボールころころ",""),
+    createTopics("article","合作er達の最高傑作のボールころころ","auto"),
     createTopics("article","クリア困難なボールころころ","auto"),
 ];
 
@@ -282,14 +287,17 @@ const tale = document.getElementById("tale");
 const article = document.getElementById("article");
         if(article){
             article.innerHTML=
-            topicTable("記事",li_article,` <p>
-            気ままに更新します。主に自分の体験談とか好きなこととか
+            topicTable("マニュアル",li_manual,` <p>
+            マニュアルの方は保管庫の拡充のしかたIMSの使い方とかをまとめた記事が今あります。ただしまだろくな内容になってないので執筆協力者募集中です。<br>
+            記事の方は気ままに更新します。主に自分の体験談とか好きなこととか
             <a href="https://www.youtube.com/watch?v=OnCFEo_pXaY" target="_blank" rel="noopener noreferrer">
             好きな総菜発表ドラゴン</a>とか((殴<br>
-            あとScratchで頻繁に更新されてるほぼギャグな「私について」とか。<br>
-            まあ結論、有用な情報はほぼ皆無に等しいのでよろしくお願いします。
-            </p>` );
+            あとScratchで頻繁に更新されてるほぼギャグな「私について」とか。まあ結論、<hi>有用な情報はほぼ皆無</hi>に等しいのでよろしくお願いします。<br>
+            </p>` )
+            +
+            topicTable("記事",li_article,``);
         }
+        
 
 
 
@@ -407,15 +415,14 @@ const topicHeader = document.getElementById("topicHeader");
         if (typeof li_WrittenBy != "undefined"){//対象の配列が存在する?
             if(li_WrittenBy.length>0){//執筆協力者が一人でも記されていたら、「この記事を書いた人」表示する。
             writers=`
-            <h3>この記事を書いた人 (<span class="hi">${li_WrittenBy.length}</span>人)</h3>
-            <table border="1">
+            <div class="episode"><h3 class="toggle close">この記事を書いた人 (<span class="hi">${li_WrittenBy.length}</span>人)</h3><div class="main">
                 ${li_WrittenBy.join("")}
-            </table>`
+            </div></div>`
             }
         }
 
         topicFooter.innerHTML=`
-            <br><br><br><br><br>${writers}
+            <br><br><br><br><br>${writers}<br><br><br><br><br>
         `;
 
     }
@@ -508,6 +515,33 @@ const topicHeader = document.getElementById("topicHeader");
             c.insertAdjacentHTML("beforebegin" , `<div class="teller ${characterClass}"><a href="/-Article/Characters/index.html" style="text-decoration:none; font-weight:400; color:inherit;"> ${characterName} </a>: <br></div>`);                
         }
         c.insertAdjacentHTML("afterend" , `<br>`);
+    });
+    
+    //markdownクラス自動変換機構
+    document.querySelectorAll(".markdown").forEach(markdown=>{
+        const div = document.createElement("div");
+        div.innerHTML = marked.parse( //&lt;と&gt;は自動変換する。
+            markdown.textContent.replaceAll("&lt;","<").replaceAll("&gt;",">")
+        );
+        markdown.replaceWith(div);
+    });
+
+    //markdownのコード自動変換機構
+    document.querySelectorAll("code").forEach(block => {
+        hljs.highlightElement(block);
+        block.style=`
+            background :linear-gradient(rgba(127, 127, 127, 0.15));
+            padding: 3px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-family: Consolas, monospace;
+            max-width: 80%;
+        `
+    });
+
+    //markdownのstrongタグ自動変換機構
+    document.querySelectorAll("strong").forEach(strong => {
+        strong.innerHTML=`<hi>${strong.textContent}</hi>`;
     });
 
     //userタグ自動変換機構
