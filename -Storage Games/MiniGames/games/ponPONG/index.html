@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ponPONG</title>
+    <style>
+        body { text-align: center; background: #f0f0f0; font-family: sans-serif; }
+        canvas { background: #fff; border: 2px solid #333; margin-top: 20px; }
+        .info { margin-top: 10px; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>ポンポング</h1>
+    <canvas id="gameCanvas" width="600" height="200"></canvas>
+    <div class="info">マウスで移動</div>
+    <script>
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
+
+        let score = 0;
+        let isGameOver = false;
+        let gamestarted = false;
+
+        const player = {
+            x: 50, y: 80,
+            width: 10, height:40,
+            color: "#0095DD",
+        };
+
+        const com = {
+            x: 550, y: 80,
+            width: 10, height: 40,
+            color: "#FF4B4B",
+            y_speed: 1
+        };
+
+        const ball = {
+            x:300, y:100,
+            width:30, height: 30,
+            color: "#4BE60E",
+            x_speed: 2, y_speed: 2
+        }
+
+        function draw(){
+            if (isGameOver) {
+                ctx.fillStyle = "black";
+                ctx.font = "30px Arial";
+                if (win){
+                    ctx.fillText("You Win!", 250, 100);
+                }else{
+                    ctx.fillText("You Lose...", 240, 100)
+                }
+                ctx.font = "20px Arial";
+                ctx.fillText("Click to Restart", 240, 130);
+                return;
+            }
+
+            if (gamestarted){
+                com.y_speed = com.y_speed * 0.9
+                if (ball.y+15 < com.y+com.height/2){
+                    com.y_speed += -0.35;
+                };
+                if (ball.y-15 > com.y+com.height/2){
+                    com.y_speed += 0.35;
+                };
+                
+                com.y += com.y_speed;
+
+
+                if (player.y < 0){
+                    player.y = 0;
+                };
+                if (player.y > 160){
+                    player.y = 160;
+                };
+                if (com.y < 0){
+                    com.y = 0;
+                };
+                if (com.y > 160){
+                    com.y = 160;
+                };
+
+
+                ball.x += ball.x_speed
+                if (player.x < ball.x && ball.x < player.x+player.width && player.y < ball.y && ball.y < player.y+player.height){
+                    ball.x_speed = ((Math.random()*2)+1)
+                }
+                if (com.x < ball.x && ball.x < com.x+com.width && com.y < ball.y && ball.y < com.y+com.height){
+                    ball.x_speed = -((Math.random()*2)+1)
+                }
+                ball.y += ball.y_speed
+                if (ball.y < 10){
+                    ball.y_speed = ((Math.random()*2)+1)
+                }
+                if (ball.y > canvas.height-10){
+                    ball.y_speed = -((Math.random()*2)+1)
+                }
+                if (ball.x < 0){
+                    isGameOver = true;
+                    win = false
+                };
+                if (ball.x > 600){
+                    isGameOver = true;
+                    win = true
+                };
+            }
+            ctx.clearRect(0, 0, canvas.width, canvas.height)
+            
+            ctx.fillStyle = player.color;
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+
+            ctx.fillStyle = com.color;
+            ctx.fillRect(com.x, com.y, com.width, com.height);
+
+            ctx.beginPath()
+            ctx.arc(ball.x, ball.y, 10, 0, Math.PI * 2)
+            ctx.fillStyle = ball.color;
+            ctx.fill();
+
+            ctx.fillStyle = "#333";
+            ctx.font = "20px Arial";
+            ctx.fillText(`Score: ${score}`, 20, 30);
+
+            if (!gamestarted){
+                ctx.fillText("スペースキーかクリックで開始", 160, 100)
+            }
+
+            requestAnimationFrame(draw);
+        }
+        function control(y) {
+            if(gamestarted){
+                player.y = y-140;
+            }
+        }
+        function start(){
+            if (isGameOver) {
+                location.reload();
+            } else if (!gamestarted){
+                gamestarted = true;
+            }
+        }
+        window.addEventListener('mousemove', function(event) {
+            control(event.clientY);
+        });
+
+        window.addEventListener("keydown", (e) => { if ( e.code === "Space") start();});
+        canvas.addEventListener("mousedown", start);
+        draw()
+    </script>
+</body>
