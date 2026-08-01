@@ -288,7 +288,7 @@ const article = document.getElementById("article");
         if(article){
             article.innerHTML=
             topicTable("マニュアル",li_manual,` <p>
-            マニュアルの方は保管庫の拡充のしかたIMSの使い方とかをまとめた記事が今あります。ただしまだろくな内容になってないので執筆協力者募集中です。<br>
+            マニュアルの方は保管庫の拡充のしかたやIMSの使い方とかをまとめた記事が今あります。ただしまだろくな内容になってないので執筆協力者募集中です。<br>
             記事の方は気ままに更新します。主に自分の体験談とか好きなこととか
             <a href="https://www.youtube.com/watch?v=OnCFEo_pXaY" target="_blank" rel="noopener noreferrer">
             好きな総菜発表ドラゴン</a>とか((殴<br>
