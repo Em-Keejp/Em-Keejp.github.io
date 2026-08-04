@@ -306,7 +306,7 @@ const template = document.getElementById("template");
         if(template){
             template.innerHTML=
             topicTable("テンプレート",li_template,` <p>
-            ツール、ゲーム、物語、記事の4種別のトピックのテンプレートです。<br>
+            ツール、ゲーム、物語、記事、リンク集の5種別のトピックのテンプレートです。<br>
             ほぼ作者用。<br>
             </p>` );
         }
