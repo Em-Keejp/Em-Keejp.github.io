@@ -176,7 +176,7 @@ const tale_info=[
 const li_tale_public=[
     createTopics("tale","BA5の隠し要素","auto"),
     createTopics("tale","10周年企画第一弾の隠し要素",""),
-    createTopics("tale","10周年企画第二弾　質問コーナー",""),
+    createTopics("tale","10周年企画第二弾　質問コーナー","auto"),
     createTopics("links","ショートムービー","auto"),
 ];
 
@@ -184,6 +184,7 @@ const li_tale_public=[
 const li_tale_private=[
     createTopics("tale","MKは2026年に初めてエイプリルフールを謳歌するようです。","auto"),
     createTopics("tale","[sub story] 東方共喰譚","auto"),
+    createTopics("tale","[sub story] 志歩のBackroom冒険譚","auto"),
     createTopics("tale","MKボールころころ一斉消失事件、そしてIMSの誕生まで",""),
 ];
 

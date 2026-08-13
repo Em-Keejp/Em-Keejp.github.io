@@ -32,8 +32,9 @@ const li_implementationOrder=[
     createTaleOrder("2025/07/28","BA5の隠し要素"),
     createTaleOrder("2026/03/01","MKは2026年に初めてエイプリルフールを謳歌するようです。"),
     createTaleOrder("2026/05/17","[sub story] 東方共喰譚"),
-    createTaleOrder("2026年6月公開予定","10周年企画第二弾　質問コーナー"),
-    createTaleOrder("2026年7月公開予定","10周年企画第一弾の隠し要素"),
+    createTaleOrder("2026/07/19","10周年企画第二弾　質問コーナー"),
+    createTaleOrder("2026/08/13","[sub story] 志歩のBackroom冒険譚"),
+    createTaleOrder("2026年9月公開予定","10周年企画第一弾の隠し要素"),
 ];
 
 

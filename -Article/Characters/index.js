@@ -434,6 +434,7 @@ function taleLink(link){
     characterIntroduce(
         `${"星野　一歌　　(ほしの　いちか) / Leo/need"}`,
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
             `など`,
         `[sub story] 東方共喰譚`,
         `
@@ -450,6 +451,7 @@ function taleLink(link){
     characterIntroduce(
         `${"天馬　咲希　　(てんま　さき) / Leo/need"}`,
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
             `など`,
         `[sub story] 東方共喰譚`,
         `
@@ -466,6 +468,7 @@ function taleLink(link){
     characterIntroduce(
         `${"望月　穂波　　(もちづき　ほなみ) / Leo/need"}`,
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
             `など`,
         `[sub story] 東方共喰譚`,
         `
@@ -482,6 +485,7 @@ function taleLink(link){
     characterIntroduce(
         `${"日野森　志歩　　(ひのもり　しほ) / Leo/need"}`,
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
             `など`,
         `[sub story] 東方共喰譚`,
         `
