@@ -788,6 +788,8 @@ function taleLink(link){
         `${"初音ミク　　(はつねみく) / Virtual Singer"}`,
             taleLink("BA5の隠し要素")+
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
+            taleLink("[sub story] 卑怯戦隊うろたんだー VS 大魔王")+
             `など`,
         `BA5の隠し要素`,
         `
@@ -808,6 +810,8 @@ function taleLink(link){
     characterIntroduce(
         `${"鏡音リン　　(かがみねりん) / Virtual Singer"}`,
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
+            taleLink("[sub story] 卑怯戦隊うろたんだー VS 大魔王")+
             `など`,
         `[sub story] 東方共喰譚`,
         `
@@ -823,6 +827,8 @@ function taleLink(link){
     characterIntroduce(
         `${"鏡音レン　　(かがみねれん) / Virtual Singer"}`,
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
+            taleLink("[sub story] 卑怯戦隊うろたんだー VS 大魔王")+
             `など`,
         `[sub story] 東方共喰譚`,
         `
@@ -838,8 +844,10 @@ function taleLink(link){
         +    
     characterIntroduce(
         `${"巡音ルカ　　(めぐりねるか) / Virtual Singer"}`,
-            `なし`,
-        ``,
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
+            taleLink("[sub story] 卑怯戦隊うろたんだー VS 大魔王")+
+            `など`,
+        `[sub story] 志歩のBackroom冒険譚`,
         `
             ピンクのロングヘアが特徴的な女性バーチャル・シンガー。
             落ちついた物腰によく合う柔らかい歌声を持つ一方、時には情熱的な歌声を聴かせることも。
@@ -849,12 +857,13 @@ function taleLink(link){
         `--`, `--`, `--`, `--`, `--`,
         `--`,
         `いつもは落ち着いてる上品な印象何だけど...<br>
-        ワンダショルカさんよ、いくら間でも君は寝てる時間が長すぎやしないか...?　ワンチャンコアラに勝てるかも?`
+        ワンダショルカさんよ、いくらなんでも君は寝てる時間が長すぎやしないか...?　ワンチャンコアラに勝てるかも?`
         )
         +    
     characterIntroduce(
         `${"MEIKO　　(めいこ) / Virtual Singer"}`,
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 卑怯戦隊うろたんだー VS 大魔王")+
             `など`,
         `[sub story] 東方共喰譚`,
         `
@@ -870,6 +879,7 @@ function taleLink(link){
     characterIntroduce(
         `${"KAITO　　(かいと) / Virtual Singer"}`,
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 卑怯戦隊うろたんだー VS 大魔王")+
             `など`,
         `[sub story] 東方共喰譚`,
         `
@@ -1137,6 +1147,26 @@ function taleLink(link){
         `--`, `--`, `--`, `--`, `--`,
         `--`,
         `-- `
+        )
+        +
+    characterIntroduce(
+        `${"*大魔王　ベンタ・ブラック"}`,
+            taleLink("[sub story] 卑怯戦隊うろたんだー VS 大魔王")+
+            `など`,
+        `[sub story] 卑怯戦隊うろたんだー VS 大魔王`,
+        `
+            クリッカーRPGのラスボス担当であり、凄まじいフィジカルを持つ。長年世界を我が物にしようと、幾度も魔物軍団を攻め入らせては人間たちを困らせていた。<br>
+            ラスボスらしく攻撃力の高い闇系呪文を使えるほか、足止めや乗っ取り、さらにはどこぞの破壊神ほどではないが回復まで使いこなす厄介な相手である。<br>
+            それなりの戦闘力が無いと門前払いを受けるのは確実なのでしっかりレベルを上げて挑もう。あと魔法のバターは多めに持っておこう。<br>
+            ちなみに、持久戦に持ち込めると相手もMP切れが発生しプレイヤー側が圧倒的有利になる。<br>
+            なお卑怯戦隊うろたんだーはそんなレベル差を無視し卑怯文明の差でベンタ・ブラックを撃退して見せた。こいつらがある意味一番恐ろしいわ。
+        `,
+        `男`, `「俺様」「我」`,
+        `世界征服`, `高火力呪文`, `精神系攻撃の影響を抑えること`, `--`, `--`,
+        `--`,
+        `ただの魔物が突然変異的に成長し、高いコミュニケーション力や戦闘力、カリスマ性を宿した。<br>
+        その結果この魔物は独自の城を建て、「魔王軍」なる組織を結成し皆から慕われる存在にまでなった。<br>
+        ただしクリッカーRPGではお決まりのパターンに則り、最終的にプレイヤーに倒された。`
         )
     ;  
 

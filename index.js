@@ -177,6 +177,7 @@ const li_tale_public=[
     createTopics("tale","BA5の隠し要素","auto"),
     createTopics("tale","10周年企画第一弾の隠し要素",""),
     createTopics("tale","10周年企画第二弾　質問コーナー","auto"),
+    createTopics("tale","[sub story] 卑怯戦隊うろたんだー VS 大魔王","auto"),
     createTopics("links","ショートムービー","auto"),
 ];
 
