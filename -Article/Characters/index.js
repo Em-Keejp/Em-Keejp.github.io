@@ -546,8 +546,9 @@ function taleLink(link){
         +    
     characterIntroduce(
         `${"日野森　雫　　(ひのもり　しずく) / MORE MORE JUMP!"}`,
-            `なし`,
-        ``,
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
+            `など`,
+        `[sub story] 志歩のBackroom冒険譚`,
         `
             今でも人気を博しているアイドルグループ『Cheerful＊Days』の元センター。<br>
             ミステリアスな大人の魅力を感じさせる容姿で、ファンを虜にしていたが、グループの仲間からは妬まれることも。愛莉とは研究生時代の同期。<br>
@@ -627,6 +628,7 @@ function taleLink(link){
     characterIntroduce(
         `${"天馬　司　　(てんま　つかさ) / ワンダーランズ×ショウタイム"}`,
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
             `など`,
         `[sub story] 東方共喰譚`,
         `
@@ -863,6 +865,7 @@ function taleLink(link){
     characterIntroduce(
         `${"MEIKO　　(めいこ) / Virtual Singer"}`,
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
             taleLink("[sub story] 卑怯戦隊うろたんだー VS 大魔王")+
             `など`,
         `[sub story] 東方共喰譚`,
@@ -879,6 +882,7 @@ function taleLink(link){
     characterIntroduce(
         `${"KAITO　　(かいと) / Virtual Singer"}`,
             taleLink("[sub story] 東方共喰譚")+
+            taleLink("[sub story] 志歩のBackroom冒険譚")+
             taleLink("[sub story] 卑怯戦隊うろたんだー VS 大魔王")+
             `など`,
         `[sub story] 東方共喰譚`,
@@ -1078,7 +1082,8 @@ function taleLink(link){
             イタリアの聖田中教会に封印されていたはずだが、どこかのバカが復活させ2026年、現世で女を殺しまわったり<br>
             街を破壊したりするなど蹂躙の限りを尽くした。性格は非常に卑猥であり、一度ロックオンされてしまうとほぼ死亡確定<br>
             となってしまう。霊夢はそんなイカれたこのサイコ野郎にロックオンされたが、上手く逃げ周り吉田を封印した。<br>
-            人肉を喰らう系の悪魔でありプールの塩素に弱い。
+            人肉を喰らう系の悪魔でありプールの塩素に弱い。<br>
+            おそらく霊長類最強と名高い吉田沙保里とは関係はない。
         `,
         `男`, `「俺」`,
         `女を追いかけ回すこと`, `消殺 , ワープ`, `塩素マシマシ系プール`, `--`, `--`,
@@ -1132,6 +1137,23 @@ function taleLink(link){
         `--`, `--`, `--`, `--`, `--`,
         `--`,
         `-- `
+        )
+        +
+    characterIntroduce(
+        `${"ファーザー田中"}`,
+            taleLink("[sub story] 東方共喰譚")+
+            `など`,
+        `[sub story] 東方共喰譚`,
+        `
+            イタリアの聖田中教会の神父であり、カニバリズム吉田を封印する方法を編み出した張本人。<br>
+            スケルトンが黒いフードを被ったみたいな、まるでヴィランのような見た目をしている。<br>
+            しかし実際に故意に悪事という悪事を働くことはなく、全力で世界平和を志す者の味方をする。<br>
+            ただちょっぴり油断症であり、しかもそれによってカニバリズム吉田の暴走を許してしまった。
+        `,
+        `？`, `「私」`,
+        `--`, `--`, `--`, `--`, `--`,
+        `「カニバリズム吉田を封印するための道具を造り出せる程度の能力」`,
+        `--`
         )
         +
     characterIntroduce(
