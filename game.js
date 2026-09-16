@@ -9,7 +9,7 @@ function gameURL(url , tw , dl , other){
         linkTw : `href = "https://turbowarp.org/${url}${tw}" target="_blank" rel="noopener noreferrer"`,
         textTw : `TurboWarpでプレイ`,
         classTw: `class="playable"`,
-        linkDl : `href = "../../code/${dl}" download="${dl}"`,
+        linkDl : `href = "../../code/${dl}" download="${dl.split("/").pop()}"`,
         textDl : `ダウンロード`,
         classDl: `class="playable"`
     };

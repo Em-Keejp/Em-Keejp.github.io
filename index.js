@@ -86,6 +86,8 @@ const li_vocaloid=[
     createMusic( "サツキ" , "メズマライザー" , "初音ミク・重音テトSV" , "A2" ),
     createMusic( "椎名もた(ぽわぽわP)" , "少女A" , "鏡音リン" , "A3" ),
     createMusic( "吉田夜世" , "オーバーライド" , "重音テトSV" , "A4" ),
+    createMusic( "吉田夜世" , "I know 愛脳" , "初音ミク" , "A46" ),
+    createMusic( "吉田夜世" , "アクセラレイト" , "初音ミク" , "A47" ),
     createMusic( "柊マグネタイト" , "マーシャル・マキシマイザー" , "可不" , "A5" ),
     createMusic( "柊マグネタイト" , "テトリス" , "重音テトSV" , "A21" ),
     createMusic( "すりぃ" , "テレキャスタービーボーイ" , "鏡音レン" , "A6" ),
@@ -122,8 +124,14 @@ const li_vocaloid=[
     createMusic( "佐藤ちなみに" , "アダチ・レイ" , "足立レイ・重音テト" , "A38" ),
     createMusic( "ピノキオピー" , "ノンブレス・オブリージュ" , "初音ミク" , "A39" ),
     createMusic( "和田たけあき" , "オールイン・ワン" , "重音テト" , "A40" ),
+    createMusic( "和田たけあき" , "チュルリラ・チュルリラ・ダッダッダ！" , "結月ゆかり" , "A43" ),
+    createMusic( "和田たけあき" , "てらてら" , "初音ミク" , "A48" ),
     createMusic( "cosMo@暴走P" , "初音ミクの激唱" , "初音ミク" , "A41" ),
     createMusic( "cosMo@暴走P" , "初音ミクの消失" , "初音ミク" , "A42" ),
+    createMusic( `<user>taki567</user>` , "オーバーフロートアイスクリーム" , "重音テト" , "A44" ),
+    createMusic( `<user>taki567</user>` , "重ねた真実" , "重音テト" , "A45" ),
+    createMusic( "めろくる" , "Gimme more!" , "初音ミク・鏡音リン・巡音ルカ・MEIKO" , "A49" ),
+    createMusic( "南ノ南" , "裏命ちゃんのフクオカトリップ奇騒曲" , "初音ミク・鏡音リン・巡音ルカ・MEIKO" , "A50" ),
 
 ];
 
@@ -321,7 +329,8 @@ const storagegames = document.getElementById("storagegames");
         if(storagegames){
             storagegames.innerHTML=
             topicTable("保管庫Games",li_storagegames,` <p>
-            保管庫Gamesは、保管庫の愉快な(?)仲間たちがhtmlで作ったゲームをまとめたページです。(今はtaki567だけだけど...)<br>
+            保管庫Gamesは、保管庫の愉快な(?)仲間たちがhtmlで作ったゲームをまとめたページです。<br>
+            今は<user>taki567</user>と<user>mahirokkk</user>のゲームが遊べる。特に保管庫ミニゲームはどれもサクッと遊べるのでお勧め。
             ぜひ遊んでください。<br>
             </p>` );
         }

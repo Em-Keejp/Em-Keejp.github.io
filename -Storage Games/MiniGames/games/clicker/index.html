@@ -1,150 +1,126 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>ponPONG</title>
-    <style>
-        body { text-align: center; background: #f0f0f0; font-family: sans-serif; }
+    <title>10秒間連打ゲーム</title>
+
+
+<style>
+    body {
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    #count {
+        font-size: 40px;
+        font-weight: 500;
+        color:navy;
+    }
+
+    #timer {
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    #clickButton {
+        width: 400px;
+        font-size: 30px;
+        padding: 30px 30px;
+        cursor: pointer;
+    }
+
+    body { text-align: center; background: #f0f0f0; font-family: sans-serif; }
         canvas { background: #fff; border: 2px solid #333; margin-top: 20px; }
         .info { margin-top: 10px; color: #666; }
-    </style>
+</style>
+
+
 </head>
+
 <body>
-    <h1>ポンポング</h1>
-    <canvas id="gameCanvas" width="600" height="200"></canvas>
-    <div class="info">マウスで移動</div>
-    <script>
-        const canvas = document.getElementById("gameCanvas");
-        const ctx = canvas.getContext("2d");
+<h1>10秒間連打ゲーム</h1>
 
-        let score = 0;
-        let isGameOver = false;
-        let gamestarted = false;
+<div id="timer">10秒以内に下のボタンを押しまくれ！</div>
+<div id="count">0</div>
 
-        const player = {
-            x: 50, y: 80,
-            width: 10, height:40,
-            color: "#0095DD",
-        };
+<br>
+<button id="clickButton">クリック！</button>
 
-        const com = {
-            x: 550, y: 80,
-            width: 10, height: 40,
-            color: "#FF4B4B",
-            y_speed: 1
-        };
+<script>
+    const timer = document.getElementById("timer");
+    const count = document.getElementById("count");
+    const clickButton = document.getElementById("clickButton");
 
-        const ball = {
-            x:300, y:100,
-            width:30, height: 30,
-            color: "#4BE60E",
-            x_speed: 2, y_speed: 2
+    let clickCount = 0;
+    let startTime;
+    let finishTime;
+    let gameRunning = false;
+
+    // クリックボタン/開始ボタン
+    clickButton.addEventListener("click", () => {
+
+        if (gameRunning) {
+            clickCount++;
+            count.textContent = clickCount;
+        }else{
+            clickCount = 1;
+            count.textContent = 1;
+
+            startTime = Date.now();
+            gameRunning = true;
+
+            updateTimer();
+        }
+        
+    });
+
+    // タイマー更新
+    function updateTimer() {
+
+        if (!gameRunning) return;
+
+        const elapsed = (Date.now() - startTime) / 1000;
+        const remaining = 10 - elapsed;
+
+        if (remaining <= 0) {
+
+            timer.textContent = "終了！";
+            count.textContent = "結果：" + clickCount + "連打！";
+            clickButton.textContent = "クールダウン中";
+            clickButton.disabled="true"
+            gameRunning= false;     
+            finishTime = Date.now();
+            coolDown();
+
+            return;
         }
 
-        function draw(){
-            if (isGameOver) {
-                ctx.fillStyle = "black";
-                ctx.font = "30px Arial";
-                if (win){
-                    ctx.fillText("You Win!", 250, 100);
-                }else{
-                    ctx.fillText("You Lose...", 240, 100)
-                }
-                ctx.font = "20px Arial";
-                ctx.fillText("Click to Restart", 240, 130);
-                return;
-            }
+        timer.textContent =
+            "残り時間：" + remaining.toFixed(1) + "秒";
 
-            if (gamestarted){
-                com.y_speed = com.y_speed * 0.9
-                if (ball.y+15 < com.y+com.height/2){
-                    com.y_speed += -0.35;
-                };
-                if (ball.y-15 > com.y+com.height/2){
-                    com.y_speed += 0.35;
-                };
-                
-                com.y += com.y_speed;
+        requestAnimationFrame(updateTimer);
+    }
 
 
-                if (player.y < 0){
-                    player.y = 0;
-                };
-                if (player.y > 160){
-                    player.y = 160;
-                };
-                if (com.y < 0){
-                    com.y = 0;
-                };
-                if (com.y > 160){
-                    com.y = 160;
-                };
 
+    function coolDown(){
 
-                ball.x += ball.x_speed
-                if (player.x < ball.x && ball.x < player.x+player.width && player.y < ball.y && ball.y < player.y+player.height){
-                    ball.x_speed = ((Math.random()*2)+1)
-                }
-                if (com.x < ball.x && ball.x < com.x+com.width && com.y < ball.y && ball.y < com.y+com.height){
-                    ball.x_speed = -((Math.random()*2)+1)
-                }
-                ball.y += ball.y_speed
-                if (ball.y < 10){
-                    ball.y_speed = ((Math.random()*2)+1)
-                }
-                if (ball.y > canvas.height-10){
-                    ball.y_speed = -((Math.random()*2)+1)
-                }
-                if (ball.x < 0){
-                    isGameOver = true;
-                    win = false
-                };
-                if (ball.x > 600){
-                    isGameOver = true;
-                    win = true
-                };
-            }
-            ctx.clearRect(0, 0, canvas.width, canvas.height)
-            
-            ctx.fillStyle = player.color;
-            ctx.fillRect(player.x, player.y, player.width, player.height);
+        const remaining = 2 - (Date.now() - finishTime) / 1000;
 
-            ctx.fillStyle = com.color;
-            ctx.fillRect(com.x, com.y, com.width, com.height);
+        if (remaining <= 0) {
 
-            ctx.beginPath()
-            ctx.arc(ball.x, ball.y, 10, 0, Math.PI * 2)
-            ctx.fillStyle = ball.color;
-            ctx.fill();
+            timer.textContent = "10秒以内に下のボタンを押しまくれ！";
+            clickButton.disabled=false;
+            clickButton.textContent="クリック！"
 
-            ctx.fillStyle = "#333";
-            ctx.font = "20px Arial";
-            ctx.fillText(`Score: ${score}`, 20, 30);
-
-            if (!gamestarted){
-                ctx.fillText("スペースキーかクリックで開始", 160, 100)
-            }
-
-            requestAnimationFrame(draw);
+            return;
         }
-        function control(y) {
-            if(gamestarted){
-                player.y = y-140;
-            }
-        }
-        function start(){
-            if (isGameOver) {
-                location.reload();
-            } else if (!gamestarted){
-                gamestarted = true;
-            }
-        }
-        window.addEventListener('mousemove', function(event) {
-            control(event.clientY);
-        });
 
-        window.addEventListener("keydown", (e) => { if ( e.code === "Space") start();});
-        canvas.addEventListener("mousedown", start);
-        draw()
-    </script>
+        requestAnimationFrame(coolDown);
+    }
+
+</script>
+
 </body>
+</html>

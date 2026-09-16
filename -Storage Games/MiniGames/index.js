@@ -8,5 +8,5 @@ function createWriterList(name , memo){
 
 
 const li_WrittenBy=[createWriterList("taki567",`このページを作った人。jumpgameとponPONG作成。<br>`),
-                    createWriterList("mahirokkk",`ページをちょっと改造した。10秒連打ゲームを今後作る予定<br>`),
+                    createWriterList("mahirokkk",`ページをちょっと改造した。10秒連打ゲームを作成<br>`),
                     ];
