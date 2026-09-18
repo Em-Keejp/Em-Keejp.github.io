@@ -131,9 +131,10 @@ const li_vocaloid=[
     createMusic( `<user>taki567</user>` , "オーバーフロートアイスクリーム" , "重音テト" , "A44" ),
     createMusic( `<user>taki567</user>` , "重ねた真実" , "重音テト" , "A45" ),
     createMusic( "めろくる" , "Gimme more!" , "初音ミク・鏡音リン・巡音ルカ・MEIKO" , "A49" ),
-    createMusic( "南ノ南" , "裏命ちゃんのフクオカトリップ奇騒曲" , "初音ミク・鏡音リン・巡音ルカ・MEIKO" , "A50" ),
+    createMusic( "南ノ南" , "裏命ちゃんのフクオカトリップ奇騒曲" , "可不・星界・裏命・松嘩りすく・フリモメン・東北きりたん" , "A50" ),
 
 ];
+
 
 //表データ(その他の音楽)
 const li_others=[ 
