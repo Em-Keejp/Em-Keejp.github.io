@@ -47,6 +47,7 @@ const li_allPerfectHistory=[
     createAllPerfectHistoryList(       "0","Hard"  ,18,"惑星ループ","MKがHardで初めてAPを達成した譜面。"),
     createAllPerfectHistoryList(       "0","Expert",23,"あいしていたのに","MKがExpertで初めてAPを達成した譜面。"),
     createAllPerfectHistoryList("20260919","Expert",23,"Highlight"),
+    createAllPerfectHistoryList("20260920","Easy"  ,7 ,"カレシのジュード"),
                     ];
 
 
