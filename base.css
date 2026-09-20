@@ -1,5 +1,6 @@
 html{
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 
@@ -289,6 +290,36 @@ table {
       background :linear-gradient(#bbe0ee 0%);
      color:#336070
     }
+}
+
+
+
+.pjsekai_difficulty_Easy{
+    color:#22bb22;
+    font-weight: 600;
+}
+.pjsekai_difficulty_Normal{
+    color:#22bbdd;
+    font-weight: 600;
+}
+.pjsekai_difficulty_Hard{
+    color:#ccbb22;
+    font-weight: 600;
+}
+.pjsekai_difficulty_Expert{
+    color:#dd2222;
+    font-weight: 600;
+}
+.pjsekai_difficulty_Master{
+    color:#8822bb;
+    font-weight: 600;
+}
+.pjsekai_difficulty_Append{
+    background: linear-gradient(135deg,#8855ff,#dd66bb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
 }
 
 
