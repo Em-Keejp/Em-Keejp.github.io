@@ -217,6 +217,7 @@ const li_article=[
     createTopics("article","プロフィールの独り言、ギャグ一覧","./-Article/profile/index.html"),
     createTopics("article","合作er達の最高傑作のボールころころ","auto"),
     createTopics("article","クリア困難なボールころころ","auto"),
+    createTopics("article","MKのプロセカALL PERFECT履歴","auto"),
 ];
 
 //表データ(テンプレート)
