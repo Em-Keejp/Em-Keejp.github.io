@@ -18,7 +18,9 @@ function createAllPerfectHistoryList(date , difficulty , level , name , memo ){
     if(date=="0"||date=="不明"){
         date="不明";
     }else{
-        date=(date.slice(0,4))+"/"+(date.slice(4,6))+"/"+(date.slice(6,8));
+        date=String(date).slice(0,4)+"/"+
+             String(date).slice(4,6)+"/"+
+             String(date).slice(6,8);
     }
 
     let info=``;
@@ -44,12 +46,15 @@ function createAllPerfectHistoryList(date , difficulty , level , name , memo ){
 
 
 const li_allPerfectHistory=[
-    createAllPerfectHistoryList(       "0","Hard"  ,18,"惑星ループ","MKがHardで初めてAPを達成した譜面。"),
-    createAllPerfectHistoryList(       "0","Expert",23,"あいしていたのに","MKがExpertで初めてAPを達成した譜面。"),
-    createAllPerfectHistoryList("20260919","Expert",23,"Highlight"),
-    createAllPerfectHistoryList("20260920","Easy"  ,7 ,"カレシのジュード"),
-    createAllPerfectHistoryList("20260920","Normal",14,"このふざけた素晴らしき世界は、僕の為にある"),
-    createAllPerfectHistoryList("20260921","Easy"  ,5,"オーバーコード"),
+    createAllPerfectHistoryList(0       ,"Hard"  ,18,"惑星ループ","MKがHardで初めてAPを達成した譜面。"),
+    createAllPerfectHistoryList(0       ,"Expert",23,"あいしていたのに","MKがExpertで初めてAPを達成した譜面。"),
+    createAllPerfectHistoryList(20260919,"Expert",23,"Highlight"),
+    createAllPerfectHistoryList(20260920,"Easy"  ,7 ,"カレシのジュード"),
+    createAllPerfectHistoryList(20260920,"Normal",14,"このふざけた素晴らしき世界は、僕の為にある"),
+    createAllPerfectHistoryList(20260921,"Easy"  ,5, "オーバーコード"),
+    createAllPerfectHistoryList(20260921,"Easy"  ,7, "ヘッジホッグ"),
+    createAllPerfectHistoryList(20260922,"Easy"  ,9, "フロイライン=オジョウサマ"),
+    createAllPerfectHistoryList(20260922,"Easy"  ,9, "電光刹歌"),
                     ];
 
 
