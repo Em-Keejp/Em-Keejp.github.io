@@ -55,6 +55,15 @@ const li_allPerfectHistory=[
     createAllPerfectHistoryList(20260921,"Easy"  ,7, "ヘッジホッグ"),
     createAllPerfectHistoryList(20260922,"Easy"  ,9, "フロイライン=オジョウサマ"),
     createAllPerfectHistoryList(20260922,"Easy"  ,9, "電光刹歌"),
+    createAllPerfectHistoryList(20260923,"Easy"  ,9, "What's up? Pop!"),
+    createAllPerfectHistoryList(20260923,"Normal",14,"What's up? Pop!"),
+    createAllPerfectHistoryList(20260923,"Easy"  ,9, "こわれちゃった！！"),
+    createAllPerfectHistoryList(20260923,"Normal",15,"こわれちゃった！！","この日は音楽ショップの楽曲全購入記念で未回収の高難度曲を下埋めしてた。そしたらAPが4つも出た。"),
+    createAllPerfectHistoryList(20260923,"Hard  ",17,"夏に透明"),
+    createAllPerfectHistoryList(20260924,"Easy  ",9 ,"一億年恋してる"),
+    createAllPerfectHistoryList(20260924,"Hard  ",17,"コスモスパイス"),
+    createAllPerfectHistoryList(20260924,"Easy  ",9 ,"アンチサイノウ"),
+    createAllPerfectHistoryList(20260926,"Hard  ",18,"正解"),
                     ];
 
 
