@@ -159,47 +159,36 @@ lo{ /*弱調(タグ)*/
 
 
 
-button.playable{
+button{
     color : #000000;
     border-radius: 0.25rem; /*ボタンの丸み*/
     border-width: 0.125rem;
-    background-color:#ffddbb;
+    background-color:#eeeeee;
+    transition: filter 0.2s;
 }
-button.playable:hover{
-    background-color:#ffeedd;
+button:not(:disabled):hover{
+    transition-duration: 0.2s;
+    filter: brightness(1.2);
+}
+button:not(:disabled):active{
+    transition-duration: 0.05s;
+    filter: brightness(0.9);
+}
+
+
+button.playable{
+    background-color:#ffddbb;
 }
 
 button.deprecated{
-    color : #000000;
-    border-radius: 0.25rem; /*ボタンの丸み*/
-    border-width: 0.125rem;
     background-color:#ffbbbb;
 }
 
 button:disabled{
-    color : #000000;
-    border-radius: 0.25rem; /*ボタンの丸み*/
-    border-width: 0.125rem;
     background-color:#888888;
 }
 
-
-
-
-.copyButton{
-    color:#000000;
-    border-radius: 0.25rem; /*ボタンの丸み*/
-    border-width: 0.125rem;
-    background-color:#ccf0ff;
-}
-:hover.copyButton{
-    color:#444488;
-    background-color:#f0f8ff;
-}
-:active.copyButton{
-    color:#000000;
-    border-radius: 0.25rem; /*ボタンの丸み*/
-    border-width: 0.125rem;
+.linkCopyButton{
     background-color:#ccf0ff;
 }
 
@@ -321,6 +310,18 @@ table {
     color: transparent;
     font-weight: 600;
 }
+
+
+
+#MKRSTotalWorks{
+    font-size: 2rem;
+    font-weight: 500;
+    hi{
+    font-size: 2.4rem;
+    font-weight: 600;
+    }
+}
+
 
 
 

@@ -413,7 +413,7 @@ const topicHeader = document.getElementById("topicHeader");
                     前のページへ
             </button></a>
         
-            <button style="position:relative; left:72px;" class="copyButton" id="linkCopy">
+            <button style="position:relative; left:72px;" class="linkCopyButton">
                 サイト内のhtmlで使えるリンクをコピー
             </button>
             
@@ -435,17 +435,44 @@ const topicHeader = document.getElementById("topicHeader");
                 ${li_WrittenBy.join("")}
             </div></div>`
             }
+        } else if (location.pathname=="/index.html"){//そうでなければ、今度は今閲覧しているのがホーム画面か?
+            const li_WrittenBy=[createWriterList("mahirokkk",`拡張の大部分を担当。`),
+                                createWriterList("taru-ru",``),
+                                createWriterList("taki567",`保管庫ゲームズ「ジャンプゲーム」、「ポンポング」を作成。`),
+                                createWriterList("rollinghuman",`MKボールころころ一覧の、既存ステージの情報埋めをした。`),
+                    ];   
+
+            writers=`
+            <div class="episode"><h3 class="toggle close">保管庫の拡張に協力してくれた人 (<span class="hi">${li_WrittenBy.length}</span>人)</h3><div class="main">
+                ${li_WrittenBy.join("")}
+            </div></div>`
         }
 
         topicFooter.innerHTML=`
-            <br><br><br><br><br>${writers}<br><br><br><br><br>
-        `;
+            <br><br><br><br><br>${writers}<br>
+            <button style="position:relative; left:24px;" class="topScrollButton">
+                ページトップへ
+            </button>
+            <button style="position:relative; left:36px;" class="allToggleCloseButton">
+                全ての帯を閉じる
+            </button>
+            <br><br><br><br>
+        <footer></footer>`;
 
     }
+
+    //協力してくれた人を書く関数　メモつき
+    function createWriterList(name , memo){
+    return `
+            ・<a href="https://scratch.mit.edu/users/${name}/" target="_blank" rel="noopener noreferrer">@${name}</a><br>
+            　${memo}<br>
+            `;
+    }
+
     
 
     //リンクコピー linkCopy---------------------------------------------------------------------------
-    const linkCopy = document.getElementById("linkCopy");
+    const linkCopy = document.querySelector(".linkCopyButton");
         if(linkCopy){
             linkCopy.addEventListener("click",async() =>{
                 //console.log("リンクコピーボタンが押されました。");
@@ -454,6 +481,14 @@ const topicHeader = document.getElementById("topicHeader");
                 }catch(err){
                      alert('コピーに失敗しました: ' + err);
                 }
+            });
+        }
+
+    //ページトップボタン  topScroll---------------------------------------------------------------------------
+    const topScrollButton = document.querySelector(".topScrollButton");
+        if(topScrollButton){
+            topScrollButton.addEventListener("click",() =>{
+                scrollTo(0,0);
             });
         }
 
@@ -483,13 +518,35 @@ const topicHeader = document.getElementById("topicHeader");
     const chapters = document.querySelectorAll(".chapter");
     chapters.forEach(c => {setupToggle(c);});
 
-    //querySelectorおよびそれのAll版
+    //querySelectorのAll版
     //前者は一番最初に該当するものを選択、後者は全部引っ張り上げて配列化する。
     //引数に「.」をつけるとhtmlのクラス、「#」をつけるとhtmlのidから探す。
 
     //episodeクラス　関数は使い回し
     const episodes = document.querySelectorAll(".episode");
     episodes.forEach(e => {setupToggle(e);});
+
+
+
+    //全トグル閉じボタン  allToggleCloseButton---------------------------------------------------------------------------
+    const allToggleCloseButton = document.querySelector(".allToggleCloseButton");
+        if(allToggleCloseButton){
+            allToggleCloseButton.addEventListener("click",() =>{
+            
+                document.querySelectorAll(".toggle").forEach(toggle => {
+                    if(toggle.classList.contains("open")){
+                        toggle.classList.toggle("close");
+                        toggle.classList.toggle("open");
+                    }
+                });
+                document.querySelectorAll(".main").forEach(main => {
+                    if(!main.classList.contains("main_close")){
+                        main.classList.toggle("main_close");
+                    }
+                });
+                
+            });
+        }
 
 
 

@@ -1707,7 +1707,7 @@ const li_MKBC_J=[
         いわばβ版みたいな感じ。今後アプデはするかもしれないししないかもしれないけど多分せずにそのままJ4作る。笑<br>
         <br>
         ・このステージのMKおオススメの遊び方<br>
-        1. 2倍速でプレイする...これでもBE9.1の等速より基本的に遅い。星の配置が易しいも相まり純粋に楽しくなる。<br>
+        1. 2倍速でプレイする...これでもBE9.1の等速より基本的に遅い。星の配置が易しいのも相まり純粋に楽しくなる。<br>
         2. 視界0%(ブラック) の状態で模範解答リプレイ...今作の最大の特徴であるMV化した歌詞を存分に楽しめる。追加で効果音をOFFにしても良い。<br>
         <br>
         ・最後に...ボーカル選択という新機能が実装され、クレジットの feat.◯◯　の部分をどうしようかと悩んでた時期があったが...<br>
@@ -1813,6 +1813,32 @@ document.getElementById("MKBC_longstages").innerHTML=
     gameTable("歴代longstage一覧",li_MKBC_longstages,`` );
 
 
+
+document.getElementById("MKRSTotalWorks").innerHTML=
+    `現在共有済みのMKボールころころ、合計<hi title="
+    ===内訳===
+本編${li_MKBC_H.length}作
+ボーナス${li_MKBC_B.length}作
+おまけ${li_MKBC_O.length}作
+新${li_MKBC_N.length}作
+ビート${li_MKBC_BE.length}作
+番外編${li_MKBC_BA.length}作
+リメイク${li_MKBC_REM.length}作
+ビ一ト${li_MKBC_BΕ.length}作
+ジャーニー${li_MKBC_J.length}作
+    ">
+    ${
+        li_MKBC_H.length+
+        li_MKBC_B.length+
+        li_MKBC_O.length+
+        li_MKBC_N.length+
+        li_MKBC_BE.length+
+        li_MKBC_BA.length+
+        li_MKBC_REM.length+
+        li_MKBC_BΕ.length+
+        li_MKBC_J.length
+    }</hi>作品！`
+    
 
 
    
