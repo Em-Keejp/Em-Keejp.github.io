@@ -88,6 +88,10 @@ const li_allPerfectHistory=[
     createAllPerfectHistoryList(20261009,"Hard  ",17,"ダーリン","追加当日、みんライで初見AP！　やったー！ (しかしスコアは最下位であった。)"),
     createAllPerfectHistoryList(20261010,"Easy  ",5 ,"導火愛"),
     createAllPerfectHistoryList(20261010,"Easy  ",5 ,"夜明けと蛍"),
+    createAllPerfectHistoryList(20261013,"Normal",12,"drop pop candy"),
+    createAllPerfectHistoryList(20261013,"Normal",12,"ドラマツルギー"),
+    createAllPerfectHistoryList(20261014,"Easy  ",7 ,"難聴系男子が倒せない"),
+    createAllPerfectHistoryList(20261014,"Easy  ",5 ,"きのせい","最後だんだんノーツがでっかくなる..."),
                     ];
 
 
