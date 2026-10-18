@@ -95,6 +95,7 @@ const li_allPerfectHistory=[
     createAllPerfectHistoryList(20261015,"Normal",13,"ヘッジホッグ"),
     createAllPerfectHistoryList(20261018,"Normal",14,"混沌ブギ"),
     createAllPerfectHistoryList(20261018,"Easy  ",6, "ジェヘナ"),
+    createAllPerfectHistoryList(20261018,"Normal",13,"一億年恋してる" ,"最後だけ音が治安悪すぎる...")
                     ];
 
 
