@@ -79,7 +79,7 @@ const li_CoCreatorsBestRollingSky=[
     createBestRollingSkyTopics("karikarium",`
             合作I　区間5 (80%~100%)
         `,
-        "@mahirokkkさん10周年記念ころころ","https://turbowarp.org/1084059547?fps=30&hqpen&clones=Infinity",`
+        "@mahirokkkさん10周年記念ころころ","https://turbowarp.org/1220741875?fps=60&hqpen&offscreen&limitless",`
         これを書き始める五分前に初めてプレイした（以下略）<br>
         ほかの人のお祝いステージをこれに選び出すのはどうかと思うがそれはそうとてなんか背景の選出センスが高くて尊敬なステージ。<br>
         このステージで個人的にすごいと思ったのは、満遍なくいろんなギミックを使ってステージが作られていて且つ、簡単な譜面のステージであることだと思う。<br>
