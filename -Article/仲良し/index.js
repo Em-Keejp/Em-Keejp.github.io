@@ -57,6 +57,9 @@ const nakayoshi=[
     createNakayoshiList("5-4-ON","ついに芯だけになったトイレットペーパー...のようだ。"),
     createNakayoshiList("tyottogan","BΕ15を1バリア全回収、BE12をノーダメ全回収するなど実力はかなり高い。ボールころころシリーズも作っている。"),
     createNakayoshiList("SANti-36","同じプロセカ好きということで、波長が合いそう。名前の元ネタはAPPEND36のSAN値直葬って曲から。"),
+    createNakayoshiList("02giriyukimaru","いつの間にかアイコンがクリッカーRPGになっていた。"),
+    createNakayoshiList("blue_sky_2026","いつの間にかよく僕のもとにコメントするようになっていた。"),
+
 
     
 
