@@ -95,7 +95,13 @@ const li_allPerfectHistory=[
     createAllPerfectHistoryList(20261015,"Normal",13,"ヘッジホッグ"),
     createAllPerfectHistoryList(20261018,"Normal",14,"混沌ブギ"),
     createAllPerfectHistoryList(20261018,"Easy  ",6, "ジェヘナ"),
-    createAllPerfectHistoryList(20261018,"Normal",13,"一億年恋してる" ,"最後だけ音が治安悪すぎる...")
+    createAllPerfectHistoryList(20261018,"Normal",13,"一億年恋してる" ,"最後だけ音が治安悪すぎる..."),
+    createAllPerfectHistoryList(20261018,"Normal",13,"電光刹歌" ,"昨日までのブランクがなかったかのように今日は4つもAPが出た♪"),
+    createAllPerfectHistoryList(20261020,"Easy  ",9, "バカ通信","密度が高くてまるでNormalのLv10を相手してるかのような感覚だった。しかも最後にフリックがあるという..."),
+    createAllPerfectHistoryList(20261020,"Easy  ",5, "アヤノの幸福理論"),
+    createAllPerfectHistoryList(20261021,"Easy  ",9, "天樂"),
+    createAllPerfectHistoryList(20261021,"Easy  ",6, "ハイドレンジア"),
+    createAllPerfectHistoryList(20261022,"Expert",24,"ロキ","朝イチでやったらいきなり出た。Expert5曲目のAP!　よっしゃー!"),
                     ];
 
 

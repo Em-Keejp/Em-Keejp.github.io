@@ -171,7 +171,7 @@ const li_game=[
     createTopics("game","合作ころころ一覧","auto"),
     createTopics("game","クリッカーRPG","auto"),
     createTopics("game","LINES CONNECTION一覧","auto"),
-    createTopics("game","猫の帰宅物語一覧",""),
+    createTopics("game","猫の帰宅物語一覧","auto"),
     createTopics("game","猫退治ゲーム一覧",""),
     createTopics("game","Scratchシューティング一覧",""),
     createTopics("game","その他",""),
@@ -537,6 +537,12 @@ const topicHeader = document.getElementById("topicHeader");
                     if(toggle.classList.contains("open")){
                         toggle.classList.toggle("close");
                         toggle.classList.toggle("open");
+                    }
+                });
+                document.querySelectorAll(".gtoggle").forEach(gtoggle => {
+                    if(gtoggle.classList.contains("gopen")){
+                        gtoggle.classList.toggle("gclose");
+                        gtoggle.classList.toggle("gopen");
                     }
                 });
                 document.querySelectorAll(".main").forEach(main => {
