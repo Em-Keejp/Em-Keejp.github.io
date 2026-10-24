@@ -102,6 +102,12 @@ const li_allPerfectHistory=[
     createAllPerfectHistoryList(20261021,"Easy  ",9, "天樂"),
     createAllPerfectHistoryList(20261021,"Easy  ",6, "ハイドレンジア"),
     createAllPerfectHistoryList(20261022,"Expert",24,"ロキ","朝イチでやったらいきなり出た。Expert5曲目のAP!　よっしゃー!"),
+    createAllPerfectHistoryList(20261023,"Easy  ",7, "永遠甚だしい"),
+    createAllPerfectHistoryList(20261023,"Normal",13,"太陽系デスコ"),
+    createAllPerfectHistoryList(20261023,"Normal",12,"DAYBREAK FRONTLINE"),
+    createAllPerfectHistoryList(20261023,"Easy  ",6, "DREAM PLACE"),
+    createAllPerfectHistoryList(20261023,"Easy  ",7, "*ハロー、プラネット。","今日は絶好調、APが5つも出た♪"),
+    createAllPerfectHistoryList(20261024,"Easy  ",6, "タイムマシン"),
                     ];
 
 
