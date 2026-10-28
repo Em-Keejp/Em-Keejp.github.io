@@ -108,6 +108,10 @@ const li_allPerfectHistory=[
     createAllPerfectHistoryList(20261023,"Easy  ",6, "DREAM PLACE"),
     createAllPerfectHistoryList(20261023,"Easy  ",7, "*ハロー、プラネット。","今日は絶好調、APが5つも出た♪"),
     createAllPerfectHistoryList(20261024,"Easy  ",6, "タイムマシン"),
+    createAllPerfectHistoryList(20261026,"Normal",13,"厨病激発ボーイ"),
+    createAllPerfectHistoryList(20261027,"Hard  ",15,"再生","何気に公式譜面ではレアキャラなLv15　物量はレベル通り少なかったが、いやらしい同時押しや小粒がありやや神経を使う。"),
+    createAllPerfectHistoryList(20261027,"Hard  ",16,"彗星ノ銀河"),
+    createAllPerfectHistoryList(20261028,"Normal",12,"永遠甚だしい"),
                     ];
 
 
