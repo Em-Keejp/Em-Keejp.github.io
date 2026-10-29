@@ -237,6 +237,9 @@ table {
 
 
 /*トグル機構用 toggle*/
+.toggle{
+    white-space: nowrap;
+}
 .close::before{
     content:"■";
     color:#cc4444;
