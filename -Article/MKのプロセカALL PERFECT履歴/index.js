@@ -112,6 +112,11 @@ const li_allPerfectHistory=[
     createAllPerfectHistoryList(20261027,"Hard  ",15,"再生","何気に公式譜面ではレアキャラなLv15　物量はレベル通り少なかったが、いやらしい同時押しや小粒がありやや神経を使う。"),
     createAllPerfectHistoryList(20261027,"Hard  ",16,"彗星ノ銀河"),
     createAllPerfectHistoryList(20261028,"Normal",12,"永遠甚だしい"),
+    createAllPerfectHistoryList(20261029,"Easy  ",6, "推定ラブソング"),
+    createAllPerfectHistoryList(20261029,"Normal",12,"Ribbon"),
+    createAllPerfectHistoryList(20261030,"Normal",11,"SAIRAI"),
+    createAllPerfectHistoryList(20261101,"Hard  ",18,"踊"),
+    createAllPerfectHistoryList(20261101,"Hard  ",16,"ブラック★ロックシューター"),
                     ];
 
 
