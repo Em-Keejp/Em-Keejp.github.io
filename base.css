@@ -104,12 +104,60 @@ lo{ /*弱調(タグ)*/
     text-align: right;
 }
 
-.up{ /*右揃え*/
+.left{ /*左揃え*/
+    text-align: left;
+}
+
+.center{ /*センタリング*/
+    text-align: center;
+}
+
+.up{ /*上揃え*/
     vertical-align: top;
 }
 
 .bold{  /*太文字*/
     font-weight : bold;
+}
+
+.size_A{
+    font-size : 1.8rem;
+}
+.size_B{
+    font-size : 2rem;
+}
+.size_C{
+    font-size : 2.2rem;
+}
+.size_D{
+    font-size : 2.4rem;
+}
+.size_E{
+    font-size : 2.6rem;
+}
+.size_F{
+    font-size : 2.8rem;
+}
+.size_G{
+    font-size : 3rem;
+}
+.size_H{
+    font-size : 3.2rem;
+}
+.size_I{
+    font-size : 3.4rem;
+}
+.size_J{
+    font-size : 3.6rem;
+}
+.size_K{
+    font-size : 3.8rem;
+}
+.size_L{
+    font-size : 4rem;
+}
+.size_M{
+    font-size : 4.2rem;
 }
 
 .index{  /*項目*/
@@ -205,6 +253,40 @@ table {
     border-color:#444444;
 }
 
+table.Deco_A{
+    border-collapse: collapse;
+    border: none;
+    position: relative;
+
+    th,td {
+        border: none;
+        padding: 4px 20px;
+    }
+    tr {
+    position: relative;
+    }
+    tr::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #dddddd;
+        border-radius: 3px;
+    }
+    &::after {
+    content: "";
+        position: absolute;
+        top: -4px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #dddddd;
+        border-radius: 3px;
+    } 
+}
+
 
 
 /*トグル機構用 mainが閉まってるとき*/
@@ -295,7 +377,7 @@ table {
     font-weight: 600;
 }
 .pjsekai_difficulty_Hard{
-    color:#ccbb22;
+    color:#d4c000;
     font-weight: 600;
 }
 .pjsekai_difficulty_Expert{
@@ -307,7 +389,7 @@ table {
     font-weight: 600;
 }
 .pjsekai_difficulty_Append{
-    background: linear-gradient(135deg,#8855ff,#dd66bb);
+    background: linear-gradient(135deg,#987bdb,#f47ed2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -331,6 +413,12 @@ table {
 /*物語用*/
 
 .teller{
+    color:#000000; /*指定されてないネームド、あるいはモブキャラ*/
+    -webkit-text-stroke: 0.14rem color-mix(in srgb , currentColor 60% , black);
+    paint-order:stroke;
+    font-weight: 200;
+}
+.teller_ExceptTale{ /*同様の文字スタイルを物語形式以外で使いたい場合*/
     color:#000000; /*指定されてないネームド、あるいはモブキャラ*/
     -webkit-text-stroke: 0.14rem color-mix(in srgb , currentColor 60% , black);
     paint-order:stroke;
