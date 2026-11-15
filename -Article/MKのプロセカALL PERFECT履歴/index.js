@@ -12,6 +12,24 @@ const li_WrittenBy=[createWriterList("mahirokkk",``),
 
 
 
+const li_theNumberOfAP_NoListed=[//AP数(難易度別)　リスト外 / それぞれ異なる初期値
+    249,//EASY
+    168,//NORMAL
+    50,//HARD
+    0,//EXPERT
+    0,//MASTER
+    0]//APPEND
+
+const li_theNumberOfAP_Listed=[//AP数(難易度別)　リスト内 / 初期値は全て0
+    0,//EASY
+    0,//NORMAL
+    0,//HARD
+    0,//EXPERT
+    0,//MASTER
+    0]//APPEND
+
+
+
 
 
 function createAllPerfectHistoryList(date , difficulty , level , name , memo ){
@@ -28,6 +46,23 @@ function createAllPerfectHistoryList(date , difficulty , level , name , memo ){
         info = `<span style="font-weight: 600;" title="${memo}">[ i ]</span>`;
     }
 
+    let difficultyID=0
+    if(difficulty.trim()=="Easy"){
+        difficultyID=0;
+    }else if(difficulty.trim()=="Normal"){
+        difficultyID=1;
+    }else if(difficulty.trim()=="Hard"){
+        difficultyID=2;
+    }else if(difficulty.trim()=="Expert"){
+        difficultyID=3;
+    }else if(difficulty.trim()=="Master"){
+        difficultyID=4;
+    }else if(difficulty.trim()=="Append"){
+        difficultyID=5;
+    }
+    li_theNumberOfAP_Listed[difficultyID]++; //AP数に足していく。
+
+
     return `<tr>
                 <td>${date}</td>
                 <td><span class="pjsekai_difficulty_${difficulty}">(${level})</span> ${name}　　　${info}</td>
@@ -35,12 +70,12 @@ function createAllPerfectHistoryList(date , difficulty , level , name , memo ){
     //dateについて
     //不明なら 0 、判明しているなら20260920 (2026年9月20日) みたいな8桁で入れる。
     //difficultyについて
-    //1...EASY
-    //2...NORMAL
-    //3...HARD
-    //4...EXPERT
-    //5...MASTER
-    //6...APPEND
+    //0...EASY
+    //1...NORMAL
+    //2...HARD
+    //3...EXPERT
+    //4...MASTER
+    //5...APPEND
 }
 
 
@@ -117,11 +152,81 @@ const li_allPerfectHistory=[
     createAllPerfectHistoryList(20261030,"Normal",11,"SAIRAI"),
     createAllPerfectHistoryList(20261101,"Hard  ",18,"踊"),
     createAllPerfectHistoryList(20261101,"Hard  ",16,"ブラック★ロックシューター"),
+    createAllPerfectHistoryList(20261101,"Hard  ",18,"化けの花"),
+    createAllPerfectHistoryList(20261105,"Normal",12,"LEADER","最近全然APがないなーと思ってたら3日間もブランクがあったとは..."),
+    createAllPerfectHistoryList(20261105,"Normal",13,"ダーリン","Mrsの曲にも全く同じ名前のものがあったような...　中身は全く別物だけど。"),
+    createAllPerfectHistoryList(20261106,"Normal",11,"レム"),
+    createAllPerfectHistoryList(20261106,"Hard  ",17,"Change me"),
+    createAllPerfectHistoryList(20261107,"Easy  ",6 ,"ウミユリ海底譚"),
+    createAllPerfectHistoryList(20261108,"Easy  ",6 ,"ヘレディティ"),
+    createAllPerfectHistoryList(20261108,"Expert",22,"告白","Expert6曲目のAPにしてLv22の初AP!　よっしゃー!"),
+    createAllPerfectHistoryList(20261108,"Easy  ",8 ,"嗚呼、素晴らしきニャン生"),
+    createAllPerfectHistoryList(20261108,"Normal",12,"光"),
+    createAllPerfectHistoryList(20261113,"Expert",24,"インテグラル","なんか突発で出たわ。Expert7曲目のAPが4日間のブランクを打破！"),
+    createAllPerfectHistoryList(20261113,"Hard  ",16,"Fondant Step"),
                     ];
 
 
+   
 
-const allPerfectHistory = document.getElementById("allPerfectHistory");
+
+const allPerfectHistory = document.getElementById("allPerfectHistory"); //リストを書く
       allPerfectHistory.innerHTML=`<table border="1">${li_allPerfectHistory.join("")}</table>`;
 
-        
+
+
+const allPerfectData = document.getElementById("allPerfectData"); //データを書く
+if(allPerfectData){
+    let content=`` //htmlの中身
+
+    //表1 : 難易度種別AP数
+    content+=`<h3>難易度種別ALL PERFECT!! 達成数
+    </h3><table border="1" class="Deco_A">
+    <thead>
+        <tr>
+            <th class="right">難易度</th>
+            <th>総AP数</th>
+            <th>リスト内</th>
+            <th>リスト外</th>
+        </tr>
+    </thead>
+    `
+    
+    let totalAP_Listed=0
+    let totalAP_NoListed=0
+    content+=`<tbody>`
+    for (  var i = 0;  i < 6;  i++  ) {
+
+        let difficulty=""
+        if(i==0){difficulty="Easy";}
+        else if(i==1){difficulty="Normal";}
+        else if(i==2){difficulty="Hard";}
+        else if(i==3){difficulty="Expert";}
+        else if(i==4){difficulty="Master";}
+        else if(i==5){difficulty="Append";}
+        content+=`<tr>
+        <td class="right"><span class="pjsekai_difficulty_${difficulty}">${difficulty.toUpperCase()}</span></td>
+        <td class="center">${li_theNumberOfAP_NoListed[i]+li_theNumberOfAP_Listed[i]}</td>
+        <td class="center">${li_theNumberOfAP_Listed[i]}</td>
+        <td class="center">${li_theNumberOfAP_NoListed[i]}</td>
+        </tr>`
+        totalAP_Listed+=li_theNumberOfAP_Listed[i]
+        totalAP_NoListed+=li_theNumberOfAP_NoListed[i]
+    }
+    content+=`</tbody>`
+
+    content+=`
+    <tfoot>
+        <tr>
+            <td class="bold size_B center">合計</td>
+            <td class="center hi">${totalAP_NoListed+totalAP_Listed}</td>
+            <td class="center hi">${totalAP_Listed}</td>
+            <td class="center hi">${totalAP_NoListed}</td>
+        </tr>
+    </tfoot>
+    </table>`//表1END
+
+
+      allPerfectData.innerHTML=`${content}`;
+}
+      
