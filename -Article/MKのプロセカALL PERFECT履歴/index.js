@@ -164,6 +164,9 @@ const li_allPerfectHistory=[
     createAllPerfectHistoryList(20261108,"Normal",12,"光"),
     createAllPerfectHistoryList(20261113,"Expert",24,"インテグラル","なんか突発で出たわ。Expert7曲目のAPが4日間のブランクを打破！"),
     createAllPerfectHistoryList(20261113,"Hard  ",16,"Fondant Step"),
+    createAllPerfectHistoryList(20261115,"Easy  ",6 ,"プロポーズ"),
+    createAllPerfectHistoryList(20261115,"Easy  ",5 ,"空に免じて"),
+    createAllPerfectHistoryList(20261116,"Easy  ",5 ,"プレデター","この譜面、Lv5なのに最後に終点フリックがあった...まじか..."),
                     ];
 
 
