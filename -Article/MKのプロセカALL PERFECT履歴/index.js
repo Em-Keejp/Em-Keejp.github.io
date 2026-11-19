@@ -167,6 +167,7 @@ const li_allPerfectHistory=[
     createAllPerfectHistoryList(20261115,"Easy  ",6 ,"プロポーズ"),
     createAllPerfectHistoryList(20261115,"Easy  ",5 ,"空に免じて"),
     createAllPerfectHistoryList(20261116,"Easy  ",5 ,"プレデター","この譜面、Lv5なのに最後に終点フリックがあった...まじか..."),
+    createAllPerfectHistoryList(20261118,"Easy  ",8 ,"ラビットホール","プロセカを期に初めてこの曲聴いたが、思ったよりロックな音が鳴ってたなーって印象。歌詞は知らない方が良さそうだ..."),
                     ];
 
 
